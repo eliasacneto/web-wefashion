@@ -1,4 +1,3 @@
-import './App.css'
 import Footer from './views/Footer/Footer'
 
 function App() {

@@ -1,1 +1,95 @@
 @use "../../global.scss" as *;
+
+.Footer{
+    background-color: $main-white;
+    width: 100%;
+    display: flex;
+    padding: 50px 0;
+    justify-content: space-around;
+    font-family: "Inter";
+
+    &__contact{
+        display: grid;
+
+        &--logo{
+            width: 300px;
+        }
+        &--info{
+            color: $description-gray
+        }
+        &--contact{
+            color: $description-gray;
+            font-weight: bolder;
+            span{
+                color: $dark-yellow;
+            }
+        }
+    }
+
+    &__courses{
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+
+        &__links{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        }
+    }
+
+    &__useful-links{
+        display: flex;
+        flex-direction: column;
+
+        &__links{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    &__social{
+        display: flex;
+        flex-direction: column;
+
+        &--icons{
+            display: flex;
+            gap: 15px;
+        }
+    }
+
+    h2{
+        margin-top: 0;
+    }
+
+    a{
+        font-size: 1.1rem;
+        text-decoration: none;
+        color: $main-black;
+    }
+
+    #clickable{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 50px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .Footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        &__contact{
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #clickable{
+        flex-direction: column;
+    }
+}
