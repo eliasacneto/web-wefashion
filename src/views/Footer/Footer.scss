@@ -74,7 +74,16 @@
         justify-content: space-evenly;
         gap: 50px;
     }
+
+    iframe{
+        margin-top: 20px;
+        border: 0;
+        width: 250px;
+        height: 150px;
+    }
 }
+
+/* Media query for tablets */
 
 @media only screen and (max-width: 950px) {
     .Footer {
@@ -88,8 +97,17 @@
     }
 }
 
+/* Media query for smartphones */
+
 @media only screen and (max-width: 600px) {
+    .Footer__contact{
+        align-self: flex-start;
+        text-align: left;
+        margin-left: 50px;
+    }
     #clickable{
         flex-direction: column;
+        align-self: start;
+        margin-left: 50px;
     }
 }

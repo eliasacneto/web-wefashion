@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <footer className="Footer">
             <div className="Footer__contact">
-                <img className="Footer__contact--logo" src={weFashionLogo}></img>
+                <img className="Footer__contact--logo" src={weFashionLogo} alt="Logo da WeFashion"></img>
                 <div>
                     <p className="Footer__contact--info">© 2023 WE FASHION MODA LTDA <br/>
                     CNPJ: 35.587.878/0001-50</p>
@@ -41,10 +41,11 @@ const Footer = () => {
             <div className="Footer__social">
                 <h2>Siga-nos</h2>
                 <div className="Footer__social--icons">
-                    <a href=""><img src={wpIcon} alt="" /></a>
-                    <a href=""><img src={instaIcon} alt="" /></a>
-                    <a href=""><img src={ytIcon} alt="" /></a>
+                    <a href=""><img src={wpIcon} alt="Ícone WhatsApp" /></a>
+                    <a href=""><img src={instaIcon} alt="Ícone Instagram" /></a>
+                    <a href=""><img src={ytIcon} alt="Ícone Youtube" /></a>
                 </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.4312914455236!2d-45.89340992516297!3d-23.22738757903067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc4b9137a941cf%3A0x168372b785cf2799!2sWe%20Fashion%20Escola%20de%20Moda!5e0!3m2!1spt-BR!2sbr!4v1693538511009!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             </div>
         </footer>
