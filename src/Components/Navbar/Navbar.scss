@@ -32,6 +32,11 @@
         color: #F9F9F9;
     }
 
+    li:hover{
+        cursor: pointer;
+        color: #FFFFFF;
+    }
+
     button{
         height: 50px;
         width: 182px;
@@ -43,6 +48,12 @@
         color: #232323;
         box-shadow: 1px 1px 20px 1px #FEAE11;   
         border: 1px #FEAE11; 
+    }
+
+    button:hover{
+        cursor: pointer;
+        background-color: #E8BF29;
+        box-shadow: 1px 1px 20px 1px #E8BF29;
     }
 
 }
