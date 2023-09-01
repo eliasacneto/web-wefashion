@@ -1,0 +1,48 @@
+.navbar{
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #232323;
+
+    img{
+        padding-left: 40px;
+    }
+
+    &__menu{
+        display: flex;
+        padding-right: 40px;
+        width: 60%;
+        justify-content: space-around;
+    }
+
+    ul{
+        list-style-type: none;
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    li{
+        padding-right: 100px;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: bold;
+        color: #F9F9F9;
+    }
+
+    button{
+        height: 50px;
+        width: 182px;
+        background-color: #FEAE11;
+        border-radius: 10px;
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: bold;
+        color: #232323;
+        box-shadow: 1px 1px 20px 1px #FEAE11;   
+        border: 1px #FEAE11; 
+    }
+
+}
