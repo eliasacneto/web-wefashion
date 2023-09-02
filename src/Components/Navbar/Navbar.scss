@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: #232323;
+    position: fixed;
 
     &__logo{
         padding-left: 40px;
@@ -13,7 +14,6 @@
     &__menu{
         display: flex;
         padding-right: 2vw;
-        
         justify-content: space-around;
     }
 
@@ -84,9 +84,7 @@
         }
     
         button{
-            height: 50px;
             width: 80px;
-            border-radius: 10px;
             font-size: 12px;
             box-shadow: 1px 1px 15px 1px #FEAE11;   
         }
@@ -123,6 +121,7 @@
         }
 
         &__logo{
+            padding-left: 15px;
             img{
                 height: 30px;
                 width: 41px;

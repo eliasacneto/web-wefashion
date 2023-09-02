@@ -23,13 +23,13 @@ const Navbar = () => {
 
 
   return (
-    <div className='navbar'>
+    <header className='navbar'>
         <div className='navbar__logo'>
             <img src={logo} alt="ErroLogo-WeFashion2" />
         </div>
         
         {   canShow() && (
-          <div className='navbar__menu'>
+          <navbar className='navbar__menu'>
               <ul>
                   <li><a href="">Inicio</a></li>
                   <div className='line'></div>
@@ -41,11 +41,11 @@ const Navbar = () => {
                   <div className='line'></div>
               </ul>
               <button>Quero ser um aluno</button>
-          </div>
+          </navbar>
           )
         }
         <img className='navbar__icon' onClick={showMenu} src={iconNavbar} alt="ErrorIcon-Menu" />
-    </div>
+    </header>
   )
 }
 
