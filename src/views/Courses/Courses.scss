@@ -1,0 +1,81 @@
+@use "../../global.scss" as *;
+
+.courses-Container {
+    background-color: #FFF;
+    height: 850px;
+
+
+
+    &__Title {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px;
+
+        h1 {
+            color: $dark-yellow;
+            font-family: Inter;
+            font-size: 45px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+        h2 {
+            color: #777;
+            font-family: Inter;
+            font-size: 25px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+
+    }
+
+    &__Cards {
+        display: flex;
+        justify-content: center;
+        gap: 25px
+    }
+
+    .card-Box1 {
+        position: relative; 
+
+        &__Folder {
+            height: 240px;
+          
+        }
+
+        &__Img {
+            width: 400px;
+            height: 240px;
+            background: #201313;
+
+        }
+
+        &__Price{
+            position: absolute;
+            margin-top: 180px;
+            z-index: 1;
+            top: 2.5%;
+            left: 0%;
+            width: 100px;
+            height: 50px;
+            background: $dark-yellow;
+            border: none;
+            color: #000;
+            font-family: Inter;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+        }
+
+        &__Assessment {
+            width: 400px;
+            height: 190px;
+            flex-shrink: 0;
+        }
+    }
+}
