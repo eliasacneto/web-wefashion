@@ -1,10 +1,7 @@
 @use "../../global.scss" as *;
 
 .courses-Container {
-    background-color: #FFF;
-    height: 850px;
-
-
+    background-color: $container-white;
 
     &__Title {
         display: flex;
@@ -35,16 +32,41 @@
 
     &__Cards {
         display: flex;
-        justify-content: center;
-        gap: 25px
+        align-items: flex-start;
+        align-content: space-around;
     }
 
     .card-Box1 {
-        position: relative; 
+        position: relative;
+        border-radius: 5px;
+        border: 0.5px solid rgba(0, 0, 0, 0.05);
+        background: $main-white;
+        box-shadow: 0px 4px 100px 5px rgba(0, 0, 0, 0.10);
+        height: 430px;
+
+        p {
+            display: flex;
+            align-items: stretch;
+            color: #77838F;
+            font-family: Roboto;
+            font-size: 17px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+
+        h3 {
+            color: #000;
+            font-family: Inter;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
 
         &__Folder {
             height: 240px;
-          
+
         }
 
         &__Img {
@@ -54,7 +76,7 @@
 
         }
 
-        &__Price{
+        &__Price {
             position: absolute;
             margin-top: 180px;
             z-index: 1;
@@ -73,9 +95,13 @@
         }
 
         &__Assessment {
-            width: 400px;
+            margin-left: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-flow: column wrap;
             height: 190px;
-            flex-shrink: 0;
         }
     }
+
+    .card-Box2 {}
 }
