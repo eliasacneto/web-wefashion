@@ -1,0 +1,33 @@
+.benefits{
+    background-color: #FEAE11;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 100px;
+    height: 85vh;
+    
+    h1{
+        font-family: Inter;
+        font-size: 60px;
+        color: #FFFFFF;
+    }
+
+    h2{
+        font-family: Roboto;
+        font-size: 20px;
+        color: #232323;
+        margin-left: 20px;
+        
+    }
+
+    h4{
+        font-family: Roboto;
+        font-size: 16px;
+        color: #F9F9F9;
+        height: 57px;
+    }
+
+
+   &__content-benefits{
+        display: flex;
+   }
+}
