@@ -1,0 +1,51 @@
+@use "../../global.scss" as *;
+
+section{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.models{
+    width: 373px;
+    height: 493px;
+    top: 78px;
+    left: 0px;
+    border-radius: 20px;
+    border: 1px;
+    margin: 78px 0px 0px 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+.about{
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    &__title{
+        color: $bg-black;
+        font-family: Inter;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 48px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+}
+
+section spam{
+    color: $light-yelllow;
+}
+
+p{
+    padding: 50px;
+    margin-right: 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+
