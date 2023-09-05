@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState, useEffect } from 'react';
 import "./Nescola.scss"
 import Pmodelo1 from "../../assets/Modelos/1.jpg"
 import Pmodelo2 from "../../assets/Modelos/2.jpg"
@@ -21,28 +21,28 @@ import Pmodelo18 from "../../assets/Modelos/25.jpg"
 import Pmodelo19 from "../../assets/Modelos/26.jpg"
 import Pmodelo20 from "../../assets/Modelos/27.jpg"
 
-const currentImage = Pmodelo1
+const images = [Pmodelo1, Pmodelo2, Pmodelo3, Pmodelo4, Pmodelo5, Pmodelo6, Pmodelo7, Pmodelo8, Pmodelo9, Pmodelo10,
+    Pmodelo11, Pmodelo12, Pmodelo13, Pmodelo14, Pmodelo15, Pmodelo16, Pmodelo17, Pmodelo18, Pmodelo19, Pmodelo20];
 
-const images = [Pmodelo2, Pmodelo3, Pmodelo4, Pmodelo5, Pmodelo6, Pmodelo7, Pmodelo8, Pmodelo9, Pmodelo10, Pmodelo11, Pmodelo12, Pmodelo13, Pmodelo14, Pmodelo15, 
-    Pmodelo16, Pmodelo17, Pmodelo18, Pmodelo19, Pmodelo20]; 
+function ImageSwapper() {
+    const [currentIndex, setCurrentIndex] = useState(0);
 
-    function ImageSwapper() {
-        const [currentImage, setCurrentImage] = useState(null);
-    
-        useEffect(() => {
-            const intervalId = setInterval(() => {
-                setCurrentImage(images[Math.floor(Math.random() * items.length)]);
-            }, 5000)
-            
-            return () => clearInterval(intervalId);
-        }, [])   
-    }
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+        }, 5000);
+
+        return () => clearInterval(intervalId);
+    }, []);
+
+    return images[currentIndex];
+}
 
 const Nescola = () => {
   return (
     <section>
     <div>
-        <img className='models' src={currentImage} alt="Modelos"/>
+        <img className='models' src={ImageSwapper()} alt={`Random Image`} />
     </div>
     <p className='about'>
         <h1 className='about__title'>Sobre a nossa <spam>escola</spam></h1> <br/>
