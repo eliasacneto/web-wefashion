@@ -1,7 +1,7 @@
 @use "../../global.scss" as *;
 
 section{
-    background-color: white;
+    background-color: $main-white;
     display: flex;
     justify-content: space-between;
 }
@@ -16,7 +16,7 @@ section{
     margin: 100px 0px 0px 350px;
     justify-content: center;
     align-items: center;
-    box-shadow: 5px 5px 8px 5px #888888;
+    box-shadow: 5px 5px 8px 5px $description-gray;
 }
 
 .about{
@@ -26,6 +26,9 @@ section{
     line-height: 26px;
     letter-spacing: 0em;
     text-align: left;
+    margin-top: 90px;
+    box-shadow: 5px 5px 8px 5px $description-gray;
+    border-radius: 50px;
 
     &__title{
         color: $bg-black;
@@ -35,7 +38,7 @@ section{
         line-height: 48px;
         letter-spacing: 0em;
         text-align: left;
-        
+        margin: 0px;
     }
 }
 
@@ -49,5 +52,3 @@ p{
     justify-content: center;
     align-items: center;
 }
-
-
