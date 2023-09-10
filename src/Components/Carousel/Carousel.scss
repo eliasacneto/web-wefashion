@@ -1,0 +1,78 @@
+@use "../../global.scss" as *;
+
+.swiper {
+  width: 52rem;
+}
+
+.swiper-slide {
+  margin-bottom: 3.1rem;
+}
+
+.swiper-slide-active {
+  margin: 0;
+}
+
+.swiper-pagination-bullet {
+  background-color: $dark-yellow;
+  margin-top: 50%;
+  align-self: center;
+  overflow: hidden;
+}
+
+.card-carousel {
+  color: #fff;
+  display: flex;
+}
+
+.testimonial-carousel-item {
+  list-style: none;
+  color: #303030;
+  width: 3.125rem;
+  margin-top: 6.25rem;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  width: 25em;
+  height: 25em;
+  padding-bottom: 1.2rem;
+  background-color: #fff;
+  border-radius: 1.2rem;
+  z-index: 0;
+}
+
+.student-image {
+  margin-top: 10%;
+  margin-bottom: 1%;
+  border-radius: 50%;
+  width: 6.25rem;
+  align-self: center;
+}
+
+.student-name {
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2%;
+}
+
+.course-name {
+  color: #54595f;
+  font-weight: 500;
+
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.testimonial-description {
+  text-align: justify;
+  margin-top: 5%;
+  padding-bottom: 2%;
+  margin-left: 1.2rem;
+  margin-right: 1.125rem;
+  color: #54595f;
+  font-weight: 300;
+  font-size: 1.125rem;
+}
