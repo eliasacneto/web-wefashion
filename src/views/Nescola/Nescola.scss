@@ -1,54 +1,54 @@
 @use "../../global.scss" as *;
 
-section{
-    background-color: $main-white;
-    display: flex;
-    justify-content: space-between;
+section {
+  background-color: $main-white;
+  display: flex;
+  justify-content: space-between;
 }
 
-.models{
-    width: 373px;
-    height: 493px;
-    top: 78px;
-    left: 0px;
-    border-radius: 20px;
-    border: 1px;
-    margin: 100px 0px 0px 350px;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 5px 5px 8px 5px $description-gray;
+.models {
+  width: 373px;
+  height: 493px;
+  top: 78px;
+  left: 0px;
+  border-radius: 20px;
+  border: 1px;
+  margin: 100px 0px 0px 350px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 8px 5px $description-gray;
 }
 
-.about{
+.about {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 90px;
+  box-shadow: 5px 5px 8px 5px $description-gray;
+  border-radius: 50px;
+
+  &__title {
+    color: $bg-black;
     font-family: Inter;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 26px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
     letter-spacing: 0em;
     text-align: left;
-    margin-top: 90px;
-    box-shadow: 5px 5px 8px 5px $description-gray;
-    border-radius: 50px;
-
-    &__title{
-        color: $bg-black;
-        font-family: Inter;
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 48px;
-        letter-spacing: 0em;
-        text-align: left;
-        margin: 0px;
-    }
+    margin: 0px;
+  }
 }
 
-section spam{
-    color: $light-yelllow;
+section spam {
+  color: $light-yelllow;
 }
 
-p{
-    padding: 50px;
-    margin-right: 250px;
-    justify-content: center;
-    align-items: center;
+.about {
+  padding: 50px;
+  margin-right: 250px;
+  justify-content: center;
+  align-items: center;
 }
