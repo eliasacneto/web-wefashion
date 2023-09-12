@@ -2,8 +2,8 @@ import React from "react";
 import weFashionLogo from "../../assets/we-fashion-logo.svg";
 import instaIcon from "../../assets/instagram-icon.svg";
 import ytIcon from "../../assets/youtube-icon.svg";
-import wpIcon from "../../assets/whatsapp-icon.svg"
-import "./Footer.scss"
+import wpIcon from "../../assets/whatsapp-icon.svg";
+import "./Footer.scss";
 
 const Footer = () => {
     return (
