@@ -1,16 +1,17 @@
+import Benefits from "./Components/Benefits/Benefits";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./views/Footer/Footer";
-import Classes from "./views/Classes/Classes";
-import Cards from "./Components/Cards/Cards"
-import { itens } from "/src/mock/product.mock"
+import Nescola from "./views/Nescola/Nescola";
+import Testimonials from "./views/Testimonials/Testimonials";
 
 
 function App() {
   return (
     <>
       <Navbar />
-      <Classes data={itens}/>
-      <Cards />
+      <Benefits />
+      <Nescola />
+      <Testimonials />
       <Footer />
     </>
   );
