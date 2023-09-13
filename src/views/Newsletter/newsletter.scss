@@ -19,9 +19,9 @@
 
   &_text {
     font-size: 20px;
-    line-height: 26px;
-    height: 150px;
-    width: 500px;
+    line-height: 30px;
+    height: 130px;
+    width: 600px;
   }
 
   &_img {
@@ -69,6 +69,7 @@
     bottom: 52px;
     border: none;
     background-color: $dark-yellow;
+    box-shadow: 0 0 10px $dark-yellow;
     color: #000;
     border-radius: 0px 10px 10px 0px;
     font-size: 1em;
