@@ -14,9 +14,11 @@ const Newsletter = () => {
           1500s, when an unknown printer took a galley of type and scrambled it
           to make a type specimen book.
         </p>
+        <input className='newsletter-input' type="text" />
+        <label className='input-placeholder'>Digite o seu melhor e-mail</label>
       </div>
-      <div className="input-newsletter">
-        <input type="text" />
+      <div className="newsletter_img">
+        <img src={wefashionPic} alt="Erro-img" />
       </div>
     </div>
   );

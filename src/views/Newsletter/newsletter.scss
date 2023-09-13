@@ -23,12 +23,36 @@
         height: 150px;
         width: 500px;
     }
+
+    &_img {
+        position: absolute;
+        left: 200px;
+    }
+}
+
+.newsletter-input {
+    width: 320px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid $dark-yellow;
+    background: $bg-black;
+    color: #fff;
+    outline: none;
+    font-size: 1.1em;
+}
+
+.input-placeholder {
+    position: absolute;
+    bottom: 491px;
+    left: 950px;
+    pointer-events: none;
 }
 
 .side-content {
     width: 25%;
     display: flex;
     flex-direction: column;
-    margin-left: 840px;
+    margin-left: 478px;
     justify-content: center;
 }
