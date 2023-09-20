@@ -1,5 +1,5 @@
 import Benefits from "./Components/Benefits/Benefits";
-import Navbar from "./Components/Navbar/Navbar";
+import Header from "./Components/Header/Header";
 import Footer from "./views/Footer/Footer";
 import Nescola from "./views/Nescola/Nescola";
 import Testimonials from "./views/Testimonials/Testimonials";
@@ -7,7 +7,7 @@ import Testimonials from "./views/Testimonials/Testimonials";
 function App() {
   return (
     <>
-      <Navbar />
+      <Header/>
       <Benefits />
       <Nescola />
       <Testimonials />
