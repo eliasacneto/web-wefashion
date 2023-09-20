@@ -1,10 +1,12 @@
+@use "../../../global.scss" as *;
+
 .navbarDesk{
     width: 100vw;
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #232323;
+    background-color: $bg-black;
     position: fixed;
 
     &__logo{
@@ -30,26 +32,26 @@
 
     li:hover{
         cursor: pointer;
-        color: #FFFFFF;
+        color: $off-white;
     }
 
     button{
         height: 50px;
         width: 183px;
-        background-color: #FEAE11;
+        background-color: $dark-yellow;
         border-radius: 10px;
         font-family: Inter;
         font-size: 16px;
         font-weight: bold;
-        color: #232323;
-        box-shadow: 1px 1px 20px 1px #FEAE11;
-        border: 1px #FEAE11;
+        color: $bg-black;
+        box-shadow: 1px 1px 20px 1px $dark-yellow;
+        border: 1px $dark-yellow;
     }
 
     button:hover{
         cursor: pointer;
-        background-color: #E8BF29;
-        box-shadow: 1px 1px 20px 1px #E8BF29;
+        background-color: $light-yelllow;
+        box-shadow: 1px 1px 20px 1px $light-yelllow;
     }
 
 
@@ -58,11 +60,11 @@
         font-family: Inter;
         font-size: 16px;
         font-weight: bold;
-        color: #F9F9F9;
+        color: $off-white;
     }
 
     // Screen for ipads and small screens
-    @media (min-width: 390px) and (max-width: 770px) {
+    @media (max-width: 770px) {
         &__logo{
             padding-left: 30px;
         }
@@ -83,7 +85,7 @@
         button{
             width: 80px;
             font-size: 12px;
-            box-shadow: 1px 1px 15px 1px #FEAE11;
+            box-shadow: 1px 1px 15px 1px $dark-yellow;
             margin-right: 10px;
         }
 
