@@ -5,6 +5,7 @@ import Nescola from "./Components/Nescola/Nescola";
 import Testimonials from "./views/Testimonials/Testimonials";
 import Courses from "./views/Courses/Courses";
 
+import Newsletter from "./views/Newsletter/newsletter";
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
       <Navbar />
       <Benefits />
       <Courses />
-      <Nescola />
       <Testimonials />
+      <Nescola />
+      <Newsletter />
       <Footer />
     </>
   );
