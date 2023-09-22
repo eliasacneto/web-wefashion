@@ -1,0 +1,108 @@
+@use "../../global.scss" as *;
+
+.yellow-text {
+  color: $dark-yellow;
+}
+
+.newsletter {
+  background-color: $bg-black;
+  color: $main-white;
+  display: flex;
+  height: 650px;
+  justify-content: space-around;
+  font-family: "Inter";
+
+  &_title {
+    line-height: normal;
+    height: 100px;
+  }
+
+  &_text {
+    font-size: 20px;
+    line-height: 30px;
+    height: 150px;
+    width: 600px;
+  }
+
+  &_img {
+    position: absolute;
+    left: 200px;
+  }
+
+  .input-container {
+    position: relative;
+    width: 320px;
+    height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .newsletter-input {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    border-radius: 10px 0px 0px 10px;
+    border: 1px solid $dark-yellow;
+    background: $bg-black;
+    color: #fff;
+    outline: none;
+    font-size: 1.1em;
+    transition: all 0.2s ease;
+
+    &.active {
+      border-color: $dark-yellow;
+    }
+
+    &:focus + .input-placeholder,
+    &.active + .input-placeholder {
+      top: -12px;
+      font-size: 0.9em;
+      color: $dark-yellow;
+      background: $bg-black;
+    }
+  }
+
+  .subscribe-button {
+    width: 100px;
+    height: 52px;
+    margin-left: 341px;
+    position: relative;
+    bottom: 52px;
+    border: none;
+    background-color: $dark-yellow;
+    box-shadow: 0 0 10px $dark-yellow;
+    color: #000;
+    border-radius: 0px 10px 10px 0px;
+    font-size: 1em;
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+
+  .subscribe-button:hover {
+    background-color: $dark-yellow;
+    color: #fff;
+    box-shadow: 0 0 20px $dark-yellow;
+    transition: all 0.2s ease;
+  }
+
+  .input-placeholder {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    bottom: 15px;
+    transform: translateY(10%);
+    pointer-events: none;
+    font-size: 1em;
+    transition: all 0.2s ease;
+  }
+}
+
+.side-content {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 478px;
+  justify-content: center;
+}
