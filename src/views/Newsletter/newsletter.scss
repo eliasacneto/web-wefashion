@@ -8,19 +8,19 @@
   background-color: $bg-black;
   color: $main-white;
   display: flex;
-  height: 580px;
+  height: 650px;
   justify-content: space-around;
   font-family: "Inter";
 
   &_title {
     line-height: normal;
-    height: 50px;
+    height: 100px;
   }
 
   &_text {
     font-size: 20px;
     line-height: 30px;
-    height: 130px;
+    height: 150px;
     width: 600px;
   }
 
