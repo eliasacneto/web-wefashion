@@ -27,36 +27,36 @@ const ClassForm = () => {
   return (
     <div className='classes'>
         <Navbar />
-            <Swiper
+            <Swiper className='classes__swiper'
                 slidesPerView={1}
                 navigation
                 modules={[ Navigation ]}>
-                    <SwiperSlide className='carrosel__form'>
+                    <SwiperSlide className='classes__swiper-form'>
                         <div className='classesForm' >
                         
                             <div className='classesForm__description'>
                                 <h3 className='classesForm__description-cursoFix'>CURSO</h3>
-                                <h1>{product.nome1}</h1>
-                                <h1>{product.nome2}</h1>
+                                <h1 className='classesForm__description-h1'>{product.nome1}</h1>
+                                <h1 className='classesForm__description-h1'>{product.nome2}</h1>
                                 <div className='classesForm__description-spec'>
                                     <div className='classesForm__description-spec-iten'>
-                                        <img src={clock}/>
-                                        <h5>{product.duração}</h5>
+                                        <img className='classesForm__description-spec-iten-img' src={clock}/>
+                                        <h5 className='classesForm__description-spec-iten-h5'>{product.duração}</h5>
                                     </div>
                                     <div className='classesForm__description-spec-iten'>
-                                        <img src={users}/>
-                                        <h5>{product.turma}</h5>
+                                        <img className='classesForm__description-spec-iten-img' src={users}/>
+                                        <h5 className='classesForm__description-spec-iten-h5'>{product.turma}</h5>
                                     </div>
                                     <div className='classesForm__description-spec-iten'>
-                                        <img src={mapPin}/>
-                                        <h5>{product.tipoLocal}</h5>
+                                        <img className='classesForm__description-spec-iten-img' src={mapPin}/>
+                                        <h5 className='classesForm__description-spec-iten-h5'>{product.tipoLocal}</h5>
                                     </div>
                                 </div>
                                 <h2 className='classesForm__description-price'>De: {product.preço}</h2>
                                 <h2 className='classesForm__description-price'>Por apenas: <h2 className='classesForm__description-price-promo'> {product.promoção}</h2></h2>
                             </div>
                             <div className='classesForm__form'>
-                                <p>Inscreva-se agora!</p>
+                                <p className='classesForm__form-p'>Inscreva-se agora!</p>
                                 <input className='classesForm__form-input' type="text" placeholder='Nome completo'/>
                                 <input className='classesForm__form-input' type="text" placeholder='Seu melhor e-mail' />
                                 <input  className='classesForm__form-input' type="text" placeholder='Seu Whatsapp'/>

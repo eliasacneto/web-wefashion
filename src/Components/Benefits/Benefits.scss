@@ -8,29 +8,35 @@
     padding-left: 2vw;
     padding-right: 2vw;
     
-    h1{
-        font-family: Inter;
-        font-size: 60px;
-        color: #FFFFFF;
-    }
+        &__content{
 
-    h2{
-        font-family: Roboto;
-        font-size: 20px;
-        color: #232323;
-        margin-left: 20px;
-    }
+            &-h1{
+                font-family: Inter;
+                font-size: 60px;
+                color: #FFFFFF;
+                margin-bottom: 3vh;
+            }
 
-    h4{
-        font-family: Roboto;
-        font-size: 16px;
-        color: #F9F9F9;
-        height: 57px;
-    }
+            &-h2{
+                font-family: Roboto;
+                font-size: 20px;
+                color: #232323;
+                margin-left: 20px;
+                margin-bottom: 1vh;
+            }
 
+            &-h4{
+                font-family: Roboto;
+                font-size: 16px;
+                color: #F9F9F9;
+                height: 57px;
+                margin-bottom: 1vh;
+            }
+        }
 
    &__content-benefits{
         display: flex;
+        margin-bottom: 2vh;
    }
 
    .btn-whatts{
