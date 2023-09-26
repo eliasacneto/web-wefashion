@@ -26,8 +26,8 @@ export default function Courses() {
                     <Swiper className='courses-Container__Cards-swiper'
                     slidesPerView={3}
                     loop
-                    navigation
-                    modules={[ Navigation ]}
+                    
+                    modules={[ Pagination ]}
                     >
                         {products.map((product) => (
                             <SwiperSlide className='courses-Container__Cards-swiper-slide' key={product.id}>
