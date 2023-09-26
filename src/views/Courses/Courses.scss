@@ -8,13 +8,24 @@
 
     &__Cards{
 
-        padding-top: 7vh;
+        padding-top: 8vh;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        
+
+        .swiper-button-prev, .swiper-button-next{
+            color: $dark-yellow;
+            
+        }
 
         &-swiper{
         height: 100vh;
         width: 100vw;
         padding-left: 5vw;
         padding-right: 5vw;
+     
+                               
 
             &-slide{
                 margin-right: 2vw;

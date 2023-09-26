@@ -3,6 +3,7 @@ import logo from "./../../assets/WeFashion2.svg";
 import "./Navbar.scss";
 import iconNavbar from "./../../assets/iconNavbar.svg";
 
+
 const Navbar = () => {
   const [menuView, setMenuView] = useState(false);
 
@@ -31,10 +32,10 @@ const Navbar = () => {
           <ul>
             <li>
               <a href=''>Início</a>
-            </li>
+            </li> 
             <div className='line'></div>
             <li>
-              <a href=''>Cursos</a>
+              <a href="">Cursos</a>
             </li>
             <div className='line'></div>
             <li>
