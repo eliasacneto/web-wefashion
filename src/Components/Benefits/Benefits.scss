@@ -68,7 +68,7 @@
    }
 
 
-   @media (min-width: 650px) and (max-width: 960px){
+   @media (min-width: 660px) and (max-width: 960px){
        &__img{
             img{     
                 width: 250px;
@@ -78,6 +78,7 @@
         h1{
             padding-top: 1vh;
             font-size: 40px;
+            
         }
     
         h2{
@@ -96,6 +97,7 @@
         height: 105vh;
         padding-left: 2vw;
         padding-right: 2vw;
+        
 
        &__img{
             img{     
@@ -105,6 +107,7 @@
     
         h1{
             font-size: 40px;
+           
         }
     
         h2{
@@ -112,9 +115,9 @@
         }
     
         h4{
+            padding-left: 5vw;
             font-size: 14px;
             width: 350px;
-        
         }
 
         .btn-whatts{
