@@ -5,9 +5,8 @@
     justify-content: space-around;
     align-items: center;
     padding-top: 60px;
-    padding-left: 2vw;
-    padding-right: 2vw;
     width: 94.9vw;
+    width: 96vw;
     height: 90vh;
 
 
@@ -16,7 +15,7 @@
             font-family: Inter;
             font-size: 30px;
             color: #FFFFFF;
-            margin: 5px 5px 15px 5px;
+            margin: 15px 0px 15px 2vw;
             text-align: left;
         }
 
@@ -59,24 +58,31 @@
 
     .btn-whatts{
         height: 45px;
-        width: 10px;
+        width: 70vw;
+        max-width: 200px;
         color: #F9F9F9;
         background-color: black;
-        border-radius: 10px;
-        font-family: Inter;
-        font-size: 14px;
-        font-weight: bold;
+        
         display: flex;
         justify-content: center;
         align-items: center;
         box-shadow: 5px 5px 10px 1px #232323;
         margin: 0 auto 0 auto;
-        padding: 0 35vw 0 35vw;
+        
+
+        p{
+            font-size: 16px;
+            border-radius: 10px;
+            font-family: Inter;
+            font-size: 10px;
+            font-weight: bold;
+            text-align: center;
+        }
     
         img{
-            height: 25px;
-            width: 25px;
-            margin-right: 3vw;
+            height: 20px;
+            width: 20px;
+            margin-right: 5px;
         }
     }
 
@@ -84,8 +90,8 @@
         padding-top: 10px;
 
         img{     
-            height: 200px;
-            width: 216px;
+            height: 60vw;
+            width: 60vw;
         }
     }
 

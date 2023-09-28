@@ -24,7 +24,7 @@ const BenefitsMobile = () => {
 
             <h4 className='benefitsMobile__content-h4'>Converse conosco para transformar sua paixão em habilidades de costura!</h4>
             
-            <button className='btn-whatts'><img src={whattsIcon} alt="" />Fale conosco </button>
+            <button className='btn-whatts'><img src={whattsIcon} alt="" /><p>Fale conosco </p></button>
         </div>
 
         <div className='benefitsMobile__img'>
