@@ -8,8 +8,7 @@ const Benefits = () => {
   return (
     <div className='benefits'>
         <div className='benefits__content'> 
-            <h1>Titulo beeeem legal</h1>
-            <div className='benefits__content-benefits'>
+                <h1>Descubra o estilo em cada ponto</h1>            <div className='benefits__content-benefits'>
                 <img src={iconCheck} alt="" /> <h2>Um professor especialista em modelagem</h2>
             </div>
             <div className='benefits__content-benefits'>
@@ -22,7 +21,7 @@ const Benefits = () => {
                 <img src={iconCheck} alt="" /> <h2>Temos lojas com todo material necessário para o curso</h2>
             </div>
 
-            <h4>Inscreva-se agora mesmo e comeca a estudar através dos nossos cursos gratuitos disponíveis!</h4>
+            <h4 className='benefits__content-h4'>Inscreva-se agora mesmo e comeca a estudar através dos nossos cursos gratuitos disponíveis!</h4>
             
             <button className='btn-whatts'><img src={whattsIcon} alt="" />Fale conosco </button>
         </div>

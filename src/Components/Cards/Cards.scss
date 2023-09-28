@@ -1,0 +1,146 @@
+@use "../../global.scss" as *;
+
+    .card-Box1 {
+        position: relative;
+        border-radius: 5px;
+        border: 0.5px solid rgba(0, 0, 0, 0.05);
+        background: $main-white;
+        box-shadow: 0px 4px 100px 5px rgba(0, 0, 0, 0.10);
+        height: 430px;
+        width: 430px;
+        cursor: grab;
+
+        &__Folder {
+            height: 240px;
+            justify-content: center;
+            margin-bottom: 2vh;
+        
+
+            &-Img {
+                width: 430px;
+                height: 240px;
+                background: #201313;
+
+            }
+        
+
+            &-Price {
+                position: absolute;
+                margin-top: 180px;
+                z-index: 1;
+                top: 2.5%;
+                left: 0%;
+                width: 100px;
+                height: 50px;
+                background: $dark-yellow;
+                border: none;
+                
+                font-size: 19px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+                
+                &-link {
+                    text-decoration: none;  
+                    color: #000;
+                    font-family: Inter;
+                }
+
+                
+            }
+        }
+
+        &__Assessment {
+            margin-left: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-flow: column wrap;
+            height: 190px;
+        
+            &-p {
+                display: flex;
+                align-items: stretch;
+                color: #77838F;
+                font-family: Roboto;
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-bottom: 2vh;
+            }
+    
+            &-h3 {
+                color: #000;
+                font-family: Inter;
+                font-size: 19px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 2vh;
+            }
+
+            &-spec{
+                display: flex;
+                flex-direction: row;
+                
+                justify-content: space-between;
+                color: #77838F;
+                font-family: Roboto;
+            }
+        }
+    }
+
+   .card-Box2{
+    position: relative;
+    margin-top: -435px;
+    background-color: white;
+    z-index: 2;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 430px;
+    max-width: 430px;
+    cursor: grab;
+
+        &__titles{
+            
+            &-1{
+                color: $dark-yellow;
+                font-family: Inter;
+                font-size: 25px;
+                font-weight: 900;
+                margin-bottom: 2vh;
+                
+            }
+            &-2{
+                font-family: Inter;
+                font-size: 23px;
+                font-weight: 700;
+                color: #000;
+                margin-bottom: 2vh;
+            }
+        }
+
+        &__spec{
+            font-family: Roboto;
+            font-weight: 600;
+            font-size: 13px;
+            color: #77838F;
+            padding-top: 2vh;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2vh;
+           
+        
+        }
+
+        &__description{
+            font-family: Roboto;
+            font-weight: 400;
+            font-size: 16px;
+            color: #77838F;
+            text-align: justify;
+            margin-bottom: 2vh;
+        
+        }
+   }
