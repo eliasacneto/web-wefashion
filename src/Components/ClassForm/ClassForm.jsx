@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Navbar from '../Navbar/Navbar';
+import Header from '../Header/Header';
 import Footer from '../../views/Footer/Footer';
 import { itens } from '../../mock/product.mock';
 import { Link, useParams } from 'react-router-dom';
@@ -26,7 +26,7 @@ const ClassForm = () => {
 
   return (
     <div className='classes'>
-        <Navbar />
+        <Header />
             <Swiper className='classes__swiper'
                 slidesPerView={1}
                 navigation
