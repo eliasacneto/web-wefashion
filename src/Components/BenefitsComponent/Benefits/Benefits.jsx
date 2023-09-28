@@ -1,14 +1,15 @@
 import React from 'react'
-import yellowImg from './../../assets/WeFashion-img-yellow.svg'
-import iconCheck from './../../assets/icon-check.svg'
-import whattsIcon from './../../assets/whatsapp.png'
+import yellowImg from './../../../assets/WeFashion-img-yellow.svg'
+import iconCheck from './../../../assets/icon-check.svg'
+import whattsIcon from './../../../assets/whatsapp.png'
 import './Benefits.scss'
 
 const Benefits = () => {
   return (
     <div className='benefits'>
         <div className='benefits__content'> 
-                <h1>Descubra o estilo em cada ponto</h1>            <div className='benefits__content-benefits'>
+            <h1 className='benefits__content-title'>Descubra o estilo em cada ponto</h1>            
+            <div className='benefits__content-benefits'>
                 <img src={iconCheck} alt="" /> <h2>Um professor especialista em modelagem</h2>
             </div>
             <div className='benefits__content-benefits'>

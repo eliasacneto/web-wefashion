@@ -7,19 +7,19 @@
     height: 85vh;
     padding-left: 2vw;
     padding-right: 2vw;
-    height: 100vh;
-    width: 94.9vw;  
+    height: 101vh;
+    width: 94.9vw;
     
         &__content{
 
-            &-h1{
+            &-title{
                 font-family: Inter;
                 font-size: 60px;
                 color: #FFFFFF;
                 margin-bottom: 3vh;
             }
 
-            &-h2{
+            &-benetifs h2{
                 font-family: Roboto;
                 font-size: 20px;
                 color: #232323;
@@ -69,6 +69,8 @@
 
 
    @media (min-width: 660px) and (max-width: 960px){
+    height: 80vh;
+
        &__img{
             img{     
                 width: 250px;
@@ -78,7 +80,6 @@
         h1{
             padding-top: 1vh;
             font-size: 40px;
-            
         }
     
         h2{
