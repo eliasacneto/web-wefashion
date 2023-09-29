@@ -1,5 +1,7 @@
+@use "../../../global.scss" as *;
+
 .benefitsMobile{
-    background-color: #FEAE11;
+    background-color: $dark-yellow;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -9,16 +11,14 @@
     width: 96vw;
     height: 90vh;
 
-
     &__content{
         &-title{
             font-family: Inter;
             font-size: 30px;
-            color: #FFFFFF;
+            color: $main-white;
             margin: 15px 0px 15px 2vw;
             text-align: left;
         }
-
         /*&-benefits{
             display: none;
         }   v isso ou isso  ^       */
@@ -28,48 +28,41 @@
             margin-left: 10px;
             display: flex;
             justify-content: left;
-            
             h2{
                 font-family: Roboto;
                 font-size: 12px;
-                color: #232323;
+                color: $bg-black;
                 margin-left: 20px;
                 margin-bottom: 1vh;
                 margin: 0 20px 1vh 0;
             }
-
             img{
                 height: 15px;
                 padding-right: 7px;
             }
         }
-
         //   FIM DA DUVIDA
 
         &-h4{
             margin: 10px 5px 3vh 0;
             font-family: Roboto;
             font-size: 14px;
-            color: #ffffff;
+            color: $main-white;
             margin-bottom: 3vh;
             text-align: center;
         }
     }
-
     .btn-whatts{
         height: 45px;
         width: 70vw;
         max-width: 200px;
-        color: #F9F9F9;
-        background-color: black;
-        
+        color: $off-white;
+        background-color: $main-black;
         display: flex;
         justify-content: center;
         align-items: center;
-        box-shadow: 5px 5px 10px 1px #232323;
+        box-shadow: 5px 5px 10px 1px $bg-black;
         margin: 0 auto 0 auto;
-        
-
         p{
             font-size: 16px;
             border-radius: 10px;
@@ -78,14 +71,12 @@
             font-weight: bold;
             text-align: center;
         }
-    
         img{
             height: 20px;
             width: 20px;
             margin-right: 5px;
         }
     }
-
     &__img{
         padding-top: 10px;
 
@@ -94,5 +85,4 @@
             width: 60vw;
         }
     }
-
 }

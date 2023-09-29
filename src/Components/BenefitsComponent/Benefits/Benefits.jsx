@@ -8,7 +8,7 @@ const Benefits = () => {
   return (
     <div className='benefits'>
         <div className='benefits__content'> 
-            <h1 className='benefits__content-title'>Descubra o estilo em cada ponto</h1>            
+            <h1 className='benefits__content-title'>Descubra o estilo em cada ponto com a WeFashion</h1>            
             <div className='benefits__content-benefits'>
                 <img className='benefits__content-icon' src={iconCheck} alt="" /> 
                 <h2 className='benefits__content-h2'>Um professor especialista em modelagem</h2>
@@ -26,7 +26,7 @@ const Benefits = () => {
                 <h2 className='benefits__content-h2'>Temos lojas com todo material necessário para o curso</h2>
             </div>
 
-            <h4 className='benefits__content-h4'>Inscreva-se agora mesmo e comeca a estudar através dos nossos cursos gratuitos disponíveis!</h4>
+            <h4 className='benefits__content-h4'>Converse conosco para transformar sua paixão em habilidades de costura!</h4>
             
             <button className='btn-whatts'><img src={whattsIcon} alt="" />Fale conosco </button>
         </div>
