@@ -1,4 +1,4 @@
-import Benefits from "./Components/Benefits/Benefits";
+import BenefitsComponent from "./Components/BenefitsComponent/BenefitsComponent"
 import Header from "./Components/Header/Header";
 import Footer from "./views/Footer/Footer";
 import Nescola from "./Components/Nescola/Nescola";
@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Header/>
-      <Benefits />
+      <BenefitsComponent />
       <Courses />
       <Testimonials />
       <Nescola />
