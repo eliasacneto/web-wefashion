@@ -8,7 +8,7 @@
     align-items: center;
     padding-top: 60px;
     width: 94.9vw;
-    width: 96vw;
+    width: 100%;
     height: 90vh;
 
     &__content{
@@ -44,7 +44,7 @@
         //   FIM DA DUVIDA
 
         &-h4{
-            margin: 10px 5px 3vh 0;
+            margin: 10px 5px 3vh 5px;
             font-family: Roboto;
             font-size: 14px;
             color: $main-white;
@@ -83,6 +83,36 @@
         img{     
             height: 60vw;
             width: 60vw;
+        }
+    }
+
+    @media (max-width: 275px) {
+        
+        &__content{             
+            &-title{
+                font-size: 16px;
+                width: 85vw;
+                margin-top: 0;
+                margin-left: 15px;
+            }
+            
+            h2{
+                font-size: 10px;
+                width: 70vw;
+            }
+            
+            &-h4{
+                width: 90vw;
+                font-size: 10px;
+                padding-top: 4vw;
+                padding-bottom: 5vw;
+            }  
+        }
+        &__img{
+            img{     
+                width: 70vw;
+                height: 70vw;
+            }
         }
     }
 }
