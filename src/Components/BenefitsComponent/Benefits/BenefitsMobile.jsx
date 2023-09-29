@@ -8,7 +8,7 @@ const BenefitsMobile = () => {
   return (
     <div className='benefitsMobile'>
         <div className='benefitsMobile__content'> 
-            <h1 className='benefitsMobile__content-title'>Descubra o estilo em cada ponto</h1>            
+            <h1 className='benefitsMobile__content-title'>Descubra o estilo em cada ponto com a WeFashion</h1>            
             <div className='benefitsMobile__content-benefits'>
                 <img src={iconCheck} alt="" /> <h2>Um professor especialista em modelagem</h2>
             </div>
