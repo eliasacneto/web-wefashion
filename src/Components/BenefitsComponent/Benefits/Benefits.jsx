@@ -10,16 +10,20 @@ const Benefits = () => {
         <div className='benefits__content'> 
             <h1 className='benefits__content-title'>Descubra o estilo em cada ponto</h1>            
             <div className='benefits__content-benefits'>
-                <img src={iconCheck} alt="" /> <h2>Um professor especialista em modelagem</h2>
+                <img className='benefits__content-icon' src={iconCheck} alt="" /> 
+                <h2 className='benefits__content-h2'>Um professor especialista em modelagem</h2>
             </div>
             <div className='benefits__content-benefits'>
-                <img src={iconCheck} alt="" /> <h2>Um professor especialista em corte e costura</h2>
+                <img className='benefits__content-icon' src={iconCheck} alt="" /> 
+                <h2 className='benefits__content-h2'>Um professor especialista em corte e costura</h2>
             </div>
             <div className='benefits__content-benefits'>
-                <img src={iconCheck} alt="" /> <h2>Maquinárino e mesa para treino agendado</h2>
+                <img className='benefits__content-icon' src={iconCheck} alt="" /> 
+                <h2 className='benefits__content-h2'>Maquinárino e mesa para treino agendado</h2>
             </div>
             <div className='benefits__content-benefits'>
-                <img src={iconCheck} alt="" /> <h2>Temos lojas com todo material necessário para o curso</h2>
+                <img className='benefits__content-icon' src={iconCheck} alt="" /> 
+                <h2 className='benefits__content-h2'>Temos lojas com todo material necessário para o curso</h2>
             </div>
 
             <h4 className='benefits__content-h4'>Inscreva-se agora mesmo e comeca a estudar através dos nossos cursos gratuitos disponíveis!</h4>
