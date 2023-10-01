@@ -13,23 +13,23 @@ const ChooseUs = () => {
         <div className="choose-content">
           <h1 className="choose-title">Por que <u className="underlight-small">escolher</u> a <span className="highlight">We</span>Fashion<span className="highlight">?</span></h1>
 
-          <ul className='grid-list'>
-            <li className='gird-item'>
+          <ul className='grid-list choose-ul'>
+            <li className='grid-item choose-li'>
               <img className="icon-w" src={Quality} />
               <h3 className='choose-text'>Tradição e Experiência</h3>
               <p className='choose-description'>Com 12 anos de experiência em São José dos Campos, somos líderes no ensino de moda.</p>
             </li>
-            <li className='gird-item'>
+            <li className='grid-item choose-li'>
               <img className="icon-w" src={Instructor} />
               <h3>Instrutores Qualificados</h3>
               <p>Nossos instrutores são especialistas no campo da moda, prontos para guiá-lo em cada etapa.</p>
             </li>
-            <li className='gird-item'>
+            <li className='grid-item choose-li'>
               <img className="icon-w" src={Diversity} />
               <h3>Foco na Diversidade</h3>
               <p>Celebramos todos os tipos de corpos e estilos, promovendo a inclusão na moda.</p>
             </li>
-            <li className='gird-item'>
+            <li className='grid-item choose-li'>
               <img className="icon-w" src={Class} />
               <h3>Aulas Práticas</h3>
               <p>Aprenda fazendo, com aulas de modelagem e costura que colocam suas habilidades em prática desde o início.</p>

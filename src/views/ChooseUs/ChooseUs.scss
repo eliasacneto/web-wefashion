@@ -5,15 +5,16 @@
   width: 70px !important;
 }
 
-ul {
+.choose-ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px;
   list-style: none;
   padding: 0;
+  margin-bottom: 20px;
 }
 
-li {
+.choose-li {
   background-color: $gray;
   width: 300px;
   border: 1px solid #ddd;
@@ -23,7 +24,7 @@ li {
 
 
 
-li:hover {
+.choose-li:hover {
   background-color: #dddddd47;
   transition: background-color 0.5s ease;
 
@@ -32,7 +33,7 @@ li:hover {
 .ChooseUs {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   background-color: $gray;
 }
 
@@ -180,34 +181,30 @@ li:hover {
     width: 50px !important;
   }
 
-  ul {
+  .choose-ul {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    /* For mobile, display as a single column */
     grid-gap: 20px;
     list-style: none;
     padding: 0;
   }
 
-  li {
+  .choose-li {
     background-color: $gray;
     width: 100%;
-    /* Make the list items full width on mobile */
     border: 1px solid #ddd;
     padding: 20px;
     text-align: center;
   }
 
-  li:hover {
+  .choose-li:hover {
     background-color: #dddddd47;
     transition: background-color 0.5s ease;
   }
 
-  /* Media Query for screens wider than 768px (adjust the breakpoint as needed) */
   @media (min-width: 768px) {
-    ul {
+    .choose-ul {
       grid-template-columns: repeat(2, 1fr);
-      /* Two columns for tablets and larger screens */
     }
   }
 }

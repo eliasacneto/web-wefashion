@@ -17,7 +17,7 @@
 }
 
 .swiper-pagination-bullet {
-  background-color: $dark-yellow;
+  background-color: #feae11 !important;
   margin-top: 50%;
   align-self: center;
   overflow: hidden;
@@ -87,6 +87,8 @@
   .testimonial-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 20em;
     height: 20em;
     padding-bottom: 1.2rem;

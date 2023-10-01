@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import wefashionPic from "./../../assets/Wefashion-preto.svg";
+import yellowImg from './../../assets/WeFashion-img-yellow.svg';
 import "./newsletter.scss";
 
 const Newsletter = () => {
@@ -11,6 +11,9 @@ const Newsletter = () => {
 
   return (
     <div className="newsletter">
+      <div className="newsletter_img">
+        <img src={yellowImg} alt="Erro-img" />
+      </div>
       <div className="side-content">
         <h1 className="newsletter_title">
           Comece a sua jornada de moda <span className="underlight-small">hoje</span>
@@ -34,9 +37,7 @@ const Newsletter = () => {
         <p className="newsletter_text_small">⚠️ Este é o primeiro passo para mergulhar no mundo emocionante da moda!
         </p>
       </div>
-      <div className="newsletter_img">
-        <img src={wefashionPic} alt="Erro-img" />
-      </div>
+
     </div>
   );
 };
