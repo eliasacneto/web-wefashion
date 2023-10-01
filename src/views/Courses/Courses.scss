@@ -1,17 +1,14 @@
 @use "../../global.scss" as *;
 
 .courses-Container {
-    background-color: $container-white;
+    background-color: #f0f0f0;
     max-width: 100%;
-    /* Remove o limite máximo de largura */
     padding: 20px;
-    /* Adiciona espaço nas laterais para telas menores */
 
     &__Cards {
         padding-top: 8vh;
         display: flex;
         flex-wrap: wrap;
-        /* Permite que os cards se ajustem em telas menores */
         justify-content: center;
         text-align: center;
 
@@ -46,14 +43,12 @@
             color: $dark-yellow;
             color: $bg-black;
             font-size: 40px;
-            /* Reduz o tamanho em telas menores */
             font-weight: 600;
         }
 
         h4 {
             color: $dark-gray;
             font-size: 20px;
-            /* Reduz o tamanho em telas menores */
             font-weight: 500;
         }
     }
@@ -61,7 +56,6 @@
     &__Cards {
         display: flex;
         flex-wrap: wrap;
-        /* Permite que os cards se ajustem em telas menores */
         justify-content: center;
     }
 
@@ -70,64 +64,87 @@
         border-radius: 5px;
         border: 0.5px solid rgba(0, 0, 0, 0.05);
         background: $main-white;
-        box-shadow: 0px 4px 100px 5px rgba(0, 0, 0, 0.10);
+        box-shadow: 0px 4px 100px 5px rgba(0, 0, 0, 0.004);
         max-width: 100%;
-        /* Ocupa toda a largura do contêiner pai */
         margin: 10px;
-        /* Adiciona espaçamento entre os cards */
         padding: 20px;
-        /* Adiciona espaço interno nos cards */
 
         p {
             color: #77838F;
             font-size: 16px;
-            /* Reduz o tamanho em telas menores */
             font-weight: 600;
         }
 
         h3 {
             color: #000;
             font-size: 18px;
-            /* Reduz o tamanho em telas menores */
             font-weight: 700;
         }
 
         &__Folder {
             height: auto;
-            /* Ajusta a altura automaticamente */
         }
 
         &__Img {
             max-width: 100%;
-            /* Garante que a imagem não ultrapasse a largura do contêiner pai */
             height: auto;
-            /* Ajusta a altura automaticamente */
             background: #201313;
         }
 
         &__Price {
             position: absolute;
             margin-top: 150px;
-            /* Ajusta a posição do preço */
             z-index: 1;
             top: 2.5%;
             left: 0%;
             width: 80px;
-            /* Reduz a largura em telas menores */
             height: 40px;
-            /* Reduz a altura em telas menores */
             font-size: 16px;
-            /* Reduz o tamanho em telas menores */
             font-weight: 900;
         }
 
         &__Assessment {
             margin-top: 10px;
-            /* Ajusta o espaçamento superior */
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
-            /* Garante que as avaliações se empilhem em telas menores */
         }
+    }
+}
+
+@media (max-width: 767px) {
+    .courses-Container {
+        padding: 10px;
+
+        &__Title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+
+
+            h1 {
+                color: $dark-yellow;
+                color: $bg-black;
+                font-size: 22px;
+                font-weight: 600;
+                text-align: center;
+            }
+
+            h4 {
+                color: $dark-gray;
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .card-Box1 {
+        margin: 5px;
+    }
+
+    .card-Box1__Price {
+        margin-top: 10px;
     }
 }
