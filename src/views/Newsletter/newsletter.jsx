@@ -13,14 +13,12 @@ const Newsletter = () => {
     <div className="newsletter">
       <div className="side-content">
         <h1 className="newsletter_title">
-          Seja você também um aluno{" "}
-          <span className="yellow-text">WeFashion</span>
+          Comece a sua jornada de moda <span className="underlight-small">hoje</span>
+          <span className="yellow-text">!</span>
         </h1>
         <p className="newsletter_text">
-          Preencha o campo abaixo com seu endereço de e-mail e comece sua
-          jornada na WeFashion. Este é o primeiro passo para se tornar um aluno
-          WeFashion e mergulhar no mundo emocionante da moda!
-        </p>
+          Preencha o formulário abaixo para um dos nossos consultores entrar em contato com você.</p>
+
         <div className="input-container">
           <input
             className={email ? "newsletter-input active" : "newsletter-input"}
@@ -33,6 +31,8 @@ const Newsletter = () => {
           </label>
           <button className="subscribe-button">Enviar</button>
         </div>
+        <p className="newsletter_text_small">⚠️ Este é o primeiro passo para mergulhar no mundo emocionante da moda!
+        </p>
       </div>
       <div className="newsletter_img">
         <img src={wefashionPic} alt="Erro-img" />

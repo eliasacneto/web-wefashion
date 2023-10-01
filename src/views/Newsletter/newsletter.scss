@@ -16,14 +16,19 @@
 
   &_title {
     line-height: normal;
-    height: 100px;
+    width: 90%;
+    margin-bottom: 15px;
   }
 
   &_text {
-    font-size: 20px;
-    line-height: 30px;
-    height: 150px;
+    font-size: 18px;
     width: 600px;
+    margin-bottom: 50px;
+  }
+
+  &_text_small {
+    font-size: 14px;
+    margin-top: 20px;
   }
 
   &_img {
@@ -33,7 +38,7 @@
 
   .input-container {
     position: relative;
-    width: 320px;
+    width: 350px;
     height: 30px;
     margin-bottom: 20px;
   }
@@ -66,7 +71,7 @@
   .subscribe-button {
     width: 100px;
     height: 52px;
-    margin-left: 341px;
+    margin-left: 360px;
     position: relative;
     bottom: 52px;
     border: none;
@@ -104,6 +109,6 @@
   width: 25%;
   display: flex;
   flex-direction: column;
-  margin-left: 478px;
+  margin-left: 500px;
   justify-content: center;
 }
