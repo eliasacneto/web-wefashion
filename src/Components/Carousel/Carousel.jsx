@@ -1,24 +1,17 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
+import React from "react";
 import Model01 from "../../assets/Modelos/lucas.webp";
 import Model02 from "../../assets/Modelos/everton.webp";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
 import "./Carousel.scss";
-
-// import required modules
 import { Autoplay, Pagination } from "swiper/modules";
 
 export default function Carousel() {
+  const slidesPerView = window.innerWidth <= 768 ? 1 : 2;
+
   return (
     <>
       <Swiper
-        slidesPerView={2}
+        slidesPerView={slidesPerView}
         grabCursor={true}
         autoplay={{
           delay: 2500,

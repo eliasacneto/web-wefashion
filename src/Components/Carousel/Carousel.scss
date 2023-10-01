@@ -4,7 +4,7 @@
   width: 52rem;
 }
 
-.swiper-container{
+.swiper-container {
   height: 10vh;
 }
 
@@ -79,4 +79,25 @@
   color: #54595f;
   font-weight: 300;
   font-size: 1.125rem;
+}
+
+/* Estilos para dispositivos maiores que 767px (telas maiores) */
+@media (min-width: 768px) {
+  /* Aplique aqui estilos específicos para telas maiores, se necessário */
+}
+
+/* Estilos para dispositivos menores que 768px (telas menores) */
+@media (max-width: 767px) {
+  /* Aplique aqui estilos específicos para telas menores, se necessário */
+
+  .testimonial-container {
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+    height: 20em;
+    padding-bottom: 1.2rem;
+    background-color: #fff;
+    border-radius: 1.2rem;
+    z-index: 0;
+  }
 }
