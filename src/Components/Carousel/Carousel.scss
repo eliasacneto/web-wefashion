@@ -64,8 +64,7 @@
 
 .course-name {
   color: #54595f;
-  font-weight: 500;
-
+  font-weight: 600;
   font-size: 1.1rem;
   text-align: center;
 }
@@ -77,18 +76,13 @@
   margin-left: 1.2rem;
   margin-right: 1.125rem;
   color: #54595f;
-  font-weight: 300;
-  font-size: 1.125rem;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
-/* Estilos para dispositivos maiores que 767px (telas maiores) */
-@media (min-width: 768px) {
-  /* Aplique aqui estilos específicos para telas maiores, se necessário */
-}
+@media (min-width: 768px) {}
 
-/* Estilos para dispositivos menores que 768px (telas menores) */
 @media (max-width: 767px) {
-  /* Aplique aqui estilos específicos para telas menores, se necessário */
 
   .testimonial-container {
     display: flex;
@@ -99,5 +93,31 @@
     background-color: #fff;
     border-radius: 1.2rem;
     z-index: 0;
+  }
+
+  .student-name {
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 2%;
+  }
+
+  .course-name {
+    color: #54595f;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .testimonial-description {
+    text-align: justify;
+    margin-top: 8px;
+    padding-bottom: 2%;
+    margin-left: 1.2rem;
+    margin-right: 1.125rem;
+    color: #54595f;
+    font-weight: 400;
+    font-size: 14px;
   }
 }
