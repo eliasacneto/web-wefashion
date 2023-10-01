@@ -1,8 +1,153 @@
 @use "../../global.scss" as *;
 
+.we {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.063);
+  font-size: 32px;
+}
+
 .Posts {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: $main-white;
 }
+
 .post-left {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
 }
+
+.post-content {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
 .post-right {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.post-img {
+  max-height: 500px;
+  width: auto;
+  border-radius: 20px;
+  animation: moveUpDown 10s alternate infinite;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.post-img-l {
+  height: auto;
+  width: 500px;
+  border-radius: 20px;
+  animation: moveUpDown 10s alternate infinite;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.post-title {
+  font-size: 30px;
+
+}
+
+.post-subtitle {
+  margin-top: 15px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+@keyframes moveUpDown {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  75% {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 767px) {
+  .we {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.063);
+    font-size: 24px;
+  }
+
+  .Posts {
+    display: flex;
+    flex-direction: column;
+    background-color: $main-white;
+    padding: 20px;
+  }
+
+  .post-left,
+  .post-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+
+  }
+
+  .post-content {
+    width: 90%;
+    text-align: center;
+    max-width: 500px;
+
+  }
+
+  .post-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    animation: moveUpDown 10s alternate infinite;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 20px -6px;
+  }
+
+  .post-img-l {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    animation: moveUpDown 10s alternate infinite;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 10px 20px -6px;
+  }
+
+  .post-title {
+    font-size: 24px;
+  }
+
+  .post-subtitle {
+    margin-top: 15px;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  @keyframes moveUpDown {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(10px);
+    }
+
+    75% {
+      transform: translateY(0);
+    }
+  }
+
+
 }

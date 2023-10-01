@@ -4,10 +4,32 @@
     color: $dark-yellow;
 }
 
+.highlight-y {
+    color: $dark-yellow;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.058);
+}
+
+.highlight-white {
+    color: $main-white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.149);
+}
+
 .underlight {
     text-decoration: none;
     border-bottom: 10px solid $dark-yellow;
     color: inherit;
+}
+
+.underlight-small {
+    text-decoration: none;
+    border-bottom: 5px solid $dark-yellow;
+    border-radius: 10% / 70%;
+    transform: rotate(90deg);
+    color: inherit;
+}
+
+.del {
+    text-decoration: line-through;
 }
 
 
@@ -63,7 +85,7 @@
 
 .b-subtitle {
 
-    margin-top: 20px;
+    margin-top: 25px;
     font-size: 16px;
     margin-bottom: 20px;
 }

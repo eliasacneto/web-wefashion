@@ -17,7 +17,7 @@ function App() {
       <Courses />
       <Posts />
       <Testimonials />
-      <Nescola />
+      {/* <Nescola /> */}
       <Newsletter />
       <Footer />
     </>

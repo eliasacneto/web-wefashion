@@ -19,8 +19,8 @@ export default function Courses() {
     return (
         <div className='courses-Container'>
             <div className='courses-Container__Title'>
-                <h1>Os <span className='highlight'><b>melhores</b></span> cursos para você</h1>
-                <h4>Confira nossos cursos em destaque</h4>
+                <h1>Os <span className='highlight-white'><b>melhores</b></span> cursos para você</h1>
+                <h4>Arraste para o lado e confira nossos cursos em destaque</h4>
             </div>
 
             <div className='courses-Container__Cards'>
