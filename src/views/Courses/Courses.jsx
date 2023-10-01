@@ -13,33 +13,34 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 export default function Courses() {
 
-        const [products] = useState(itens);
+    const cardsPerView = window.innerWidth <= 768 ? 1 : 3;
+    const [products] = useState(itens);
 
-        return (
-            <div className='courses-Container'>
-                <div className='courses-Container__Title'>
-                    <h1>Os melhores cursos</h1>
-                    <h2>Cursos em destaque</h2>
-                </div>
-                
-                <div className='courses-Container__Cards'>
-                    <Swiper className='courses-Container__Cards-swiper'
-                    slidesPerView={3}
-                    loop
-                    
-                    modules={[ Pagination ]}
-                    >
-                        {products.map((product) => (
-                            <SwiperSlide className='courses-Container__Cards-swiper-slide' key={product.id}>
-                                <Cards data={product} key={product.id} />
-                            </SwiperSlide>
-                            ))
-                        }
-                    </Swiper>
-                </div>
-                
+    return (
+        <div className='courses-Container'>
+            <div className='courses-Container__Title'>
+                <h1>Os <span className='highlight'><b>melhores</b></span> cursos para você</h1>
+                <h4>Confira nossos cursos em destaque</h4>
             </div>
-            
-        );
-    
+
+            <div className='courses-Container__Cards'>
+                <Swiper className='courses-Container__Cards-swiper'
+                    slidesPerView={cardsPerView}
+                    loop
+
+                    modules={[Pagination]}
+                >
+                    {products.map((product) => (
+                        <SwiperSlide className='courses-Container__Cards-swiper-slide' key={product.id}>
+                            <Cards data={product} key={product.id} />
+                        </SwiperSlide>
+                    ))
+                    }
+                </Swiper>
+            </div>
+
+        </div>
+
+    );
+
 }
