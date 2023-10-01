@@ -28,7 +28,7 @@ const Navbar = () => {
           </li>
           <div className='line'></div>
         </ul>
-        <button>Inscreva-se agora</button>
+        <button className="button-cta">Inscreva-se agora</button>
       </navbar>
     </header>
   );

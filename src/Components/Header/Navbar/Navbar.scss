@@ -28,12 +28,11 @@
     }
 
 
-    button {
+    .button-cta {
         height: 50px;
         width: 200px;
         background-color: $dark-yellow;
         border-radius: 10px;
-        font-family: Inter;
         font-size: 18px;
         font-weight: 700;
         color: $bg-black;
@@ -42,7 +41,7 @@
         transition: color 0.3s ease;
     }
 
-    button:hover {
+    .button-cta:hover {
         cursor: pointer;
         color: $main-white;
         background-color: $dark-yellow;
@@ -52,7 +51,6 @@
 
     a {
         text-decoration: none;
-        font-family: Inter;
         font-size: 16px;
         font-weight: 600;
         color: $dark-gray;

@@ -1,81 +1,83 @@
 @use "../../global.scss" as *;
 
-.Footer{
+.Footer {
     background-color: $main-white;
     width: 100%;
     display: flex;
     padding: 50px 0;
     justify-content: space-around;
-    font-family: "Inter";
 
-    &__contact{
+    &__contact {
         display: grid;
 
-        &--logo{
+        &--logo {
             width: 300px;
         }
-        &--info{
+
+        &--info {
             color: $description-gray
         }
-        &--contact{
+
+        &--contact {
             color: $description-gray;
             font-weight: bolder;
-            span{
+
+            span {
                 color: $dark-yellow;
             }
         }
     }
 
-    &__courses{
+    &__courses {
         display: flex;
         flex-direction: column;
         padding-top: 0;
 
-        &__links{
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        }
-    }
-
-    &__useful-links{
-        display: flex;
-        flex-direction: column;
-
-        &__links{
+        &__links {
             display: flex;
             flex-direction: column;
             gap: 10px;
         }
     }
 
-    &__social{
+    &__useful-links {
         display: flex;
         flex-direction: column;
 
-        &--icons{
+        &__links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+
+    &__social {
+        display: flex;
+        flex-direction: column;
+
+        &--icons {
             display: flex;
             gap: 15px;
         }
     }
 
-    h2{
+    h2 {
         margin-top: 0;
     }
 
-    a{
+    a {
         font-size: 1.1rem;
         text-decoration: none;
         color: $main-black;
     }
 
-    #clickable{
+    #clickable {
         display: flex;
         justify-content: space-evenly;
         gap: 50px;
     }
 
-    iframe{
+    iframe {
         margin-top: 20px;
         border: 0;
         width: 250px;
@@ -91,7 +93,7 @@
         align-items: center;
         gap: 30px;
 
-        &__contact{
+        &__contact {
             text-align: center;
         }
     }
@@ -100,12 +102,13 @@
 /* Media query for smartphones */
 
 @media only screen and (max-width: 600px) {
-    .Footer__contact{
+    .Footer__contact {
         align-self: flex-start;
         text-align: left;
         margin-left: 50px;
     }
-    #clickable{
+
+    #clickable {
         flex-direction: column;
         align-self: start;
         margin-left: 50px;

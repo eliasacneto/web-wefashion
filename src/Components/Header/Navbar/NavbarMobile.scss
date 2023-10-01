@@ -47,7 +47,6 @@
 
     a {
         text-decoration: none;
-        font-family: Inter;
         font-size: 16px;
         font-weight: bold;
         color: $dark-gray;
@@ -82,12 +81,11 @@
         background-color: $dark-yellow;
     }
 
-    button {
+    .button-cta {
         height: 50px;
         width: 183px;
         background-color: $dark-yellow;
         border-radius: 10px;
-        font-family: Inter;
         font-size: 16px;
         font-weight: bold;
         color: $bg-black;

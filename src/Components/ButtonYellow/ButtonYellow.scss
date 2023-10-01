@@ -4,20 +4,21 @@
   0% {
     box-shadow: 0 0 0 0 $light-yelllow 0;
   }
+
   50% {
     box-shadow: 0 0 0 10px $light-yelllow 0.2;
   }
+
   100% {
     box-shadow: 0 0 0 0 $light-yelllow 0.4;
   }
 }
 
-button {
+.button-cta {
   height: 50px;
   width: 250px;
   background-color: #feae11;
   border-radius: 10px;
-  font-family: Inter;
   font-size: 16px;
   font-weight: bold;
   color: #232323;
