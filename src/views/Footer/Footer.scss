@@ -1,17 +1,18 @@
 @use "../../global.scss" as *;
 
 .Footer {
-    background-color: $dark-yellow;
+    background-color: #FFAD18;
     width: 100%;
     display: flex;
     padding: 50px 0;
     justify-content: space-around;
+    font-family: "Inter";
 
     &__contact {
         display: grid;
 
         &--logo {
-            width: 300px;
+            width: 150px;
         }
 
         &--info {
@@ -77,15 +78,8 @@
         gap: 50px;
     }
 
-    iframe {
-        margin-top: 20px;
-        border: 0;
-        width: 250px;
-        height: 150px;
-    }
-}
 
-/* Media query for tablets */
+}
 
 @media only screen and (max-width: 950px) {
     .Footer {
@@ -99,7 +93,6 @@
     }
 }
 
-/* Media query for smartphones */
 
 @media only screen and (max-width: 600px) {
     .Footer__contact {
