@@ -1,12 +1,13 @@
 import React from "react";
 import logo from "./../../../assets/WeFashion2.svg";
+import weLogo from '../../../assets/images/nav-logo.png'
 import "./Navbar.scss";
 
 const Navbar = () => {
   return (
     <header className='navbarDesk'>
       <div className='navbarDesk__logo'>
-        <img src={logo} alt='ErroLogo-WeFashion2' />
+        <img className='logow' src={weLogo} alt='ErroLogo-WeFashion2' />
       </div>
 
       <navbar className='navbarDesk__menu desktop'>

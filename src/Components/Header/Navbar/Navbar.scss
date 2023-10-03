@@ -15,6 +15,11 @@
         display: flex;
     }
 
+    &__logo {
+        padding: 10px;
+    }
+
+
     ul {
         list-style-type: none;
         height: auto;
@@ -109,4 +114,8 @@
             margin-right: 10px;
         }
     }
+}
+
+.logow {
+    width: 180px;
 }

@@ -1,26 +1,51 @@
 @use "../../global.scss" as *;
 
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #232323;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+hr {
+    border: 1px solid $dark-yellow;
+    width: 85%;
+    margin-bottom: 10px;
+
+}
+
+.copy {
+    color: $description-gray;
+    padding: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
 .Footer {
-    background-color: #FFAD18;
+    background-color: #232323;
     width: 100%;
     display: flex;
+
     padding: 50px 0;
     justify-content: space-around;
-    font-family: "Inter";
+    align-items: center;
 
     &__contact {
         display: grid;
 
         &--logo {
-            width: 150px;
+            width: 250px;
         }
 
         &--info {
-            color: $description-gray
+            color: $main-white;
+            font-size: 16px;
         }
 
         &--contact {
-            color: $description-gray;
+
             font-weight: bolder;
 
             span {
@@ -33,6 +58,7 @@
         display: flex;
         flex-direction: column;
         padding-top: 0;
+        font-weight: 400;
 
         &__links {
             display: flex;
@@ -62,9 +88,7 @@
         }
     }
 
-    h2 {
-        margin-top: 0;
-    }
+
 
     a {
         font-size: 1.1rem;
@@ -106,4 +130,41 @@
         align-self: start;
         margin-left: 50px;
     }
+}
+
+.footer-title {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: $dark-yellow;
+}
+
+.footer-ul {
+    list-style: none;
+}
+
+.footer-icons-ul {
+    list-style: none;
+    display: flex;
+
+}
+
+.footer-icons-li {
+    color: #FFF;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.footer-li {
+    color: #FFF;
+    cursor: pointer;
+}
+
+.footer-li:hover {
+    color: #FEAE11;
+    transition: color 0.5s ease;
+}
+
+.footer-icons-li:hover {
+    color: #FEAE11;
 }

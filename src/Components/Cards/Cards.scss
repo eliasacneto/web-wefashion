@@ -159,22 +159,18 @@
     height: auto;
     cursor: grab;
     transition: transform 0.3s ease;
-    /* Adicione uma transição para a propriedade 'transform' */
 }
 
 .card-Box2 {
     transform: translateY(-100%);
-    /* Inicialmente, esconda o card-Box2 */
 }
 
 .cardContainer:hover .card-Box1 {
     transform: translateY(-100%);
-    /* Esconda card-Box1 quando o mouse passar por cima */
 }
 
 .cardContainer:hover .card-Box2 {
     transform: translateY(0);
-    /* Mostrar card-Box2 quando o mouse passar por cima */
 }
 
 @media screen and (max-width: 768px) {
@@ -182,18 +178,15 @@
     .card-Box1,
     .card-Box2 {
         max-width: 100%;
-        /* Garante que o conteúdo se ajuste à largura da tela */
     }
 
     .card-Box1__Folder-Img,
     .card-Box2__spec,
     .card-Box2__description {
         max-width: 100%;
-        /* Impede que os elementos ultrapassem a largura da tela */
     }
 
     .card-Box2 {
         margin-top: 0;
-        /* Remove a margem superior para evitar sobreposição */
     }
 }
