@@ -1,94 +1,121 @@
 @use "../../../global.scss" as *;
 
-.navbarDesk{
+.navbarDesk {
     width: 100vw;
     height: 80px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background-color: $bg-black;
+    justify-content: space-evenly;
+    background-color: $main-white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     position: fixed;
+    z-index: 10;
 
-    &__logo{
-        padding-left: 40px;
-    }
-
-    &__menu{
+    &__menu {
         display: flex;
-        padding-right: 3vw;
-        justify-content: space-around;
     }
 
-    ul{
+    &__logo {
+        padding: 10px;
+    }
+
+
+    ul {
         list-style-type: none;
         height: auto;
         display: flex;
         align-items: center;
     }
 
-    li{
-        margin-right: 7vw;
+    li {
+        display: flex;
+        justify-content: space-between;
+        width: 100px;
     }
 
-    li:hover{
-        cursor: pointer;
-        color: $off-white;
-    }
 
-    button{
+    .button-cta {
         height: 50px;
-        width: 183px;
+        width: 200px;
         background-color: $dark-yellow;
         border-radius: 10px;
-        font-family: Inter;
-        font-size: 16px;
-        font-weight: bold;
+        font-size: 18px;
+        font-weight: 700;
         color: $bg-black;
         box-shadow: 1px 1px 20px 1px $dark-yellow;
         border: 1px $dark-yellow;
+        transition: color 0.3s ease;
     }
 
-    button:hover{
+    .button-cta:hover {
         cursor: pointer;
-        background-color: $light-yelllow;
-        box-shadow: 1px 1px 20px 1px $light-yelllow;
+        color: $main-white;
+        background-color: $dark-yellow;
+        transition: color 0.3s ease;
+        box-shadow: 1px 1px 20px 1px $dark-yellow;
     }
 
-
-    a{
+    a {
         text-decoration: none;
-        font-family: Inter;
         font-size: 16px;
-        font-weight: bold;
-        color: $off-white;
+        font-weight: 600;
+        color: $bg-black;
+    }
+
+    a:hover {
+        color: $dark-yellow;
     }
 
     // Screen for ipads and small screens
     @media (max-width: 770px) {
-        &__logo{
+        &__logo {
             padding-left: 30px;
         }
 
-        li{
+        li {
             margin-right: 5vw;
         }
 
-        ul{
+        ul {
             padding-right: 2px;
             padding-left: 10px;
         }
 
-        a{
+        a {
             font-size: 12px;
         }
 
-        button{
+        button {
             width: 80px;
             font-size: 12px;
             box-shadow: 1px 1px 15px 1px $dark-yellow;
             margin-right: 10px;
         }
+    }
 
+    @media (max-width: 500px) {
+        li {
+            margin-right: 3vw;
+        }
+
+        ul {
+            padding-right: 2px;
+            padding-left: 5px;
+        }
+
+        a {
+            font-size: 10px;
+        }
+
+        button {
+            width: 60px;
+            font-size: 10px;
+            box-shadow: 1px 1px 15px 1px $dark-yellow;
+            margin-right: 10px;
+        }
     }
 }
 
+.logow {
+    width: 180px;
+}

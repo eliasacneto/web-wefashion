@@ -4,7 +4,7 @@
   width: 52rem;
 }
 
-.swiper-container{
+.swiper-container {
   height: 10vh;
 }
 
@@ -17,7 +17,7 @@
 }
 
 .swiper-pagination-bullet {
-  background-color: $dark-yellow;
+  background-color: #feae11 !important;
   margin-top: 50%;
   align-self: center;
   overflow: hidden;
@@ -26,6 +26,7 @@
 .card-carousel {
   color: #fff;
   display: flex;
+
 }
 
 .testimonial-carousel-item {
@@ -44,6 +45,7 @@
   background-color: #fff;
   border-radius: 1.2rem;
   z-index: 0;
+
 }
 
 .student-image {
@@ -64,8 +66,7 @@
 
 .course-name {
   color: #54595f;
-  font-weight: 500;
-
+  font-weight: 600;
   font-size: 1.1rem;
   text-align: center;
 }
@@ -77,6 +78,50 @@
   margin-left: 1.2rem;
   margin-right: 1.125rem;
   color: #54595f;
-  font-weight: 300;
-  font-size: 1.125rem;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {}
+
+@media (max-width: 767px) {
+
+  .testimonial-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20em;
+    height: 20em;
+    padding-bottom: 1.2rem;
+    background-color: #fff;
+    border-radius: 1.2rem;
+    z-index: 0;
+  }
+
+  .student-name {
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 2%;
+  }
+
+  .course-name {
+    color: #54595f;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .testimonial-description {
+    text-align: justify;
+    margin-top: 8px;
+    padding-bottom: 2%;
+    margin-left: 1.2rem;
+    margin-right: 1.125rem;
+    color: #54595f;
+    font-weight: 400;
+    font-size: 14px;
+  }
 }

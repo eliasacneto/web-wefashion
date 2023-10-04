@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import Header from '../../Components/Header/Header';
+
+import Header from '../Header/Header';
 import Footer from '../../views/Footer/Footer';
 import { itens } from '../../mock/product.mock';
 import { Link, useParams } from 'react-router-dom';

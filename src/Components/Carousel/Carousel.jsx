@@ -1,24 +1,21 @@
-import React, { useRef, useState } from "react";
-// Import Swiper React components
+import React from "react";
 import Model01 from "../../assets/Modelos/lucas.webp";
 import Model02 from "../../assets/Modelos/everton.webp";
+import P1 from "../../assets/images/p1.jpeg";
+import P2 from "../../assets/images/p2.jpeg";
+import P3 from "../../assets/images/p3.jpeg";
+import P4 from "../../assets/images/p4.jpeg";
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
 import "./Carousel.scss";
-
-// import required modules
 import { Autoplay, Pagination } from "swiper/modules";
 
 export default function Carousel() {
+  const slidesPerView = window.innerWidth <= 768 ? 1 : 2;
+
   return (
     <>
       <Swiper
-        slidesPerView={2}
+        slidesPerView={slidesPerView}
         grabCursor={true}
         autoplay={{
           delay: 2500,
@@ -32,49 +29,39 @@ export default function Carousel() {
       >
         <SwiperSlide className='testimonial-carousel-item'>
           <div className='testimonial-container'>
-            <img className='student-image' src={Model02} alt='aluno' />
-            <span className='student-name'>José Fernandes</span>
-            <span className='course-name'>Curso: Tecido Pleno</span>
+            <img className='student-image' src={P1} alt='aluno' />
+            <span className='student-name'>Ana Silva</span>
             <p className='testimonial-description'>
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
+              "A WeFashion me ensinou tudo o que eu precisava para brilhar na indústria da moda. Professores incríveis e oportunidades de estágio únicas fizeram toda a diferença."
             </p>
           </div>
         </SwiperSlide>
         <SwiperSlide className='testimonial-carousel-item'>
           <div className='testimonial-container'>
-            <img className='student-image' src={Model02} alt='aluno' />
-            <span className='student-name'>João</span>
-            <span className='course-name'>Curso: Tecido Pleno</span>
+            <img className='student-image' src={P2} alt='aluno' />
+            <span className='student-name'>Carlos Santos</span>
             <p className='testimonial-description'>
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
+              "WeFashion não foi apenas uma escola para mim, foi uma porta de entrada para o mundo da moda. Os professores acreditaram no meu potencial, e as oportunidades de estágio me deram experiência prática."
             </p>
           </div>
         </SwiperSlide>
         <SwiperSlide className='testimonial-carousel-item'>
           <div className='testimonial-container'>
-            <img className='student-image' src={Model02} alt='aluno' />
-            <span className='student-name'>João</span>
-            <span className='course-name'>Curso: Tecido Pleno</span>
+            <img className='student-image' src={P3} alt='aluno' />
+            <span className='student-name'>Maria Ferreira</span>
             <p className='testimonial-description'>
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
+              "As salas de aula eram cheias de energia, e os recursos de design eram de alta qualidade. A WeFashion não é apenas uma escola; é um lugar onde os sonhos se transformam em realidade."
             </p>
           </div>
         </SwiperSlide>
         <SwiperSlide className='testimonial-carousel-item'>
           <div className='testimonial-container'>
-            <img className='student-image' src={Model02} alt='aluno' />
-            <span className='student-name'>João</span>
-            <span className='course-name'>Curso: Tecido Pleno</span>
+            <img className='student-image' src={P4} alt='aluno' />
+            <span className='student-name'>Luísa Torres</span>
             <p className='testimonial-description'>
-              Lorem Ipsum has been the industry's standard dummy text ever since
-              the 1500s, when an unknown printer took a galley of type and
-              scrambled it to make a type specimen book.
+              "Minha experiência na WeFashion foi além das minhas expectativas. Os programas abrangentes e a equipe dedicada me deram confiança para seguir meu coração na moda. Se você ama moda, a WeFashion é o lugar perfeito para florescer."
+
+
             </p>
           </div>
         </SwiperSlide>
