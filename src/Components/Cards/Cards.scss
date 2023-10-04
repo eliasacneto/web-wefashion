@@ -70,11 +70,12 @@
         flex-direction: column;
         height: auto;
 
+
         &-p {
             display: flex;
             align-items: stretch;
             color: #77838F;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 600;
             line-height: normal;
             margin-bottom: 2vh;
@@ -92,8 +93,8 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            color: #77838F;
-            font-weight: 600;
+            color: #000;
+            font-weight: 400;
         }
     }
 }
@@ -188,5 +189,9 @@
 
     .card-Box2 {
         margin-top: 0;
+    }
+
+    .card-Box1__spec {
+        font-size: 14px !important;
     }
 }

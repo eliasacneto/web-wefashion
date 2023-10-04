@@ -33,6 +33,7 @@ const Footer = () => {
                                 <li className="footer-li">Voltar para o início</li>
                                 <li className="footer-li">Sobre nós</li>
                                 <li className="footer-li">Nossos cursos</li>
+                                <li className="footer-li">Contato</li>
                             </ul>
                         </div>
                     </div>

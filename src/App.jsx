@@ -8,6 +8,7 @@ import Newsletter from "./views/Newsletter/newsletter";
 import Posts from "./views/Posts/Posts";
 import Benefits from "./Components/Benefits/Benefits";
 import ChooseUs from "./views/ChooseUs/ChooseUs";
+import ScrollToTopButton from "./Components/ScrollToTopButton/ScrollToTopButton";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <ChooseUs />
       {/* <Newsletter /> */}
       <Footer />
+      <ScrollToTopButton />
     </>
   );
 }

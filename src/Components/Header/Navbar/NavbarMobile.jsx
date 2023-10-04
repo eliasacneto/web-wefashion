@@ -30,7 +30,7 @@ const NavBarMobile = () => {
                         </li>
                         <div className='line'></div>
                     </ul>
-                    <button>Inscreva-se</button>
+                    <button className="button-cta">Inscreva-se</button>
                 </navbar>
             )}
 

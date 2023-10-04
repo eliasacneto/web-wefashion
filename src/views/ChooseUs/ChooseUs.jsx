@@ -1,10 +1,13 @@
 import React from 'react'
 import Why from "./../../assets/images/why.jpg"
+import ImgCTA from "./../../assets/images/img-cta.jpg"
 import Instructor from "/src/assets/icons/01.svg";
 import Diversity from "/src/assets/icons/02.svg";
 import Quality from "/src/assets/icons/03.svg";
 import Class from "/src/assets/icons/04.svg";
 import './ChooseUs.scss'
+import { ButtonYellow } from '../../Components/ButtonYellow/ButtonYellow';
+import CTAButton from '../../Components/CTAButton/CTAButton';
 
 const ChooseUs = () => {
   return (
@@ -35,16 +38,27 @@ const ChooseUs = () => {
               <p>Aprenda fazendo, com aulas de modelagem e costura que colocam suas habilidades em prática desde o início.</p>
             </li>
           </ul>
-
-
         </div>
         <div>
           <img className="choose-img" src={Why} alt="post01" loading="lazy" />
         </div>
 
       </div>
+      <div className='post-right'>
+        <div>
+          <img className="post-img-l" src={ImgCTA} alt="post02" loading="lazy" />
+        </div>
+        <div className="post-content">
+          <h1 className="post-title">⏰ Inicie a sua jornada de moda agora! </h1>
+          <p className="post-subtitle"> A <b><span className="highlight-y">We</span>Fashion</b> é o seu ponto de partida para uma jornada emocionante no mundo da moda.</p>
+          <p className="post-subtitle">Descubra seu estilo, crie roupas únicas e <b><span className="highlight-y">faça parte</span></b> de uma comunidade diversificada e inspiradora. Junte-se a nós e torne-se um criador de moda confiante e talentoso!</p>
 
-    </div>
+          <CTAButton />
+
+        </div>
+      </div>
+
+    </div >
   )
 }
 
