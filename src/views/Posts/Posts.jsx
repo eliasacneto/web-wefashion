@@ -5,7 +5,7 @@ import './Posts.scss'
 
 const Posts = () => {
   return (
-    <div className='Posts'>
+    <div id="Posts" className='Posts'>
       <div className='post-left'>
         <div className="post-content">
           <h1 className="post-title">✊🏼 Seja parte da <u className="underlight-small">Revolução</u> da Moda na <span className="we"><span className="highlight">We</span>Fashion</span><span className="highlight">!</span></h1>
