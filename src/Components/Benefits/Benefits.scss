@@ -38,8 +38,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
-
+  
 }
 
 .benefits-content {
@@ -57,15 +56,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    width: 70vw;
 }
 
 
 .benefits-title {
     display: flex;
     justify-content: center;
-    width: 50%;
-
+    width: 70%;
 
 }
 
@@ -84,7 +82,6 @@
 }
 
 .b-subtitle {
-
     margin-top: 25px;
     font-size: 16px;
     margin-bottom: 20px;
@@ -99,51 +96,57 @@
     padding-top: 10px;
 }
 
-
-
 .btn-cta {
     height: 50px;
     padding: 20px;
     margin-right: 20px;
-    color: $bg-black;
     background-color: $dark-yellow;
     border-radius: 10px;
-    font-size: 18px;
-    font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: color 0.3s ease;
     border: 1px $dark-yellow;
+    a{
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+        color: $bg-black;
+    }
 }
 
 .btn-cta:hover {
     cursor: pointer;
-    color: $off-white;
     background-color: $dark-yellow;
     transition: color 0.3s ease;
+    a{
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+        color: $off-white;
+    }
 }
 
 .btn-cta2 {
     height: 50px;
-    padding: 20px;
-    color: $bg-black;
+    padding: 20px; 
     background-color: $main-white;
     border-radius: 10px;
-    font-size: 18px;
-    font-weight: 600;
     display: flex;
     justify-content: center;
     align-items: center;
     border: 2px solid $dark-yellow;
     transition: background-color 0.5s ease;
-
-
+    a{
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: 600;
+        color: $bg-black;
+    }
 }
 
 .btn-cta2:hover {
     cursor: pointer;
-    color: $bg-black;
     background-color: $dark-yellow;
     transition: background-color 0.5s ease;
 }
@@ -151,12 +154,39 @@
 .benefits-right {
     display: flex;
     justify-content: center;
-    width: 60%;
+    width: 50%;
 }
 
 .benefits-img {
     height: 600px;
     width: 400px;
+}
+
+@media (max-width: 1150px){
+    .b-title {
+        font-size: 40px;
+        margin: 15px 20px 0 20px;
+        height: auto;
+        width: auto;
+    }
+
+    .b-subtitle {
+        font-size: 16px;
+        margin-left: 10px;
+        margin-right: 10px;
+        height: auto;
+        width: auto;
+    }
+
+    .benefits-img {
+        max-width: 400px;
+        width: 40vw;
+    }
+
+    .btn-cta,
+    .btn-cta2 {
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -198,13 +228,12 @@
     .btn-cta2 {
         height: auto;
         width: auto;
-        margin-bottom: 20px;
+        margin-bottom: 0;
         font-size: 16px;
-
+        
     }
 
     .benefits-right {
-
         height: auto;
         width: auto;
     }

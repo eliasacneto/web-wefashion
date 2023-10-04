@@ -11,7 +11,7 @@ import CTAButton from '../../Components/CTAButton/CTAButton';
 
 const ChooseUs = () => {
   return (
-    <div className='ChooseUs'>
+    <div id='About' className='ChooseUs'>
       <div className='choose-left'>
         <div className="choose-content">
           <h1 className="choose-title">Por que <u className="underlight-small">escolher</u> a <span className="highlight">We</span>Fashion<span className="highlight">?</span></h1>
@@ -44,7 +44,7 @@ const ChooseUs = () => {
         </div>
 
       </div>
-      <div className='post-right'>
+      <div id='Contact' className='post-right'>
         <div>
           <img className="post-img-l" src={ImgCTA} alt="post02" loading="lazy" />
         </div>

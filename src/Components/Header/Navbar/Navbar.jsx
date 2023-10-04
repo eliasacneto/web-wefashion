@@ -13,19 +13,19 @@ const Navbar = () => {
       <navbar className='navbarDesk__menu desktop'>
         <ul>
           <li>
-            <a href=''>Início</a>
+            <a href='#Benefits'>Início</a>
           </li>
           <div className='line'></div>
           <li>
-            <a href=''>Cursos</a>
+            <a href='#Courses'>Cursos</a>
           </li>
           <div className='line'></div>
           <li>
-            <a href=''>Sobre</a>
+            <a href='#About'>Sobre</a>
           </li>
           <div className='line'></div>
           <li>
-            <a href=''>Contato</a>
+            <a href='#Contact'>Contato</a>
           </li>
           <div className='line'></div>
         </ul>

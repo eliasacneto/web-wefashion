@@ -30,7 +30,7 @@
     li {
         display: flex;
         justify-content: space-between;
-        width: 100px;
+        padding-right: 5vw;
     }
 
 
@@ -45,6 +45,7 @@
         box-shadow: 1px 1px 20px 1px $dark-yellow;
         border: 1px $dark-yellow;
         transition: color 0.3s ease;
+        margin-right: 3vw;
     }
 
     .button-cta:hover {
@@ -69,23 +70,24 @@
     // Screen for ipads and small screens
     @media (max-width: 770px) {
         &__logo {
-            padding-left: 30px;
+            padding-left: 0px;
         }
 
         li {
-            margin-right: 5vw;
+            width: 100%;
+            padding-right: 3vw;
         }
 
         ul {
-            padding-right: 2px;
-            padding-left: 10px;
+            padding-right: 0px;
+            padding-left: 2px;
         }
 
         a {
             font-size: 12px;
         }
 
-        button {
+        .button-cta {
             width: 80px;
             font-size: 12px;
             box-shadow: 1px 1px 15px 1px $dark-yellow;
@@ -95,7 +97,7 @@
 
     @media (max-width: 500px) {
         li {
-            margin-right: 3vw;
+            margin-right: 1vw;
         }
 
         ul {
@@ -107,11 +109,15 @@
             font-size: 10px;
         }
 
-        button {
+        .button-cta {
             width: 60px;
             font-size: 10px;
             box-shadow: 1px 1px 15px 1px $dark-yellow;
             margin-right: 10px;
+        }
+
+        .logow {
+            width: 120px;
         }
     }
 }
