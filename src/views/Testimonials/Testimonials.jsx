@@ -8,10 +8,10 @@ const Testimonials = () => {
     <div className='Testimonials'>
       <div className='left-content'>
         <h1 className='testimonials_title'>
-          <span className='highlight'>Nossos</span> alunos 💛
+          O que dizem nossos alunos 💛
         </h1>
         <p className='testimonials_text'>
-          Venha fazer parte da nossa escola de costura e descubra um mundo de
+          Faça você também parte da nossa escola de costura e descubra um mundo de
           possibilidades criativas! Nossos alunos estão encantados com a
           experiência de aprender essa arte milenar e transformar tecidos em
           verdadeiras obras de arte.

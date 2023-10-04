@@ -1,0 +1,39 @@
+@use "../../global.scss" as *;
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 $light-yelllow 0;
+  }
+
+  50% {
+    box-shadow: 0 0 0 10px $light-yelllow 0.2;
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 $light-yelllow 0.4;
+  }
+}
+
+.button-cta-whatsapp {
+  height: 50px;
+  background-color: $dark-yellow;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #232323;
+  box-shadow: 1px 1px 20px 1px $dark-yellow;
+  border: 1px $dark-yellow;
+  margin-top: 20px;
+  display: inline-block;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whats-logo {
+  width: auto;
+  height: 30px;
+  margin-right: 20px;
+}

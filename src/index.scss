@@ -1,11 +1,44 @@
 @use "./global.scss" as *;
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: $bg-black;
-  font-family: "Inter", sans-serif;
+  background-color: $main-white;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Estilizar a barra de rolagem vertical */
+::-webkit-scrollbar {
+  width: 12px;
+  /* Largura da barra de rolagem */
+}
+
+/* Estilizar o botão superior da barra de rolagem vertical */
+::-webkit-scrollbar-button:start:decrement {
+  background-color: $dark-yellow;
+}
+
+/* Estilizar o botão inferior da barra de rolagem vertical */
+::-webkit-scrollbar-button:end:increment {
+  background-color: $dark-yellow;
+}
+
+/* Estilizar o trilho da barra de rolagem vertical */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Estilizar o punho (thumb) da barra de rolagem vertical */
+::-webkit-scrollbar-thumb {
+  background-color: $dark-yellow;
+  border-radius: 6px;
+}
+
+/* Estilizar o punho quando estiver sendo arrastado (hover) */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
 }
