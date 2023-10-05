@@ -45,7 +45,7 @@ const ChooseUs = () => {
 
       </div>
       <div id='Contact' className='post-right'>
-        <div>
+        <div className="img2">
           <img className="post-img-l" src={ImgCTA} alt="post02" loading="lazy" />
         </div>
         <div className="post-content">

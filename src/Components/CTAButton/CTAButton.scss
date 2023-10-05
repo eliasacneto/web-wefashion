@@ -37,3 +37,17 @@
   height: 30px;
   margin-right: 20px;
 }
+
+@media (max-width: 390px){
+  .button-cta-whatsapp{
+    width: auto;
+    font-size: 14px;
+  }
+
+  .whats-logo {
+    width: auto;
+    height: 30px;
+    margin-right: 2vw;
+    margin-left: 6vw;
+  }
+}
