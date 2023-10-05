@@ -17,7 +17,7 @@ const Posts = () => {
         </div>
       </div>
       <div className='post-right'>
-        <div>
+        <div className='second-img'>
           <img className="post-img-l" src={Post02} alt="post02" loading="lazy" />
         </div>
         <div className="post-content">
