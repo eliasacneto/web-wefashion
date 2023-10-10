@@ -46,7 +46,7 @@ export default function Cards({ data }) {
                     <h3 className='card-Box2__description'>
                         {data.descrição1}
                     </h3>
-                    <Link className='card-Box1__Folder-Price-link' to={`product/${data.id}`}><button className='btn-course'>Tenho interesse!</button></Link>
+                    <Link className='card-Box1__Folder-Price-link' to={`curso/${data.id}`}><button className='btn-course'>Tenho interesse!</button></Link>
                 </div>
             )}
         </div>

@@ -8,7 +8,7 @@ function AppRoutes(){
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={ <App /> }></Route>
-                <Route path="/product/:id" element={ <ClassForm /> }></Route>
+                <Route path="/curso/:id" element={ <ClassForm /> }></Route>
             </Routes>
         </BrowserRouter>
     )

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import iconNavbar from "./../../../assets/iconNavbar.svg";
-import logo from "./../../../assets/WeFashion2.svg";
+import logo from "./../../../assets/images/nav-logo.png";
 import "./NavbarMobile.scss";
 
 const NavBarMobile = () => {
