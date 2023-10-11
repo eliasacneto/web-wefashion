@@ -5,6 +5,9 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 
     &__Content {
         margin-top: 60px;

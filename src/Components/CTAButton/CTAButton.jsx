@@ -3,7 +3,7 @@ import "./CTAButton.scss";
 
 const CTAButton = ({ link, children }) => {
   return (
-    <button className="CTAButton">
+    <button href={link} className="CTAButton">
       {children}
     </button>
   );
