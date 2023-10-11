@@ -1,7 +1,7 @@
 import React from "react";
-import logo from "./../../../assets/WeFashion2.svg";
-import weLogo from '../../../assets/images/nav-logo.png'
+import weLogo from '../../assets/images/nav-logo.png'
 import "./Navbar.scss";
+import CTAButton from "../CTAButton/CTAButton";
 
 const Navbar = () => {
   return (
@@ -13,7 +13,7 @@ const Navbar = () => {
       <navbar className='navbarDesk__menu desktop'>
         <ul>
           <li>
-            <a href='#Benefits'>Início</a>
+            <a href='#Home'>Início</a>
           </li>
           <div className='line'></div>
           <li>
@@ -29,7 +29,7 @@ const Navbar = () => {
           </li>
           <div className='line'></div>
         </ul>
-        <button className="button-cta">Inscreva-se agora</button>
+        <CTAButton>Inscreva-se agora</CTAButton>
       </navbar>
     </header>
   );

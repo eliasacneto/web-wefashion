@@ -1,26 +1,5 @@
 @use "../../global.scss" as *;
 
-
-.btn-course {
-    height: 50px;
-    padding: 0 10px;
-    color: $bg-black;
-    background-color: $dark-yellow;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: 600;
-
-    transition: color 0.3s ease;
-    border: 1px $dark-yellow;
-}
-
-.btn-course:hover {
-    cursor: pointer;
-    color: $off-white;
-    background-color: $dark-yellow;
-    transition: color 0.3s ease;
-}
-
 .card-Box1 {
     position: relative;
     border-radius: 5px;
@@ -59,6 +38,15 @@
             &-link {
                 text-decoration: none;
                 color: #000;
+                button{
+                    margin-right: auto;
+                    margin-left: auto;
+
+                    &:hover {
+                        cursor: pointer;
+                        filter: brightness(110%);
+                    }
+                }
             }
         }
     }
@@ -92,7 +80,8 @@
         &-spec {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: center;
+            gap: 10px;
             color: #000;
             font-weight: 400;
         }
@@ -148,7 +137,6 @@
     }
 }
 
-
 .card-Box1,
 .card-Box2 {
     position: relative;
@@ -174,7 +162,7 @@
     transform: translateY(0);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .card-Box1,
     .card-Box2 {

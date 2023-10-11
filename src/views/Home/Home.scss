@@ -1,0 +1,215 @@
+@use "../../global.scss" as *;
+
+.Home {
+    background-color: $dark-yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    &__Content {
+        margin-top: 60px;
+        background-color: $main-white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 700px;
+        
+        &--left {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            width: 70vw;
+
+            &__Title{
+                display: flex;
+                justify-content: center;
+                width: 70%;
+
+                &--text{
+                    font-size: 60px;
+                    color: $main-black;
+                    width: 100%;
+                    font-weight: 700;
+                }
+            }
+
+            &__Subtitle{
+                display: flex;
+                justify-content: center;
+                width: 50%;
+
+                &--text{
+                    margin-top: 25px;
+                    font-size: 16px;
+                    margin-bottom: 20px;
+                }
+            }
+
+            &__Buttons {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+        }
+        &--right {
+            display: flex;
+            justify-content: center;
+            width: 50%;
+
+            &__Image{
+                height: 600px;
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+    }
+}
+
+.highlight {
+    color: $dark-yellow;
+}
+
+.highlight-y {
+    color: $dark-yellow;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.058);
+}
+
+.highlight-white {
+    color: $main-white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.149);
+}
+
+.underlight {
+    text-decoration: none;
+    border-bottom: 10px solid $dark-yellow;
+    color: inherit;
+}
+
+.underlight-small {
+    text-decoration: none;
+    border-bottom: 5px solid $dark-yellow;
+    border-radius: 10% / 70%;
+    transform: rotate(90deg);
+    color: inherit;
+}
+
+.del {
+    text-decoration: line-through;
+}
+
+@media (min-width: 1150px) {
+    .Home__Content{
+        display: flex;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+
+        &--left{
+            display: grid;
+            justify-content: flex-start;
+            padding-left: 20px;
+            width: 50%;
+            gap: 20px;
+            &__Buttons{
+                justify-self: flex-start;
+            }
+        }
+        &--right{
+            width: 30%;
+        }
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1150px){
+    // .Home__Content{
+    //     display: flex;
+    //     width: 100%;
+    //     margin-left: auto;
+    //     margin-right: auto;
+    // }
+    .Home__Content--left{
+        display: grid;
+        justify-content: flex-start;
+        width: 50%;
+        gap: 10px;
+        &__Buttons{
+            justify-self: flex-start;
+        }
+        &__Title--text {
+        font-size: 40px;
+        height: auto;
+        width: auto;
+        }
+        &__Subtitle--text {
+            font-size: 16px;
+            height: auto;
+            width: auto;
+        }
+        &__Buttons {
+            margin-top: 20px;
+        }
+    }
+
+    .Home__Content--right{
+        width: 30%;
+            &__Image {
+            max-width: 100%;
+            height: 350px;
+        }
+    }
+}
+
+@media (min-width: 767px) and (max-width: 880px){
+    .Home__Content--left__Buttons{
+        display: grid;
+    }
+}
+
+@media (max-width: 767px) {
+    .Home__Content {
+        height: auto;
+        width: auto;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        &--left__Title,
+        &--left__Subtitle {
+            width: 90vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        &--left__Title--text {
+            font-size: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+            height: auto;
+            width: auto;
+        }
+
+        &--left__Subtitle--text {
+            font-size: 16px;
+            margin-left: 20px;
+            margin-right: 20px;
+            height: auto;
+            width: auto;
+        }
+
+        &--right{
+            height: auto;
+            width: auto;
+
+            &__Image {
+                max-width: 100%;
+                height: 250px;
+                margin-top: 20px;
+            }
+        }
+    }
+}

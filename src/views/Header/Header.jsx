@@ -1,6 +1,6 @@
 import React  from "react";
-import Navbar from "./Navbar/Navbar";
-import NavBarMobile from "./Navbar/NavbarMobile";
+import Navbar from "../../Components/Navbar/Navbar";
+import NavBarMobile from "../../Components/Navbar/NavbarMobile";
 import "./Header.scss";
 
 const Header = () => {

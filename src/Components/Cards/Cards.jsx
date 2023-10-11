@@ -7,6 +7,7 @@ import peopleIcon from "/src/assets/icons/people.svg";
 import mapIcon from "/src/assets/icons/map.svg";
 import modelagemImg from "/src/assets/images/modelagem.jpg"
 import { itens } from '../../mock/product.mock'
+import { ButtonYellow } from '../ButtonYellow/ButtonYellow';
 
 
 export default function Cards({ data }) {
@@ -28,7 +29,7 @@ export default function Cards({ data }) {
                     <p className='card-Box1__Assessment-p'><img src={starIcon} /><img src={starIcon} /><img src={starIcon} /><img src={starIcon} /><img src={starIcon} /> 4.5  (45 avaliações)</p>
                     <h3 className='card-Box1__Assessment-h3'>{data.nome1}</h3>
                     <h3 className='card-Box1__Assessment-h3'>{data.nome2}</h3>
-                    <div className='card-Box1__Assessment-spec'> <img src={timeIcon} /> {data.duração} <img src={peopleIcon} /> {data.turma}  <img src={mapIcon} />{data.tipoLocal}</div>
+                    <div className='card-Box1__Assessment-spec'> <img src={timeIcon} /> {data.duração} <img src={peopleIcon} /> {data.turma}  {/*<img src={mapIcon} />{data.tipoLocal}*/}</div>
                 </div>
             </div>
             {isShown && (
@@ -46,7 +47,7 @@ export default function Cards({ data }) {
                     <h3 className='card-Box2__description'>
                         {data.descrição1}
                     </h3>
-                    <Link className='card-Box1__Folder-Price-link' to={`curso/${data.id}`}><button className='btn-course'>Tenho interesse!</button></Link>
+                    <Link className='card-Box1__Folder-Price-link' to={`curso/${data.id}`}><ButtonYellow>Tenho interesse</ButtonYellow></Link>
                 </div>
             )}
         </div>

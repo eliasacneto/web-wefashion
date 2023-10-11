@@ -13,7 +13,7 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 export default function Courses() {
 
-    const cardsPerView = window.innerWidth <= 768 ? 1 : 3;
+    const cardsPerView = window.innerWidth <= 850 ? 1 : window.innerWidth <= 1060 ? 2 : 3;
     const [products] = useState(itens);
 
     return (
@@ -25,9 +25,9 @@ export default function Courses() {
 
             <div className='courses-Container__Cards'>
                 <Swiper className='courses-Container__Cards-swiper'
+                    spaceBetween={80}
                     slidesPerView={cardsPerView}
                     loop
-
                     modules={[Pagination]}
                 >
                     {products.map((product) => (

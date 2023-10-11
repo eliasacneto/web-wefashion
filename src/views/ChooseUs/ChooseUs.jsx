@@ -7,6 +7,7 @@ import Quality from "/src/assets/icons/03.svg";
 import Class from "/src/assets/icons/04.svg";
 import './ChooseUs.scss'
 import { ButtonYellow } from '../../Components/ButtonYellow/ButtonYellow';
+import WhatsApp from "../../assets/icons/whatsapp-logo.svg";
 import CTAButton from '../../Components/CTAButton/CTAButton';
 
 const ChooseUs = () => {
@@ -53,8 +54,8 @@ const ChooseUs = () => {
           <p className="post-subtitle"> A <b><span className="highlight-y">We</span>Fashion</b> é o seu ponto de partida para uma jornada emocionante no mundo da moda.</p>
           <p className="post-subtitle">Descubra seu estilo, crie roupas únicas e <b><span className="highlight-y">faça parte</span></b> de uma comunidade diversificada e inspiradora. Junte-se a nós e torne-se um criador de moda confiante e talentoso!</p>
 
-          <CTAButton />
-
+          <CTAButton><img width={30} src={WhatsApp} />
+          Quero falar com um consultor</CTAButton>
         </div>
       </div>
 

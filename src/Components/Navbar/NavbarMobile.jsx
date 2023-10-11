@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import iconNavbar from "./../../../assets/iconNavbar.svg";
-import logo from "./../../../assets/images/nav-logo.png";
+import iconNavbar from "../../assets/iconNavbar.svg";
+import logo from "../../assets/images/nav-logo.png";
 import "./NavbarMobile.scss";
+import CTAButton from "../CTAButton/CTAButton";
 
 const NavBarMobile = () => {
     const [menuView, setMenuView] = useState(false);
@@ -14,23 +15,23 @@ const NavBarMobile = () => {
                 <navbar className='navbarMobile__menu mobile'>
                     <ul>
                         <li>
-                            <a href='#Benefits'>Início</a>
+                            <a href='#Home'>Início</a>
                         </li>
-                        <div className='line'></div>
+                        <hr />
                         <li>
                             <a href='#Courses'>Cursos</a>
                         </li>
-                        <div className='line'></div>
+                        <hr />
                         <li>
                             <a href='#About'>Sobre</a>
                         </li>
-                        <div className='line'></div>
+                        <hr />
                         <li>
                             <a href='#Contact'>Contato</a>
                         </li>
-                        <div className='line'></div>
+                        <hr />
                     </ul>
-                    <button className="button-cta">Inscreva-se</button>
+                    <CTAButton>Inscreva-se</CTAButton>                    
                 </navbar>
             )}
 

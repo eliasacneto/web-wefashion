@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import Header from '../Header/Header';
+import Header from '../../views/Header/Header';
 import Footer from '../../views/Footer/Footer';
 import { itens } from '../../mock/product.mock';
 import { Link, useParams } from 'react-router-dom';
@@ -25,7 +25,7 @@ const ClassForm = () => {
     const [products] = useState(itens);
     const product = products.find((element) => element.id == id);
 
-  return (
+    return (
     <div className='classes'>
         <Header />
             <Swiper className='classes__swiper'

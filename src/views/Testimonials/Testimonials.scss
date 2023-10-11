@@ -19,25 +19,31 @@
 
   .Testimonials {
     flex-direction: row;
-    width: 98.9vw;
+    width: 100%;
+    justify-content: center;
   }
 
   .left-content {
     width: 35vw;
     margin-left: 65px;
-    padding: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
   }
 
   .testimonials_text {
-    margin-top: 20px;
     font-size: 20px;
-    padding-bottom: 40px;
     width: 80%;
   }
 
+  button{
+    max-width: 300px;
+  }
+
   .testimonials_title {
-    margin-top: 130px;
-    font-size: 45px;
+    font-size: 40px;
   }
 
   .right-content {
@@ -97,5 +103,8 @@
 
   .mobile{
     display: inline;
+  }
+  button{
+    padding-bottom: -10px;
   }
 }
