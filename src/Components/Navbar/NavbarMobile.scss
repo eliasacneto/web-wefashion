@@ -41,41 +41,41 @@
         justify-content: center;
         background-color: $main-white;
         width: 100%;
-    }
 
-    a {
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: bold;
-        color: $bg-black;
-    }
-
-    a:hover {
-        color: $dark-yellow;
-        transition: color 0.3s ease;
-    }
-
-    ul {
-        list-style-type: none;
-        padding: 0 0 20px 0;
-        width: 100%;
-    }
-
-    li {
-        margin: 5px;
-        background-color: $main-white;
-        height: 40px;
-        padding-top: 15px;
-    }
-
-    li:hover {
-        color: $dark-yellow;
-        transition: color 0.3s ease;
-    }
+        a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            color: $bg-black;
+        }
     
-    hr{
-        width: 100%;
-        margin: 0;
-        border: 1px solid $gray;
+        a:hover {
+            color: $dark-yellow;
+            transition: color 0.3s ease;
+        }
+    
+        ul {
+            list-style-type: none;
+            padding: 0 0 20px 0;
+            width: 100%;
+        }
+    
+        li {
+            margin: 5px;
+            background-color: $main-white;
+            height: 40px;
+            padding-top: 15px;
+        }
+    
+        li:hover {
+            color: $dark-yellow;
+            transition: color 0.3s ease;
+        }
+        
+        hr{
+            width: 100%;
+            margin: 0;
+            border: 1px solid $gray;
+        }
     }
 }

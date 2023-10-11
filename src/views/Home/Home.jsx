@@ -1,8 +1,7 @@
-import React from 'react';
-import yellowImg from './../../assets/WeFashion-img-yellow.svg';
 import './Home.scss';
 import ButtonWhite from '../../Components/ButtonWhite/ButtonWhite';
-import { ButtonYellow } from '../../Components/ButtonYellow/ButtonYellow';
+import ButtonYellow from '../../Components/ButtonYellow/ButtonYellow';
+import yellowImg from './../../assets/WeFashion-img-yellow.svg';
 
 const Benefits = () => {
     return (

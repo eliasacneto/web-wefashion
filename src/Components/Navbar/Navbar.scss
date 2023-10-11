@@ -13,58 +13,38 @@
 
     &__menu {
         display: flex;
+
+        ul {
+            list-style-type: none;
+            height: auto;
+            display: flex;
+            align-items: center;
+        }
+    
+        li {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 5vw;
+        }
+    
+        a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: $bg-black;
+        }
+    
+        a:hover {
+            color: $dark-yellow;
+        }
     }
 
     &__logo {
         padding: 10px;
-    }
 
-
-    ul {
-        list-style-type: none;
-        height: auto;
-        display: flex;
-        align-items: center;
-    }
-
-    li {
-        display: flex;
-        justify-content: space-between;
-        padding-right: 5vw;
-    }
-
-
-    .button-cta {
-        height: 50px;
-        width: 200px;
-        background-color: $dark-yellow;
-        border-radius: 10px;
-        font-size: 18px;
-        font-weight: 700;
-        color: $bg-black;
-        box-shadow: 1px 1px 20px 1px $dark-yellow;
-        border: 1px $dark-yellow;
-        transition: color 0.3s ease;
-        margin-right: 3vw;
-    }
-
-    .button-cta:hover {
-        cursor: pointer;
-        color: $main-white;
-        background-color: $dark-yellow;
-        transition: color 0.3s ease;
-        box-shadow: 1px 1px 20px 1px $dark-yellow;
-    }
-
-    a {
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: 600;
-        color: $bg-black;
-    }
-
-    a:hover {
-        color: $dark-yellow;
+        .logo {
+            width: 180px;
+        }
     }
 
     // Screen for ipads and small screens
@@ -86,13 +66,6 @@
         a {
             font-size: 12px;
         }
-
-        .button-cta {
-            width: 80px;
-            font-size: 12px;
-            box-shadow: 1px 1px 15px 1px $dark-yellow;
-            margin-right: 10px;
-        }
     }
 
     @media (max-width: 500px) {
@@ -109,19 +82,8 @@
             font-size: 10px;
         }
 
-        .button-cta {
-            width: 60px;
-            font-size: 10px;
-            box-shadow: 1px 1px 15px 1px $dark-yellow;
-            margin-right: 10px;
-        }
-
-        .logow {
+        .logo {
             width: 120px;
         }
     }
-}
-
-.logow {
-    width: 180px;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Testimonials.scss";
-import { ButtonYellow } from "../../Components/ButtonYellow/ButtonYellow";
+import ButtonYellow from "../../Components/ButtonYellow/ButtonYellow";
 import Carousel from "../../Components/Carousel/Carousel";
 import CarouselMobile from "../../Components/Carousel/CarouselMobile";
 

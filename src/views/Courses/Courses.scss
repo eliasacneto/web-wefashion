@@ -16,18 +16,15 @@
 
         .swiper-button-prev,
         .swiper-button-next {
-            color: $dark-yellow;
+            color: $bg-black;
+            width: 1px;
         }
 
         &-swiper {
             width: 90%;
-            padding-left: 5vw;
-            padding-right: 5vw;
 
             &-slide {
-                margin-right: 2vw;
-                max-width: 400px;
-                width: 100%;
+                max-width: 350px;
                 height: auto;
             }
         }
