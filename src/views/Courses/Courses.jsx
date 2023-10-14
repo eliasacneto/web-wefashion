@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { Component, useState, useEffect } from 'react';
 import "./Courses.scss";
 import { itens } from '../../mock/product.mock'
 import Cards from '../../Components/Cards/Cards';
@@ -39,7 +39,7 @@ export default function Courses() {
         }, [])
 
     return (
-        <div className='courses-Container'>
+        <div id='Courses' className='courses-Container'>
             <div className='courses-Container__Title'>
                 <h1>Os <span className='highlight-white'><b>melhores</b></span> cursos para você</h1>
                 <h4>Arraste para o lado e confira nossos cursos em destaque</h4>

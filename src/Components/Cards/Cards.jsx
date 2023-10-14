@@ -7,6 +7,7 @@ import peopleIcon from "/src/assets/icons/people.svg";
 import mapIcon from "/src/assets/icons/map.svg";
 import modelagemImg from "/src/assets/images/modelagem.jpg"
 import { itens } from '../../mock/product.mock'
+import ButtonYellow from '../ButtonYellow/ButtonYellow';
 
 
 export default function Cards({ data }) {
@@ -46,7 +47,7 @@ export default function Cards({ data }) {
                     <h3 className='card-Box2__description'>
                         {data.descrição1}
                     </h3>
-                    <Link className='card-Box1__Folder-Price-link' to={`product/${data.id}`}><button className='btn-course'>Tenho interesse!</button></Link>
+                    <Link className='card-Box1__Folder-Price-link' to={`curso/${data.id}`}><ButtonYellow>Tenho interesse</ButtonYellow></Link>
                 </div>
             )}
         </div>

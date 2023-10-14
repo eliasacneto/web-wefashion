@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Navbar from '../Navbar/Navbar';
+
 import Header from '../Header/Header';
 import Footer from '../../views/Footer/Footer';
 import { itens } from '../../mock/product.mock';
@@ -9,15 +9,11 @@ import "./ClassForm.scss";
 import mapPin from "../../assets/images/MapPin.png"
 import clock from "../../assets/images/Clock.png"
 import users from "../../assets/images/UsersThree.png"
-import { Swiper, SwiperSlide } from "swiper/react";
+
 import model31 from "../../assets/images/25.jpg"
 import model32 from "../../assets/images/26.jpg"
 import weFashionPreto from "../../assets/images/Wefashionpreto.png"
 
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 const ClassForm = () => {
 
