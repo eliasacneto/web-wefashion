@@ -27,9 +27,9 @@
 
             &-slide {
                 margin-right: 2vw;
-                max-width: 400px;
-                width: 100%;
-                height: auto;
+                width: 430px;
+                
+                height: 430px;
             }
         }
     }
@@ -39,13 +39,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 20px;
+        padding-top: 80px;
 
 
         h1 {
             color: $dark-yellow;
             color: $bg-black;
-            font-size: 40px;
+            font-size: 45px;
+            font-style: normal;
             font-weight: 600;
             text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.103);
         }
@@ -59,8 +60,8 @@
 
     &__Cards {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        align-items: flex-start;
+        align-content: space-around;
     }
 
     .card-Box1 {
@@ -69,49 +70,60 @@
         border: 0.5px solid rgba(0, 0, 0, 0.05);
         background: $main-white;
         box-shadow: 0px 4px 100px 5px rgba(0, 0, 0, 0.004);
+        heigh: 430px;
+        
         max-width: 100%;
         margin: 10px;
         padding: 20px;
 
         p {
+            display: flex;
+            align-items: stretch;
             color: #77838F;
-            font-size: 16px;
+            font-family: Roboto;
+            font-size: 17px;
+            font-style: normal;
             font-weight: 600;
+            line-height: normal;
         }
 
         h3 {
             color: #000;
-            font-size: 18px;
+            font-family: Inter;
+            font-size: 19px;
+            font-style: normal;
             font-weight: 700;
+            line-height: normal;
         }
 
         &__Folder {
-            height: auto;
+            height: 240px;
         }
 
         &__Img {
-            max-width: 100%;
-            height: auto;
+            width: 400px;
+            height: 240px;
             background: #201313;
         }
 
         &__Price {
             position: absolute;
-            margin-top: 150px;
+            margin-top: 180px;
             z-index: 1;
             top: 2.5%;
             left: 0%;
-            width: 80px;
-            height: 40px;
-            font-size: 16px;
+            width: 100px;
+            height: 50px;
+            font-size: 19px;
             font-weight: 900;
         }
 
         &__Assessment {
-            margin-top: 10px;
+            margin-left: 15px;
             display: flex;
             flex-wrap: wrap;
-            flex-direction: column;
+            flex-flow: column wrap;
+            height: 190px;
         }
     }
 }
