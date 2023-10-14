@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Navbar from '../Navbar/Navbar';
 import Header from '../Header/Header';
 import Footer from '../../views/Footer/Footer';
 import { itens } from '../../mock/product.mock';
@@ -27,11 +28,6 @@ const ClassForm = () => {
   return (
     <div className='classes'>
         <Header />
-            <Swiper className='classes__swiper'
-                slidesPerView={1}
-                navigation
-                modules={[ Navigation ]}>
-                    <SwiperSlide className='classes__swiper-form'>
                         <div className='classesForm' >
                         
                             <div className='classesForm__description'>
@@ -70,8 +66,7 @@ const ClassForm = () => {
                                 <Link className='classesForm__form-link' to={`/`}>Voltar para para a página inicial</Link>
                             </div>
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide className='carrosel__form'>
+                    
                         <div className='classesDescription'>
                             <h1 className='classesDescription__ask'>O que você irá aprender?</h1>
                             <div className='classesDescription__p1'>
@@ -88,8 +83,7 @@ const ClassForm = () => {
                                 </div>
                             </div>
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide className='carrosel__form'>
+                  
                     <div className='classesDescription'>
                             <h1 className='classesDescription__ask'>O que você irá aprender?</h1>
                             <div className='classesDescription__p1'>
@@ -106,8 +100,7 @@ const ClassForm = () => {
                                 </div>
                             </div>
                         </div>
-                    </SwiperSlide>  
-                    <SwiperSlide className='carrosel__form'>
+                    
                         <div className='classesDuration'>
                             <img className='classesDuration__img' src={weFashionPreto}></img>
                             <div className='classesDuration__p1'>
@@ -126,8 +119,8 @@ const ClassForm = () => {
                                 </div>                                
                             </div>
                         </div>
-                    </SwiperSlide>   
-            </Swiper>
+                       
+            
         <Footer />
     </div>
   )
