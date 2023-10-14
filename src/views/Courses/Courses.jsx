@@ -13,8 +13,30 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 export default function Courses() {
 
-    const cardsPerView = window.innerWidth <= 768 ? 1 : 3;
+    const [slidePerView, setSlidePerView] = useState(3);
     const [products] = useState(itens);
+
+            useEffect(() => {
+
+            function handleResize(){
+                if(window.innerWidth < 1400 && window.innerWidth > 950){
+                    setSlidePerView(2);
+                
+                } else if(window.innerWidth < 950){
+                    setSlidePerView(1);
+                }else {
+                    setSlidePerView(3);
+                }
+
+            }
+
+            handleResize();
+            window.addEventListener("resize", handleResize)
+
+            return () => {
+                window.removeEventListener("resize", handleResize)
+            }
+        }, [])
 
     return (
         <div className='courses-Container'>
@@ -25,10 +47,10 @@ export default function Courses() {
 
             <div className='courses-Container__Cards'>
                 <Swiper className='courses-Container__Cards-swiper'
-                    slidesPerView={cardsPerView}
+                    slidesPerView={slidePerView}
                     loop
 
-                    modules={[Pagination]}
+                    modules={[ Pagination ]}
                 >
                     {products.map((product) => (
                         <SwiperSlide className='courses-Container__Cards-swiper-slide' key={product.id}>
