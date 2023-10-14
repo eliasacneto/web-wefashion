@@ -7,7 +7,7 @@ import peopleIcon from "/src/assets/icons/people.svg";
 import mapIcon from "/src/assets/icons/map.svg";
 import modelagemImg from "/src/assets/images/modelagem.jpg"
 import { itens } from '../../mock/product.mock'
-import ButtonYellow from '../ButtonYellow/ButtonYellow';
+import { ButtonYellow } from '../ButtonYellow/ButtonYellow';
 
 
 export default function Cards({ data }) {
