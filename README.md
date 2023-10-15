@@ -47,7 +47,7 @@ Mais detalhes sobre o projeto, pode ser acessado através do [Notion](https://th
 
 ## Deploy da Aplicação :dash:
 
-> Link do deploy da aplicação. Exemplo com netlify: https://certificates-for-everyone-womakerscode.netlify.app/
+> Link do deploy da aplicação: https://wefashion.vercel.app
 
 
 
