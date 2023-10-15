@@ -3,17 +3,21 @@
 .courses-Container {
     background-color: $dark-yellow;
     max-width: 100%;
-    padding: 20px;
+    justify-content: center;
     height: 700px;
     margin-bottom: 50px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    
+    
 
     &__Cards {
-        padding-top: 8vh;
+        padding-top: 4vh;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
+        
+        
 
         .swiper-button-prev,
         .swiper-button-next {
@@ -22,14 +26,12 @@
 
         &-swiper {
             width: 100%;
-            padding-left: 5vw;
-            padding-right: 5vw;
+            
 
             &-slide {
-                margin-right: 2vw;
                 width: 430px;
-                
                 height: 430px;
+                
             }
         }
     }
@@ -39,7 +41,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 80px;
+        padding-top: 4vh;
+        margin-left: 2vw;
+        margin-right: 2vw;
 
 
         h1 {
@@ -64,104 +68,9 @@
         align-content: space-around;
     }
 
-    .card-Box1 {
-        position: relative;
-        border-radius: 5px;
-        border: 0.5px solid rgba(0, 0, 0, 0.05);
-        background: $main-white;
-        box-shadow: 0px 4px 100px 5px rgba(0, 0, 0, 0.004);
-        heigh: 430px;
-        
-        max-width: 100%;
-        margin: 10px;
-        padding: 20px;
-
-        p {
-            display: flex;
-            align-items: stretch;
-            color: #77838F;
-            font-family: Roboto;
-            font-size: 17px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: normal;
-        }
-
-        h3 {
-            color: #000;
-            font-family: Inter;
-            font-size: 19px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-        }
-
-        &__Folder {
-            height: 240px;
-        }
-
-        &__Img {
-            width: 400px;
-            height: 240px;
-            background: #201313;
-        }
-
-        &__Price {
-            position: absolute;
-            margin-top: 180px;
-            z-index: 1;
-            top: 2.5%;
-            left: 0%;
-            width: 100px;
-            height: 50px;
-            font-size: 19px;
-            font-weight: 900;
-        }
-
-        &__Assessment {
-            margin-left: 15px;
-            display: flex;
-            flex-wrap: wrap;
-            flex-flow: column wrap;
-            height: 190px;
-        }
-    }
 }
+@media (max-width: 950px) {
+    .courses-Container{
 
-@media (max-width: 767px) {
-    .courses-Container {
-        padding: 10px;
-
-        &__Title {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding-top: 20px;
-
-
-            h1 {
-                color: $dark-yellow;
-                color: $bg-black;
-                font-size: 22px;
-                font-weight: 600;
-                text-align: center;
-            }
-
-            h4 {
-                color: $bg-black;
-                font-size: 14px;
-                font-weight: 500;
-                text-align: center;
-            }
-        }
-    }
-
-    .card-Box1 {
-        margin: 5px;
-    }
-
-    .card-Box1__Price {
-        margin-top: 10px;
     }
 }
