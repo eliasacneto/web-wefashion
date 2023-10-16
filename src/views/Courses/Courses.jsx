@@ -19,10 +19,10 @@ export default function Courses() {
             useEffect(() => {
 
             function handleResize(){
-                if(window.innerWidth < 1200 && window.innerWidth > 950){
+                if(window.innerWidth <= 1200 && window.innerWidth > 880){
                     setSlidePerView(2);
                 
-                } else if(window.innerWidth < 950){
+                } else if(window.innerWidth <= 880){
                     setSlidePerView(1);
                 }else {
                     setSlidePerView(3);

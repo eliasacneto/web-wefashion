@@ -1,12 +1,11 @@
 @use "../../global.scss" as *;
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 
 *{
     padding: 0px;
     margin: 0px;
 }
-
-
-
 
 
 .classes{
@@ -15,12 +14,13 @@
     }
 
 .classesForm{
-   
+    font-family: 'Inter';
     background-image: url("../../assets/images/backImg.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
+    background-color: #232323;
     
     padding-top: 10%;
     justify-content: space-around;
@@ -140,6 +140,11 @@
 
             &-btn{
                 margin-left: 3vw;
+                background-color: $dark-yellow;
+                border-radius: 5px;
+                font-size: 20px;
+                font-weight: 700;
+                border-style: none;
             }
 
             &-link{
@@ -217,7 +222,7 @@
     width: 100%;
     height: 100%;
     padding-top: 8%;
-    
+    background-color: #232323;
     padding-bottom: 10%;
     max-height: 100%;
     max-width: 100%;
@@ -264,4 +269,63 @@
         
     }
 
+}
+
+@media (max-width: 950px) {
+
+    .classesForm{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 90px;
+
+        &__description{
+
+            &-spec-iten{
+                margin-right: 50px;
+                display: flex;
+                flex-direction: row;
+                
+                
+            }
+        }
+    }
+
+    .classesDescription{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        &__p1{
+            display: flex;
+            flex-direction: column;
+            
+            &-p1-img{
+                width: 50vw;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    
+    .classesDuration{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+
+        &__p1{
+            align-items: center;
+            text-align: center;
+        }
+
+        &__img{
+            width: 300px;
+            height: 330px;
+            margin-top: 20px;
+        }
+    
+    }
 }
