@@ -88,12 +88,15 @@ hr {
         }
     }
 
-
-
     a {
         font-size: 1.1rem;
         text-decoration: none;
-        color: $main-black;
+        color: $main-white;
+
+        &:hover {
+            color: #FEAE11;
+            transition: color 0.5s ease;
+        }
     }
 
     #clickable {

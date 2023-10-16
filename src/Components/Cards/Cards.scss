@@ -99,7 +99,8 @@ margin-right: 5px;
         &-spec {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: center;
+            gap: 10px;
             color: #000;
             font-weight: 400;
         }
@@ -156,8 +157,4 @@ margin-right: 5px;
         text-align: justify;
         margin-bottom: 20px;
     }
-}
-
-.card-Box1__Folder-Price-link{
-
 }

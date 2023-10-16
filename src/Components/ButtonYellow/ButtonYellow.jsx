@@ -1,6 +1,7 @@
-import React from "react";
 import "./ButtonYellow.scss";
 
-export const ButtonYellow = ({ text }) => {
-  return <button className="btn-cta">{text}</button>;
+const ButtonYellow = ({ link, children }) => {
+  return <button className="ButtonYellow"><a href={link}>{children}</a></button>;
 };
+
+export default ButtonYellow;

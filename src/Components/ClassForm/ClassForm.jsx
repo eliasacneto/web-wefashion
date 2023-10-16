@@ -23,7 +23,7 @@ const ClassForm = () => {
     const [products] = useState(itens);
     const product = products.find((element) => element.id == id);
 
-  return (
+    return (
     <div className='classes'>
         <Header />
                         <div className='classesForm' >

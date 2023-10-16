@@ -1,39 +1,51 @@
 @use "../../global.scss" as *;
 
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 $light-yelllow 0;
-  }
+// @keyframes pulse {
+//   0% {
+//     box-shadow: 0 0 0 0 $light-yelllow 0;
+//   }
 
-  50% {
-    box-shadow: 0 0 0 10px $light-yelllow 0.2;
-  }
+//   50% {
+//     box-shadow: 0 0 0 10px $light-yelllow 0.2;
+//   }
 
-  100% {
-    box-shadow: 0 0 0 0 $light-yelllow 0.4;
-  }
-}
+//   100% {
+//     box-shadow: 0 0 0 0 $light-yelllow 0.4;
+//   }
+// }
 
-.button-cta-whatsapp {
+.CTAButton {
   height: 50px;
+  padding: 20px;
   background-color: $dark-yellow;
   border-radius: 10px;
   font-size: 18px;
-  font-weight: bold;
-  color: #232323;
-  box-shadow: 1px 1px 20px 1px $dark-yellow;
-  border: 1px $dark-yellow;
-  margin-top: 20px;
-  display: inline-block;
+  font-weight: 700;
+  color: $main-black;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;  border: 1px $dark-yellow;
   cursor: pointer;
-  animation: pulse 2s infinite;
   display: flex;
+  gap: 10px;
   justify-content: center;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:hover{
+    filter: brightness(110%);
+    color: $off-white;
+    transform: scale(1.1);
+    transition: all .2s ease-in-out;
+  }
+
+  &:active{
+    box-shadow: inset 2px 2px 10px #000;
+  }
 }
 
-.whats-logo {
-  width: auto;
-  height: 30px;
-  margin-right: 20px;
+@media (max-width: 390px){
+  .CTAButton {
+    width: auto;
+    font-size: 14px;
+  }
 }

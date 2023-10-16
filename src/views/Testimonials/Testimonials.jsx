@@ -1,7 +1,8 @@
 import React from "react";
 import "./Testimonials.scss";
-import { ButtonYellow } from "../../Components/ButtonYellow/ButtonYellow";
+import ButtonYellow from "../../Components/ButtonYellow/ButtonYellow";
 import Carousel from "../../Components/Carousel/Carousel";
+import CarouselMobile from "../../Components/Carousel/CarouselMobile";
 
 const Testimonials = () => {
   return (
@@ -16,10 +17,16 @@ const Testimonials = () => {
           experiência de aprender essa arte milenar e transformar tecidos em
           verdadeiras obras de arte.
         </p>
-        <ButtonYellow text='Conheça nossos cursos' />
+        <ButtonYellow link=''>Conheça nossos cursos</ButtonYellow>
       </div>
+      
       <div className='right-content'>
-        <Carousel />
+        <div className="desktop">
+          <Carousel/>
+        </div>
+        <div className="mobile">
+          <CarouselMobile/>
+        </div>
       </div>
     </div>
   );

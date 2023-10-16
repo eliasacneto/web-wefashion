@@ -1,0 +1,81 @@
+@use "../../global.scss" as *;
+
+.navbarMobile {
+    width: 100vw;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: $main-white;
+    position: fixed;
+    z-index: 10;
+
+    &__logo {
+        padding-left: 15px;
+
+        img {
+            width: 130px;
+        }
+    }
+
+    &__icon {
+        display: inline;
+        padding-right: 18px;
+    }
+
+    &__icon:hover {
+        cursor: pointer;
+    }
+
+    &__menu {
+        padding: 0 0 20px 0;
+
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        background-color: $main-white;
+        width: 100%;
+
+        a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            color: $bg-black;
+        }
+    
+        a:hover {
+            color: $dark-yellow;
+            transition: color 0.3s ease;
+        }
+    
+        ul {
+            list-style-type: none;
+            padding: 0 0 20px 0;
+            width: 100%;
+        }
+    
+        li {
+            margin: 5px;
+            background-color: $main-white;
+            height: 40px;
+            padding-top: 15px;
+        }
+    
+        li:hover {
+            color: $dark-yellow;
+            transition: color 0.3s ease;
+        }
+        
+        hr{
+            width: 100%;
+            margin: 0;
+            border: 1px solid $gray;
+        }
+    }
+}

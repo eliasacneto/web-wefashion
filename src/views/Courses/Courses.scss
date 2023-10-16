@@ -21,7 +21,8 @@
 
         .swiper-button-prev,
         .swiper-button-next {
-            color: $dark-yellow;
+            color: $bg-black;
+            width: 1px;
         }
 
         &-swiper {

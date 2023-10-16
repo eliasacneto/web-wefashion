@@ -1,31 +1,33 @@
 @use "../../global.scss" as *;
 
-@keyframes pulse {
-  0% {
-    box-shadow: 0 0 0 0 $light-yelllow 0;
-  }
-
-  50% {
-    box-shadow: 0 0 0 10px $light-yelllow 0.2;
-  }
-
-  100% {
-    box-shadow: 0 0 0 0 $light-yelllow 0.4;
-  }
-}
-
-.button-cta {
+.ButtonYellow {
   height: 50px;
-  width: 250px;
-  background-color: #feae11;
+  padding: 20px;
+  background-color: $dark-yellow;
   border-radius: 10px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #232323;
-  box-shadow: 1px 1px 20px 1px #feae11;
-  border: 1px #feae11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: $bg-black;
+  border: 2px solid $dark-yellow;
+  transition: color 0.3s ease;
+  
+  a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: $bg-black;
+  }
 
-  display: inline-block;
-  cursor: pointer;
-  animation: pulse 2s infinite;
+  &:hover{
+    cursor: pointer;
+    color: $main-white;
+    background-color: $dark-yellow;
+    transition: color 0.3s ease;
+    
+    a{
+      color: $off-white;
+    }
+  }
 }
