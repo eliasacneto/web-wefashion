@@ -1,23 +1,20 @@
 import React, { useState } from 'react';
 
-import Header from '../../views/Header/Header';
+import Navbar from "../../Components/Navbar/Navbar";
 import Footer from '../../views/Footer/Footer';
 import { itens } from '../../mock/product.mock';
 import { Link, useParams } from 'react-router-dom';
 import backImg from "../../assets/images/backImg.png"
 import "./ClassForm.scss";
-import mapPin from "../../assets/images/MapPin.png"
-import clock from "../../assets/images/Clock.png"
-import users from "../../assets/images/UsersThree.png"
-import { Swiper, SwiperSlide } from "swiper/react";
+import mapPin from "/src/assets/icons/map.svg";
+import clock from "/src/assets/icons/time.svg";
+import users from "/src/assets/icons/people.svg";
+
 import model31 from "../../assets/images/25.jpg"
 import model32 from "../../assets/images/26.jpg"
-import weFashionPreto from "../../assets/images/Wefashionpreto.png"
+import weFashionPreto from "../../assets/WeFashion-img-yellow.svg"
+import ButtonYellow from "../../Components/ButtonYellow/ButtonYellow"
 
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 const ClassForm = () => {
 
@@ -27,12 +24,7 @@ const ClassForm = () => {
 
     return (
     <div className='classes'>
-        <Header />
-            <Swiper className='classes__swiper'
-                slidesPerView={1}
-                navigation
-                modules={[ Navigation ]}>
-                    <SwiperSlide className='classes__swiper-form'>
+        <Navbar />
                         <div className='classesForm' >
                         
                             <div className='classesForm__description'>
@@ -53,26 +45,22 @@ const ClassForm = () => {
                                         <h5 className='classesForm__description-spec-iten-h5'>{product.tipoLocal}</h5>
                                     </div>
                                 </div>
-                                <h2 className='classesForm__description-price'>De: {product.preço}</h2>
-                                <h2 className='classesForm__description-price'>Por apenas: <h2 className='classesForm__description-price-promo'> {product.promoção}</h2></h2>
+                                
                             </div>
                             <div className='classesForm__form'>
                                 <p className='classesForm__form-p'>Inscreva-se agora!</p>
-                                <input className='classesForm__form-input' type="text" placeholder='Nome completo'/>
-                                <input className='classesForm__form-input' type="text" placeholder='Seu melhor e-mail' />
-                                <input  className='classesForm__form-input' type="text" placeholder='Seu Whatsapp'/>
-                                <div className='classesForm__form-checkbox'>
+                                <input className='classesForm__form-input' type="text" placeholder='Como quer ser chamado?'/>
+                                <input className='classesForm__form-input' type="text" placeholder='E-mail' />
+                                <input  className='classesForm__form-input' type="text" placeholder='Seu whatsapp (xx) xxxxx-xxxx'/>
+                                {/*<div className='classesForm__form-checkbox'>
                                     <input className='classesForm__form-checkbox-box' type="checkbox" name="" id="" />
-                                    <h5 className='classesForm__form-checkbox-txt'>Eu li e aceito os termos e condições da Política de Privacidade e Contrato de Prestação de Serviço</h5>
-                                </div>
-                                <button className='classesForm__form-btn' type='submit'>
-                                    Inscrever-se
-                                </button>
+                                   <h5 className='classesForm__form-checkbox-txt'>Eu li e aceito os termos e condições da Política de Privacidade e Contrato de Prestação de Serviço</h5>
+                                </div>*/}
+                                <ButtonYellow children={"Tenho interesse!"}/>
                                 <Link className='classesForm__form-link' to={`/`}>Voltar para para a página inicial</Link>
                             </div>
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide className='carrosel__form'>
+                    
                         <div className='classesDescription'>
                             <h1 className='classesDescription__ask'>O que você irá aprender?</h1>
                             <div className='classesDescription__p1'>
@@ -89,10 +77,9 @@ const ClassForm = () => {
                                 </div>
                             </div>
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide className='carrosel__form'>
+                  
                     <div className='classesDescription'>
-                            <h1 className='classesDescription__ask'>O que você irá aprender?</h1>
+                            
                             <div className='classesDescription__p1'>
                                 <div className='classesDescription__p1-p1'>
                                     <img  className='classesDescription__p1-p1-img' src={model32}></img>
@@ -107,8 +94,7 @@ const ClassForm = () => {
                                 </div>
                             </div>
                         </div>
-                    </SwiperSlide>  
-                    <SwiperSlide className='carrosel__form'>
+                    
                         <div className='classesDuration'>
                             <img className='classesDuration__img' src={weFashionPreto}></img>
                             <div className='classesDuration__p1'>
@@ -127,8 +113,8 @@ const ClassForm = () => {
                                 </div>                                
                             </div>
                         </div>
-                    </SwiperSlide>   
-            </Swiper>
+                       
+            
         <Footer />
     </div>
   )

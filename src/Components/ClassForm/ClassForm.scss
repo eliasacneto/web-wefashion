@@ -1,96 +1,95 @@
 @use "../../global.scss" as *;
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 
-* {
+*{
     padding: 0px;
     margin: 0px;
 }
 
-.classes__swiper {
-    margin: 0px;
-    height: 100vh;
-    width: 98.9vw;
 
-
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-    color: $dark-yellow;
-
-}
-
-.classes {
+.classes{
     position: relative;
+    padding: 0px;
+    }
 
-}
-
-.classesForm {
-
+.classesForm{
+    font-family: 'Inter';
     background-image: url("../../assets/images/backImg.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
-    margin-top: 80px;
+    background-color: #232323;
+    
     padding-top: 10%;
     justify-content: space-around;
     padding-bottom: 10%;
+    
 
-
-    &__description {
+    &__description{
         max-width: 100%;
         max-height: 100%;
 
 
-        &-h1 {
+        &-h1{
+            font-family: Inter;
             font-weight: 700;
             font-size: 60px;
             color: #ffffff;
             margin-bottom: 2vh;
+            text-shadow: 1px 1px $dark-yellow;
         }
 
-        &-cursoFix {
+        &-cursoFix{
             color: #feae11;
             font-size: 25px;
             font-weight: 700;
+            font-family: Inter;
             margin-bottom: 2vh;
+            text-shadow: 1px 1px #ffffff;
         }
 
-        &-price {
+        &-price{
+            font-family: Inter;
             font-weight: 700;
             font-size: 40px;
             color: #ffffff;
             display: flex;
             flex-direction: row;
             margin-bottom: 2vh;
-
-            &-promo {
+            
+            &-promo{
+                font-family: Inter;
                 font-weight: 700;
                 font-size: 45px;
                 color: $dark-yellow;
             }
-
+           
         }
-
-        &-spec {
-            display: flex;
-            flex-direction: row;
-            width: 25vw;
-            justify-content: space-between;
-            margin-bottom: 2vh;
-
-            &-iten {
+       
+        &-spec{
                 display: flex;
                 flex-direction: row;
-                color: #ffffff;
-                font-weight: 600;
-                font-size: 15px;
-                align-items: center;
+                width: 25vw;
+                justify-content: space-between;
+                margin-bottom: 2vh;
+
+            &-iten{
+                        display: flex;
+                        flex-direction: row;
+                        color: #ffffff;
+                        font-family: Roboto;
+                        font-weight: 600;
+                        font-size: 25px;
+                        align-items: center;
+                        text-shadow: 1px 1px #232323;
+
             }
         }
     }
-
-    &__form {
+    
+    &__form{
         background-color: #ffffff;
         display: flex;
         flex-direction: column;
@@ -99,107 +98,124 @@
         padding-right: 3vw;
         padding-top: 30px;
         padding-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+        
+        
 
-
-
-        &-p {
-            font-size: 24px;
-            font-weight: 600;
-            color: #232323;
-            margin-bottom: 5vh;
-
-        }
-
-        &-input {
-            width: 350px;
-            height: 45px;
-            border-radius: 10px;
-            border-style: none;
-            box-shadow: 0px 4px 20px grey;
-            font-weight: 400;
-            font-size: 14px;
-            color: #232323;
-            padding-left: 15px;
-            margin-bottom: 5vh;
-        }
-
-        &-checkbox {
-            display: flex;
-            flex-direction: row;
-            margin-bottom: 5vh;
-            max-width: 350px;
-
-            &-box {
-                width: 15px;
-                height: 15px;
-                margin-right: 10px;
+            &-p{
+                font-family: Inter;
+                font-size: 24px;
+                font-weight: 600;
+                color: #232323;
+                margin-bottom: 5vh;
+                
             }
-
-            &-txt {
-                font-size: 10px;
+            
+            &-input{
+                width: 350px;
+                height: 45px;
+                border-radius: 10px;
+                border-style: none;
+                box-shadow: 0px 4px 20px grey;
+                font-family: Inter;
                 font-weight: 400;
+                font-size: 14px;
+                color: #232323;
+                padding-left: 15px;
+                margin-bottom: 5vh;
             }
-        }
 
-        &-btn {
-            margin-left: 3vw;
-        }
+            &-checkbox{
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 5vh;
+                max-width: 350px;
 
-        &-link {
+                &-box{
+                    width: 15px;
+                    height: 15px;
+                    margin-right: 10px;
+                }
+                &-txt{
+                    font-family: Inter;
+                    font-size: 10px;
+                    font-weight: 400;
+                }
+            }
 
-            color: #232323;
-            text-align: center;
-            font-size: 13px;
-            margin-top: 9px;
-        }
-    }
+            &-btn{
+                margin-left: 3vw;
+                background-color: $dark-yellow;
+                border-radius: 5px;
+                font-size: 20px;
+                font-weight: 700;
+                border-style: none;
+            }
 
+            &-link{
+                
+                color: #232323;
+                text-align: center;
+                font-size: 13px;
+                margin-top: 9px;
+                font-family: Roboto;
+            }
+           
+    }        
+    
 }
 
-.classesDescription {
+.classesDescription{
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
     align-items: center;
 
     padding-top: 8%;
-    margin-top: 80px;
+   
     padding-bottom: 10%;
     max-height: 100%;
     max-width: 100%;
+    
 
-    &__ask {
+    &__ask{
+        font-family: Inter;
         font-size: 54px;
         font-weight: 700;
         margin-bottom: 10vh;
+        text-shadow: 1px 1px $dark-yellow;
 
     }
 
-    &__p1 {
+    &__p1{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         max-width: 100vw;
-
-        &-p1 {
+       
+        &-p1{
             justify-content: center;
             padding-left: 8vw;
             padding-right: 8vw;
 
-            &-ti {
+            &-ti{
                 color: $dark-yellow;
+                font-family: Inter;
                 font-size: 40px;
                 font-weight: 700;
                 margin-bottom: 10vh;
+                text-shadow: 1px 1px #232323;
             }
 
-            &-tx {
+            &-tx{
+                font-family: Roboto;
                 font-weight: 400;
                 font-size: 32px;
                 text-align: justify;
             }
 
-            &-img {
+            &-img{
                 width: 23vw;
                 height: 50vh;
                 border-radius: 20px;
@@ -208,54 +224,119 @@
     }
 }
 
-.classesDuration {
+.classesDuration{
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 100%;
     padding-top: 8%;
-    margin-top: 80px;
+    background-color: $dark-yellow;
     padding-bottom: 10%;
     max-height: 100%;
     max-width: 100%;
     justify-content: space-around;
 
-    &__img {
+
+    &__img{
         width: 420px;
         height: 450px;
     }
 
-    &__p1 {
+    &__p1{
         display: flex;
         flex-direction: column;
         margin-right: 20px;
 
-        &-ti {
-            color: $dark-yellow;
-            font-size: 42px;
-            font-weight: 700;
+        &-ti{
+            font-family: Inter;
+            color: #232323;
+            font-size: 80px;
+            font-weight: 900;
+            text-shadow: 1px 1px #ffffff;
+            
         }
-
-        &-p1 {
+        
+        &-p1{
             display: flex;
             flex-direction: row;
             align-items: center;
             margin-top: 5vh;
 
-            &-img {
+            &-img{
                 width: 32px;
                 height: 32px;
             }
 
-            &-tx {
-                font-size: 25px;
+            &-tx{
+                font-family: Roboto;
+                font-size: 30px;
                 font-weight: 600;
                 color: #ffffff;
                 margin-left: 10px;
+                text-shadow: 1px 1px #232323;
             }
         }
 
-
+        
     }
 
+}
+
+@media (max-width: 950px) {
+
+    .classesForm{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 90px;
+
+        &__description{
+
+            &-spec-iten{
+                margin-right: 50px;
+                display: flex;
+                flex-direction: row;
+                
+                
+            }
+        }
+    }
+
+    .classesDescription{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        &__p1{
+            display: flex;
+            flex-direction: column;
+            
+            &-p1-img{
+                width: 50vw;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    
+    .classesDuration{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+
+        &__p1{
+            align-items: center;
+            text-align: center;
+        }
+
+        &__img{
+            width: 300px;
+            height: 330px;
+            margin-top: 20px;
+        }
+    
+    }
 }

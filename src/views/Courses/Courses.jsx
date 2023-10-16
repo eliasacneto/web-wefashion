@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { Component, useState, useEffect } from 'react';
 import "./Courses.scss";
 import { itens } from '../../mock/product.mock'
 import Cards from '../../Components/Cards/Cards';
@@ -12,29 +12,30 @@ import { Navigation, Pagination } from "swiper/modules";
 
 export default function Courses() {
 
-    function getWindowDimensions() {
-        const { innerWidth: width} = window;
-        return {width};
-    }
-    
-    function useWindowDimensions() {
-        const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-    
-        useEffect(() => {
-            function handleResize() {
-            setWindowDimensions(getWindowDimensions());
-            }
-        
-            window.addEventListener('resize', handleResize);
-            return () => window.removeEventListener('resize', handleResize);
-        }, []);
-    
-        return windowDimensions;
-    }
-
-    const {width: windowWidth} = useWindowDimensions();
-    const cardsPerView = windowWidth <= 850 ? 1 : windowWidth <= 1060 ? 2 : 3;
+    const [slidePerView, setSlidePerView] = useState(3);
     const [products] = useState(itens);
+
+            useEffect(() => {
+
+            function handleResize(){
+                if(window.innerWidth <= 1200 && window.innerWidth > 880){
+                    setSlidePerView(2);
+                
+                } else if(window.innerWidth <= 880){
+                    setSlidePerView(1);
+                }else {
+                    setSlidePerView(3);
+                }
+
+            }
+
+            handleResize();
+            window.addEventListener("resize", handleResize)
+
+            return () => {
+                window.removeEventListener("resize", handleResize)
+            }
+        }, [])
 
     return (
         <div id='Courses' className='courses-Container'>
@@ -45,10 +46,10 @@ export default function Courses() {
 
             <div className='courses-Container__Cards'>
                 <Swiper className='courses-Container__Cards-swiper'
-                    modules={[Navigation, Pagination]}
-                    navigation
-                    slidesPerView={cardsPerView}
-                    pagination={{ clickable: true }}
+                    slidesPerView={slidePerView}
+                    loop
+
+                    modules={[ Pagination ]}
                 >
                     {products.map((product) => (
                         <SwiperSlide className='courses-Container__Cards-swiper-slide' key={product.id}>
