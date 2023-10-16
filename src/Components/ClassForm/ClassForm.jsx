@@ -1,20 +1,19 @@
 import React, { useState } from 'react';
 
-import Header from '../Header/Header';
+import Navbar from "../../Components/Navbar/Navbar";
 import Footer from '../../views/Footer/Footer';
 import { itens } from '../../mock/product.mock';
 import { Link, useParams } from 'react-router-dom';
 import backImg from "../../assets/images/backImg.png"
 import "./ClassForm.scss";
-import mapPin from "../../assets/images/MapPin.png"
-import clock from "../../assets/images/Clock.png"
-import users from "../../assets/images/UsersThree.png"
+import mapPin from "/src/assets/icons/map.svg";
+import clock from "/src/assets/icons/time.svg";
+import users from "/src/assets/icons/people.svg";
 
 import model31 from "../../assets/images/25.jpg"
 import model32 from "../../assets/images/26.jpg"
-import weFashionPreto from "../../assets/images/Wefashionpreto.png"
-
-import { ButtonYellow } from '../ButtonYellow/ButtonYellow';
+import weFashionPreto from "../../assets/WeFashion-img-yellow.svg"
+import ButtonYellow from "../../Components/ButtonYellow/ButtonYellow"
 
 
 const ClassForm = () => {
@@ -25,7 +24,7 @@ const ClassForm = () => {
 
     return (
     <div className='classes'>
-        <Header />
+        <Navbar />
                         <div className='classesForm' >
                         
                             <div className='classesForm__description'>
@@ -53,11 +52,11 @@ const ClassForm = () => {
                                 <input className='classesForm__form-input' type="text" placeholder='Como quer ser chamado?'/>
                                 <input className='classesForm__form-input' type="text" placeholder='E-mail' />
                                 <input  className='classesForm__form-input' type="text" placeholder='Seu whatsapp (xx) xxxxx-xxxx'/>
-                                <div className='classesForm__form-checkbox'>
-                                    {/*<input className='classesForm__form-checkbox-box' type="checkbox" name="" id="" />
-                                   <h5 className='classesForm__form-checkbox-txt'>Eu li e aceito os termos e condições da Política de Privacidade e Contrato de Prestação de Serviço</h5>*/}
-                                </div>
-                                <ButtonYellow text={'Inscreva-se'}/>
+                                {/*<div className='classesForm__form-checkbox'>
+                                    <input className='classesForm__form-checkbox-box' type="checkbox" name="" id="" />
+                                   <h5 className='classesForm__form-checkbox-txt'>Eu li e aceito os termos e condições da Política de Privacidade e Contrato de Prestação de Serviço</h5>
+                                </div>*/}
+                                <ButtonYellow children={"Tenho interesse!"}/>
                                 <Link className='classesForm__form-link' to={`/`}>Voltar para para a página inicial</Link>
                             </div>
                         </div>
