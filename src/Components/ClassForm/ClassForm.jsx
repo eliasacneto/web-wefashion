@@ -14,6 +14,7 @@ import model31 from "../../assets/images/25.jpg"
 import model32 from "../../assets/images/26.jpg"
 import weFashionPreto from "../../assets/WeFashion-img-yellow.svg"
 import ButtonYellow from "../../Components/ButtonYellow/ButtonYellow"
+import Header from '../../views/Header/Header';
 
 
 const ClassForm = () => {
@@ -24,7 +25,7 @@ const ClassForm = () => {
 
     return (
     <div className='classes'>
-        <Navbar />
+        <Header />
                         <div className='classesForm' >
                         
                             <div className='classesForm__description'>
