@@ -282,24 +282,36 @@
 
 }
 
-@media (max-width: 950px) {
+@media (max-width: 810px) {
 
     .classesForm{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        
         padding-top: 90px;
 
         &__description{
+            justify-content: center;
+        align-items: center;
+        text-align: center;
+            &-cursoFix{
+                font-size: 15px;
+            }
 
-            &-spec-iten{
-                margin-right: 50px;
+            &-h1{
+                font-size: 55px;
+            }
+
+            &-spec{
+
+                justify-content: space-between;
+                &-iten{
+                margin-right: 5vw;
                 display: flex;
                 flex-direction: row;
+                font-size: 15px;
                 
-                
+                }
             }
         }
     }
