@@ -6,10 +6,10 @@ import "./Header.scss";
 const Header = () => {
     return (
         <>
-            <div className="desktop">
+            <div className="desktopHeader">
                 <Navbar/>
             </div>
-            <div className="mobile">
+            <div className="mobileHeader">
                 <NavBarMobile/>
             </div>
         </>

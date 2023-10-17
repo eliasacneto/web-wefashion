@@ -49,7 +49,7 @@
     }
 
     // Screen for ipads and small screens
-    @media (max-width: 770px) {
+    @media (max-width: 780px) {
         &__logo {
             padding-left: 0px;
         }
@@ -69,7 +69,7 @@
         }
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 660px) {
         li {
             margin-right: 1vw;
         }
@@ -85,6 +85,11 @@
 
         .logo {
             width: 120px;
+        }
+
+        .CTAButton{
+            width: 120px;
+            font-size: 13px;
         }
     }
 }
