@@ -8,19 +8,17 @@
     margin-bottom: 50px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
     
-    .swiper{
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
-
     &__Cards {
         padding-top: 4vh;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        text-align: center;
+        align-content: space-around;
         
+        .swiper{
+            justify-content: space-around;
+            
+            padding-left: 5px;
+            padding-right: 5px;
+        }
         
 
         .swiper-button-prev,
@@ -30,12 +28,12 @@
         }
 
         &-swiper {
-            width: 100%;
+            width: 100vw;
             
 
             &-slide {
-                width: 430px;
-                height: 430px;
+                max-width: 400px;
+                max-height: 400px;
                 
             }
         }
@@ -67,11 +65,7 @@
         }
     }
 
-    &__Cards {
-        display: flex;
-        align-items: flex-start;
-        align-content: space-around;
-    }
+    
 
 }
 @media (max-width: 710px) {
@@ -79,8 +73,10 @@
         
              
         &__Title{
+            text-align: center;
             h1{
                 font-size: 40px;
+                
             }
         }
 
