@@ -21,7 +21,7 @@ export default function Courses() {
                 if(window.innerWidth <= 1200 && window.innerWidth > 810){
                     setSlidePerView(2);
                 
-                } else if(window.innerWidth <= 880){
+                } else if(window.innerWidth <= 810){
                     setSlidePerView(1);
                 }else {
                     setSlidePerView(3);

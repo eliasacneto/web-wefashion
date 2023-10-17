@@ -16,11 +16,12 @@ export default function Cards({ data }) {
 
     return (
         <div className='cardContainer'
-            onMouseEnter={() => setIsShown(true)}
-            onMouseLeave={() => setIsShown(false)}
+            
         >
 
-            <div className='card-Box1'>
+            <div className='card-Box1'
+            onMouseEnter={() => setIsShown(true)}
+            >
                 <div className='card-Box1__Folder'>
                     <img src={modelagemImg} alt="" className='card-Box1__Folder-Img' />
                     
@@ -35,7 +36,8 @@ export default function Cards({ data }) {
                 </div>
             </div>
             {isShown && (
-                <div className='card-Box2'>
+                <div className='card-Box2'
+                onMouseLeave={() => setIsShown(false)}>
                     <div className='card-Box2__titles'>
                         
                         <h3 className='card-Box2__titles-2'>{data.nome1}</h3>
