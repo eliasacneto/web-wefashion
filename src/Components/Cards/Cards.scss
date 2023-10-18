@@ -14,7 +14,8 @@
     border: 1px $dark-yellow;
 }
 
-.btn-course:hover {
+.btn-course:hover,
+.btn-course:active {
     cursor: pointer;
     color: $off-white;
     background-color: $dark-yellow;
