@@ -6,7 +6,7 @@ import timeIcon from "/src/assets/icons/time.svg";
 import peopleIcon from "/src/assets/icons/people.svg";
 import mapIcon from "/src/assets/icons/map.svg";
 import modelagemImg from "/src/assets/images/modelagem.jpg";
-import { itens } from '../../mock/product.mock';
+import { items } from '../../mock/product.mock';
 import ButtonYellow from '../../Components/ButtonYellow/ButtonYellow';
 import CTAButton from '../CTAButton/CTAButton';
 

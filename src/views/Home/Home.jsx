@@ -5,7 +5,7 @@ import yellowImg from './../../assets/WeFashion-img-yellow.png';
 
 import { motion } from 'framer-motion';
 
-const Benefits = () => {
+const Home = () => {
     return (
         <div id='Home' className='Home'>
             <div className='Home__Content'>
@@ -50,4 +50,4 @@ const Benefits = () => {
     );
 };
 
-export default Benefits;
+export default Home;

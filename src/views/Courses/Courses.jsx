@@ -1,6 +1,6 @@
 import React, { Component, useState, useEffect } from 'react';
 import "./Courses.scss";
-import { itens } from '../../mock/product.mock'
+import { items } from '../../mock/product.mock'
 import Cards from '../../Components/Cards/Cards';
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -13,29 +13,29 @@ import { Navigation, Pagination } from "swiper/modules";
 export default function Courses() {
 
     const [slidePerView, setSlidePerView] = useState(3);
-    const [products] = useState(itens);
+    const [products] = useState(items);
 
-            useEffect(() => {
+    useEffect(() => {
 
-            function handleResize(){
-                if(window.innerWidth <= 1200 && window.innerWidth > 810){
-                    setSlidePerView(2);
-                
-                } else if(window.innerWidth <= 810){
-                    setSlidePerView(1);
-                }else {
-                    setSlidePerView(3);
-                }
+        function handleResize() {
+            if (window.innerWidth <= 1200 && window.innerWidth > 810) {
+                setSlidePerView(2);
 
+            } else if (window.innerWidth <= 810) {
+                setSlidePerView(1);
+            } else {
+                setSlidePerView(3);
             }
 
-            handleResize();
-            window.addEventListener("resize", handleResize)
+        }
 
-            return () => {
-                window.removeEventListener("resize", handleResize)
-            }
-        }, [])
+        handleResize();
+        window.addEventListener("resize", handleResize)
+
+        return () => {
+            window.removeEventListener("resize", handleResize)
+        }
+    }, [])
 
     return (
         <div id='Courses' className='courses-Container'>
@@ -49,7 +49,7 @@ export default function Courses() {
                     slidesPerView={slidePerView}
                     loop
 
-                    modules={[ Pagination ]}
+                    modules={[Pagination]}
                 >
                     {products.map((product) => (
                         <SwiperSlide className='courses-Container__Cards-swiper-slide' key={product.id}>
