@@ -38,7 +38,7 @@ export default function Courses() {
     }, [])
 
     return (
-        <div id='Courses' className='courses-Container'>
+        <div id='courses' className='courses-Container'>
             <div className='courses-Container__Title'>
                 <h1>Os <span className='highlight-white'><b>melhores</b></span> cursos para você</h1>
                 <h4>Arraste para o lado e confira nossos cursos em destaque</h4>

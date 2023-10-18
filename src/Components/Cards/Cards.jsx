@@ -7,7 +7,6 @@ import peopleIcon from "/src/assets/icons/people.svg";
 import mapIcon from "/src/assets/icons/map.svg";
 import modelagemImg from "/src/assets/images/modelagem.jpg";
 import { items } from '../../mock/product.mock';
-import ButtonYellow from '../../Components/ButtonYellow/ButtonYellow';
 import CTAButton from '../CTAButton/CTAButton';
 
 
@@ -52,7 +51,7 @@ export default function Cards({ data }) {
                     <h3 className='card-Box2__description'>
                         {data.descrição1}
                     </h3>
-                    <Link className='card-Box1__Folder-Price-link' to={`curso/${data.id}`}><CTAButton children='Tenho interesse!' /></Link>
+                    <Link className='card-Box1__Folder-Price-link' to={`course/${data.id}`}><CTAButton children='Tenho interesse!' /></Link>
                 </div>
             )}
         </div>
