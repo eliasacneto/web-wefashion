@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">
-  Projeto: <span style="color:#feae11">We</span>Fashion - Escola de Moda 🪡 
+  Projeto: <span style="color:#feae11 !important">We</span>Fashion - Escola de Moda 
 </h1>
 
 <p style="text-align:center">
