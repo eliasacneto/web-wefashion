@@ -8,6 +8,7 @@ import Class from "/src/assets/icons/04.svg";
 import './ChooseUs.scss'
 import WhatsApp from "../../assets/icons/whatsapp-logo.svg";
 import CTAButton from '../../Components/CTAButton/CTAButton';
+import { Link } from 'react-router-dom';
 
 const ChooseUs = () => {
   return (
@@ -48,13 +49,13 @@ const ChooseUs = () => {
         <div className="ChooseUs__Right__ImgContainer">
           <img className="ChooseUs__Right__ImgContainer--img" src={ImgCTA} alt="post02" loading="lazy" />
         </div>
-        <div className="ChooseUs__Right__Content">
+        <div className="ChooseUs__Right__Content" id='contact'>
           <h1 className="ChooseUs__Right__Content--title">⏰ Inicie a sua jornada de moda agora! </h1>
           <p className="ChooseUs__Right__Content--subtitle"> A <b><span className="highlight-y">We</span>Fashion</b> é o seu ponto de partida para uma jornada emocionante no mundo da moda.</p>
           <p className="ChooseUs__Right__Content--subtitle">Descubra seu estilo, crie roupas únicas e <b><span className="highlight-y">faça parte</span></b> de uma comunidade diversificada e inspiradora. Junte-se a nós e torne-se um criador de moda confiante e talentoso!</p>
 
-          <CTAButton><img width={30} src={WhatsApp} />
-          Quero falar com um consultor</CTAButton>
+          <Link to="https://api.whatsapp.com/send?phone=5512988880301&text=Ol%C3%A1,%20visitei%20o%20site%20e%20gostaria%20de%20maiores%20informa%C3%A7%C3%B5es.%20%F0%9F%98%8A" target='_blank' className='whats-link'><CTAButton><img width={30} src={WhatsApp} />
+            Fale com um consultor</CTAButton></Link>
         </div>
       </div>
 

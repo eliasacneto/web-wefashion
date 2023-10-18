@@ -21,22 +21,24 @@
             display: flex;
             align-items: center;
         }
-    
+
         li {
             display: flex;
             justify-content: space-between;
             padding-right: 5vw;
         }
-    
+
         a {
             text-decoration: none;
             font-size: 16px;
             font-weight: 600;
             color: $bg-black;
+            transition: all .5s ease-in-out;
         }
-    
+
         a:hover {
             color: $dark-yellow;
+            transition: all .2s ease-in-out;
         }
     }
 
@@ -87,7 +89,7 @@
             width: 120px;
         }
 
-        .CTAButton{
+        .CTAButton {
             width: 120px;
             font-size: 13px;
         }
