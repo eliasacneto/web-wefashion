@@ -3,19 +3,73 @@ import Navbar from "../../Components/Navbar/Navbar";
 import Footer from "../../views/Footer/Footer";
 import { items } from "../../mock/product.mock";
 import { Link, useParams } from "react-router-dom";
-import backImg from "../../assets/images/backImg.png";
 import "./ClassForm.scss";
 import mapPin from "../../assets/icons/map.svg";
 import clock from "../../assets/icons/time.svg";
 import users from "../../assets/icons/people.svg";
-import ButtonYellow from "../../Components/ButtonYellow/ButtonYellow";
 import Header from "../../views/Header/Header";
 import ChooseUs from "../../views/ChooseUs/ChooseUs";
 import Testimonials from "../../views/Testimonials/Testimonials";
 import CTAButton from "../CTAButton/CTAButton";
-import Courses from "../../views/Courses/Courses";
+import Swal from 'sweetalert2';
+
+
+
 
 const ClassForm = () => {
+
+    const [formSent, setFormSent] = useState(false);
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+
+        // Obtenha os dados do formulário
+        const formData = new FormData(event.target);
+        const data = Object.fromEntries(formData.entries());
+
+        try {
+            // Envie os dados do formulário para o endpoint
+            const response = await fetch('https://api.sheetmonkey.io/form/xdHitcjKLQjab5oJZfkHaz', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            });
+
+            if (response.ok) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Uhuul! 🥳',
+                    text: 'Agradecemos o interesse, em breve entraremos em contato!',
+                    confirmButtonText: 'OK',
+                    confirmButtonColor: '#feae11',
+                });
+
+                setFormSent(true);
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Erro ao enviar o formulário',
+                    text: 'Ocorreu um erro ao enviar o formulário. Por favor, tente novamente mais tarde.',
+                    confirmButtonText: 'OK',
+                    confirmButtonColor: '#feae11',
+                });
+            }
+        } catch (error) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Erro ao enviar o formulário',
+                text: 'Ocorreu um erro ao enviar o formulário. Por favor, tente novamente mais tarde.',
+                confirmButtonText: 'OK',
+                confirmButtonColor: '#feae11',
+
+            });
+        }
+    };
+
+
+
     let { id } = useParams();
     const [products] = useState(items);
     const product = products.find((element) => element.id == id);
@@ -43,29 +97,33 @@ const ClassForm = () => {
                     </div>
                     <p className="classesForm__description-about"> {product.descrição2}</p>
                 </div>
-                <div className='classesForm__form'>
+                <form onSubmit={handleSubmit} className='classesForm__form'>
                     <p className='classesForm__form-p'>Inscreva-se agora!</p>
                     <hr className="line-form" />
                     <input
                         className='classesForm__form-input'
-                        type='text'
-                        placeholder='Nome completo'
+                        type='text' name="Name"
+                        placeholder='Nome completo' required
                     />
                     <input
                         className='classesForm__form-input'
-                        type='text'
-                        placeholder='Seu melhor e-mail'
+                        type='email' name="Email"
+                        placeholder='Seu melhor e-mail' required
                     />
                     <input
                         className='classesForm__form-input'
-                        type='text'
-                        placeholder='Seu WhatsApp'
+                        type='phone' name="WhatsApp"
+                        placeholder='Seu WhatsApp' required
                     />
+                    <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
 
-                    <a href="https://api.whatsapp.com/send?phone=5512988880301&text=Ol%C3%A1,%20visitei%20o%20site%20e%20gostaria%20de%20maiores%20informa%C3%A7%C3%B5es.%20%F0%9F%98%8A" target='_blank' className='form-btn'>
-                        <CTAButton>Tenho interesse</CTAButton>
-                    </a>
-                </div>
+
+                    <CTAButton type="submit">Tenho interesse!</CTAButton>
+
+
+
+
+                </form>
             </div>
             <ChooseUs />
             <Testimonials />
