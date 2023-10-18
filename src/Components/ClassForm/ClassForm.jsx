@@ -12,6 +12,7 @@ import ChooseUs from "../../views/ChooseUs/ChooseUs";
 import Testimonials from "../../views/Testimonials/Testimonials";
 import CTAButton from "../CTAButton/CTAButton";
 import Swal from 'sweetalert2';
+import InputMask from 'react-input-mask';
 
 
 
@@ -19,16 +20,19 @@ import Swal from 'sweetalert2';
 const ClassForm = () => {
 
     const [formSent, setFormSent] = useState(false);
+    const [phone, setPhone] = useState('');
+
+    const handleChange = (event) => {
+        setPhone(event.target.value);
+    }
 
     const handleSubmit = async (event) => {
         event.preventDefault();
 
-        // Obtenha os dados do formulário
         const formData = new FormData(event.target);
         const data = Object.fromEntries(formData.entries());
 
         try {
-            // Envie os dados do formulário para o endpoint
             const response = await fetch('https://api.sheetmonkey.io/form/xdHitcjKLQjab5oJZfkHaz', {
                 method: 'POST',
                 headers: {
@@ -67,8 +71,6 @@ const ClassForm = () => {
             });
         }
     };
-
-
 
     let { id } = useParams();
     const [products] = useState(items);
@@ -110,11 +112,15 @@ const ClassForm = () => {
                         type='email' name="Email"
                         placeholder='Seu melhor e-mail' required
                     />
-                    <input
+                    <InputMask
                         className='classesForm__form-input'
+                        mask="(99) 9 9999-9999"
                         type='phone' name="WhatsApp"
-                        placeholder='Seu WhatsApp' required
+                        placeholder='Seu WhatsApp'
+                        value={phone}
+                        onChange={handleChange} required
                     />
+
                     <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
 
 
