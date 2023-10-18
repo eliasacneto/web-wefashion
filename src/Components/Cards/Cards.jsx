@@ -8,6 +8,7 @@ import mapIcon from "/src/assets/icons/map.svg";
 import modelagemImg from "/src/assets/images/modelagem.jpg";
 import { itens } from '../../mock/product.mock';
 import ButtonYellow from '../../Components/ButtonYellow/ButtonYellow';
+import CTAButton from '../CTAButton/CTAButton';
 
 
 export default function Cards({ data }) {
@@ -16,15 +17,15 @@ export default function Cards({ data }) {
 
     return (
         <div className='cardContainer'
-            
+
         >
 
             <div className='card-Box1'
-            onMouseEnter={() => setIsShown(true)}
+                onMouseEnter={() => setIsShown(true)}
             >
                 <div className='card-Box1__Folder'>
                     <img src={modelagemImg} alt="" className='card-Box1__Folder-Img' />
-                    
+
                 </div>
                 <div className='card-Box1__Assessment'>
                     <p className='card-Box1__Assessment-p'><img src={starIcon} /><img src={starIcon} /><img src={starIcon} /><img src={starIcon} /><img src={starIcon} /> 4.5  (45 avaliações)</p>
@@ -37,9 +38,9 @@ export default function Cards({ data }) {
             </div>
             {isShown && (
                 <div className='card-Box2'
-                onMouseLeave={() => setIsShown(false)}>
+                    onMouseLeave={() => setIsShown(false)}>
                     <div className='card-Box2__titles'>
-                        
+
                         <h3 className='card-Box2__titles-2'>{data.nome1}</h3>
                         <h3 className='card-Box2__titles-2'>{data.nome2}</h3>
                     </div>
@@ -51,7 +52,7 @@ export default function Cards({ data }) {
                     <h3 className='card-Box2__description'>
                         {data.descrição1}
                     </h3>
-                    <Link className='card-Box1__Folder-Price-link' to={`curso/${data.id}`}><ButtonYellow children='Tenho interesse!'/></Link>
+                    <Link className='card-Box1__Folder-Price-link' to={`curso/${data.id}`}><CTAButton children='Tenho interesse!' /></Link>
                 </div>
             )}
         </div>

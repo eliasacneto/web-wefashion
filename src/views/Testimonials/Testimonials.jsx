@@ -3,6 +3,7 @@ import "./Testimonials.scss";
 import ButtonYellow from "../../Components/ButtonYellow/ButtonYellow";
 import Carousel from "../../Components/Carousel/Carousel";
 import CarouselMobile from "../../Components/Carousel/CarouselMobile";
+import CTAButton from "../../Components/CTAButton/CTAButton";
 
 const Testimonials = () => {
   return (
@@ -17,15 +18,16 @@ const Testimonials = () => {
           experiência de aprender essa arte milenar e transformar tecidos em
           verdadeiras obras de arte.
         </p>
-        <ButtonYellow link=''>Conheça nossos cursos</ButtonYellow>
+        <CTAButton>
+          Conheça nossos cursos</CTAButton>
       </div>
-      
+
       <div className='right-content'>
         <div className="desktopTestimonials">
-          <Carousel/>
+          <Carousel />
         </div>
         <div className="mobileTestimonials">
-          <CarouselMobile/>
+          <CarouselMobile />
         </div>
       </div>
     </div>
