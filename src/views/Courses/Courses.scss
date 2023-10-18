@@ -7,19 +7,19 @@
     height: 700px;
     margin-bottom: 50px;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
-    
+
     &__Cards {
         padding-top: 4vh;
         display: flex;
         align-content: space-around;
-        
-        .swiper{
+
+        .swiper {
             justify-content: space-around;
-            
+
             padding-left: 5px;
             padding-right: 5px;
         }
-        
+
 
         .swiper-button-prev,
         .swiper-button-next {
@@ -29,12 +29,12 @@
 
         &-swiper {
             width: 100vw;
-            
+
 
             &-slide {
                 max-width: 400px;
                 max-height: 400px;
-                
+
             }
         }
     }
@@ -52,8 +52,7 @@
         h1 {
             color: $dark-yellow;
             color: $bg-black;
-            font-size: 45px;
-            font-style: normal;
+            font-size: 38px;
             font-weight: 600;
             text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.103);
         }
@@ -65,21 +64,25 @@
         }
     }
 
-    
+
 
 }
+
 @media (max-width: 710px) {
-    .courses-Container{
-        
-             
-        &__Title{
+    .courses-Container {
+
+
+        &__Title {
             text-align: center;
-            h1{
-                font-size: 40px;
-                
+
+            h1 {
+                font-size: 32px;
+                line-height: 1;
+                margin-bottom: 8px;
+
             }
         }
 
-       
+
     }
 }

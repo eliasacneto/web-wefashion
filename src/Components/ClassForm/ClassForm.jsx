@@ -1,124 +1,139 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from "react";
+import Footer from "../../views/Footer/Footer";
+import { items } from "../../mock/product.mock";
 
-import Navbar from "../../Components/Navbar/Navbar";
-import Footer from '../../views/Footer/Footer';
-import { itens } from '../../mock/product.mock';
-import { Link, useParams } from 'react-router-dom';
-import backImg from "../../assets/images/backImg.png"
 import "./ClassForm.scss";
-import mapPin from "/src/assets/icons/map.svg";
-import clock from "/src/assets/icons/time.svg";
-import users from "/src/assets/icons/people.svg";
+import mapPin from "../../assets/icons/map.svg";
+import clock from "../../assets/icons/time.svg";
+import users from "../../assets/icons/people.svg";
+import Header from "../../views/Header/Header";
+import ChooseUs from "../../views/ChooseUs/ChooseUs";
+import Testimonials from "../../views/Testimonials/Testimonials";
+import CTAButton from "../CTAButton/CTAButton";
+import Swal from 'sweetalert2';
+import InputMask from 'react-input-mask';
+import { useParams } from "react-router-dom";
 
-import model31 from "../../assets/images/25.jpg"
-import model32 from "../../assets/images/26.jpg"
-import weFashionPreto from "../../assets/WeFashion-img-yellow.svg"
-import ButtonYellow from "../../Components/ButtonYellow/ButtonYellow"
-import Header from '../../views/Header/Header';
 
 
 const ClassForm = () => {
 
+
+
+    const [formSent, setFormSent] = useState(false);
+    const [phone, setPhone] = useState('');
+
+    const inputRef = useRef(null); // Criando a referência
+
+    const handleChange = (event) => {
+        setPhone(event.target.value);
+    };
+
+
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(event.target);
+        const data = Object.fromEntries(formData.entries());
+
+        try {
+            const response = await fetch('https://api.sheetmonkey.io/form/xdHitcjKLQjab5oJZfkHaz', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            });
+
+            if (response.ok) {
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Uhuul! 🥳',
+                    text: 'Agradecemos o interesse, em breve entraremos em contato!',
+                    confirmButtonText: 'OK',
+                    confirmButtonColor: '#feae11',
+                });
+
+                setFormSent(true);
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Erro ao enviar o formulário',
+                    text: 'Ocorreu um erro ao enviar o formulário. Por favor, tente novamente mais tarde.',
+                    confirmButtonText: 'OK',
+                    confirmButtonColor: '#feae11',
+                });
+            }
+        } catch (error) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Erro ao enviar o formulário',
+                text: 'Ocorreu um erro ao enviar o formulário. Por favor, tente novamente mais tarde.',
+                confirmButtonText: 'OK',
+                confirmButtonColor: '#feae11',
+
+            });
+        }
+    };
+
     let { id } = useParams();
-    const [products] = useState(itens);
+    const [products] = useState(items);
     const product = products.find((element) => element.id == id);
 
     return (
-    <div className='classes'>
-        <Header />
-                        <div className='classesForm' >
-                        
-                            <div className='classesForm__description'>
-                                <h3 className='classesForm__description-cursoFix'>CURSO</h3>
-                                <h1 className='classesForm__description-h1'>{product.nome1}</h1>
-                                <h1 className='classesForm__description-h1'>{product.nome2}</h1>
-                                <div className='classesForm__description-spec'>
-                                    <div className='classesForm__description-spec-iten'>
-                                        <img className='classesForm__description-spec-iten-img' src={clock}/>
-                                        <h5 className='classesForm__description-spec-iten-h5'>{product.duração}</h5>
-                                    </div>
-                                    <div className='classesForm__description-spec-iten'>
-                                        <img className='classesForm__description-spec-iten-img' src={users}/>
-                                        <h5 className='classesForm__description-spec-iten-h5'>{product.turma}</h5>
-                                    </div>
-                                    <div className='classesForm__description-spec-iten'>
-                                        <img className='classesForm__description-spec-iten-img' src={mapPin}/>
-                                        <h5 className='classesForm__description-spec-iten-h5'>{product.tipoLocal}</h5>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <div className='classesForm__form'>
-                                <p className='classesForm__form-p'>Inscreva-se agora!</p>
-                                <input className='classesForm__form-input' type="text" placeholder='Como quer ser chamado?'/>
-                                <input className='classesForm__form-input' type="text" placeholder='E-mail' />
-                                <input  className='classesForm__form-input' type="text" placeholder='Seu whatsapp (xx) xxxxx-xxxx'/>
-                                {/*<div className='classesForm__form-checkbox'>
-                                    <input className='classesForm__form-checkbox-box' type="checkbox" name="" id="" />
-                                   <h5 className='classesForm__form-checkbox-txt'>Eu li e aceito os termos e condições da Política de Privacidade e Contrato de Prestação de Serviço</h5>
-                                </div>*/}
-                                <ButtonYellow children={"Tenho interesse!"}/>
-                                <Link className='classesForm__form-link' to={`/`}>Voltar para para a página inicial</Link>
-                            </div>
+        <div className='classes'>
+            <Header />
+            <div className='classesForm'>
+                <div className='classesForm__description'>
+                    <h2 className='classesForm__description-cursoFix'>🔥 Curso em destaque</h2>
+                    <h1 className='classesForm__description-h1'>{product.nome1} <br />{product.nome2}</h1>
+                    <div className='classesForm__description-spec'>
+                        <div className='classesForm__description-spec-item'>
+                            <img className='class-icon' src={clock} alt='clock icon' />
+                            <h5 className='classesForm__description-spec-item-h5'>{product.duração}</h5>
                         </div>
-                    
-                        <div className='classesDescription'>
-                            <h1 className='classesDescription__ask'>O que você irá aprender?</h1>
-                            <div className='classesDescription__p1'>
-                                <div className='classesDescription__p1-p1'>
-                                    <h2 className='classesDescription__p1-p1-ti'>
-                                        {product.descritit1}
-                                    </h2>
-                                    <p className='classesDescription__p1-p1-tx'>
-                                        {product.descrição1}
-                                    </p>
-                                </div>
-                                <div className='classesDescription__p1-p1'>
-                                    <img className='classesDescription__p1-p1-img' src={model31}></img>
-                                </div>
-                            </div>
+                        <div className='classesForm__description-spec-item'>
+                            <img className='class-icon' src={users} alt='users icon' />
+                            <h5 className='classesForm__description-spec-item-h5'>{product.turma}</h5>
                         </div>
-                  
-                    <div className='classesDescription'>
-                            
-                            <div className='classesDescription__p1'>
-                                <div className='classesDescription__p1-p1'>
-                                    <img  className='classesDescription__p1-p1-img' src={model32}></img>
-                                </div>
-                                <div className='classesDescription__p1-p1'>
-                                    <h2 className='classesDescription__p1-p1-ti'>
-                                        {product.descritit2}
-                                    </h2>
-                                    <p className='classesDescription__p1-p1-tx'>
-                                        {product.descrição2}
-                                    </p>
-                                </div>
-                            </div>
+                        <div className='classesForm__description-spec-item'>
+                            <img className='class-icon' src={mapPin} alt='map pin icon' />
+                            <h5 className=''>{product.tipoLocal}</h5>
                         </div>
-                    
-                        <div className='classesDuration'>
-                            <img className='classesDuration__img' src={weFashionPreto}></img>
-                            <div className='classesDuration__p1'>
-                                <h1 className='classesDuration__p1-ti'>Duração do curso</h1>
-                                <div className='classesDuration__p1-p1'>
-                                    <img className='classesDuration__p1-p1-img' src={clock}></img>
-                                    <h4 className='classesDuration__p1-p1-tx'>{product.duração}</h4>
-                                </div>
-                                <div className='classesDuration__p1-p1'>
-                                    <img className='classesDuration__p1-p1-img' src={users}></img>
-                                    <h4  className='classesDuration__p1-p1-tx'>{product.turma}</h4>
-                                </div>
-                                <div className='classesDuration__p1-p1'>
-                                    <img className='classesDuration__p1-p1-img' src={mapPin}></img>
-                                    <h4 className='classesDuration__p1-p1-tx'>{product.tipoLocal}</h4>
-                                </div>                                
-                            </div>
-                        </div>
-                       
-            
-        <Footer />
-    </div>
-  )
-}
+                    </div>
+                    <p className="classesForm__description-about"> {product.descrição2}</p>
+                </div>
+                <form onSubmit={handleSubmit} className='classesForm__form'>
+                    <p className='classesForm__form-p'>Inscreva-se agora!</p>
+                    <hr className="line-form" />
+                    <input
+                        className='classesForm__form-input'
+                        type='text' name="Name" id="Name"
+                        placeholder='Nome completo' required
+                    />
+                    <input
+                        className='classesForm__form-input'
+                        type='email' name="Email" id="Email"
+                        placeholder='Seu melhor e-mail' required
+                    />
+                    <InputMask
+                        className='classesForm__form-input'
+                        mask="(99) 9 9999-9999" id="WhatsApp"
+                        type='phone' name="WhatsApp"
+                        placeholder='Seu WhatsApp'
+                        value={phone}
+                        inputRef={inputRef}
+                        onChange={handleChange} required />
+                    <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+                    <CTAButton type="submit">Tenho interesse!</CTAButton>
+                </form>
+            </div>
+            <ChooseUs />
+            <Testimonials />
+            <Footer />
+        </div>
+    );
+};
 
-export default ClassForm
+export default ClassForm;

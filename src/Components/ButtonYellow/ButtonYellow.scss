@@ -12,7 +12,8 @@
   color: $bg-black;
   border: 2px solid $dark-yellow;
   transition: color 0.3s ease;
-  
+  font-family: 'Poppins', sans-serif;
+
   a {
     text-decoration: none;
     font-size: 18px;
@@ -20,13 +21,13 @@
     color: $bg-black;
   }
 
-  &:hover{
+  &:hover {
     cursor: pointer;
     color: $main-white;
     background-color: $dark-yellow;
     transition: color 0.3s ease;
-    
-    a{
+
+    a {
       color: $off-white;
     }
   }

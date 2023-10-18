@@ -1,4 +1,4 @@
-export const itens = [
+export const items = [
   {
     id: 1,
     nome1: "Tecido Plano",

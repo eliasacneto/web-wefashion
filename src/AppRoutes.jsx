@@ -1,14 +1,14 @@
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 import ClassForm from "./Components/ClassForm/ClassForm";
 
 
-function AppRoutes(){
-    return(
+function AppRoutes() {
+    return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={ <App /> }></Route>
-                <Route path="/curso/:id" element={ <ClassForm /> }></Route>
+                <Route path="/" element={<App />}></Route>
+                <Route path="/curso/:id" element={<ClassForm />}></Route>
             </Routes>
         </BrowserRouter>
     )

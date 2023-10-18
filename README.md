@@ -1,63 +1,59 @@
-<h1 align="center">
-  Projeto: We Fashion - Escola de Moda 🪡 
-</h1>
-
 <p align="center">
-  <img src="https://img.shields.io/static/v1?label=react&message=framework&color=blue&style=for-the-badge&logo=REACT"/>
-  <img src="https://img.shields.io/static/v1?label=Vercel&message=deploy&color=blue&style=for-the-badge&logo=vercel"/>
-   <img src="http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
+  <img alt="WeFashion-banner" src="./src/assets/banner.jpg" width="100%">
 </p>
 
-> Status do Projeto: :heavy_check_mark:
+<h1 align="center">
+  Projeto: <span style="color:#feae11">We</span>Fashion - Escola de Moda 🪡 
+</h1>
 
+<p style="text-align:center">
+  
+  <img src="http://img.shields.io/static/v1?label=STATUS%20DO%20PROJETO:&message=CONCLUIDO&color=GREEN&style=for-the-badge"/>
+</p>
 
-### Tópicos 
+## 👉 Acesso rápido:
 
-:small_blue_diamond: [Sobre o projeto](#sobre-o-projeto)
+[Sobre o projeto](#sobre-o-projeto)
 
-:small_blue_diamond: [Funcionalidades](#funcionalidades)
+[Funcionalidades](#funcionalidades)
 
-:small_blue_diamond: [Deploy da Aplicação](#deploy-da-aplicação-dash)
+[Deploy da Aplicação](#deploy-da-aplicação-dash)
 
-:small_blue_diamond: [Tecnologias Utilizadas](#tecnologias-utilizadas)
+[Tecnologias Utilizadas](#tecnologias-utilizadas)
 
-:small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
+[Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
 
-:small_blue_diamond: [Configurando o Mock](#configurando-mock)
+[Configurando o Mock](#configurando-mock)
 
+## 📚 Sobre o Projeto
 
+A cliente é uma professora de costura e proprietária da empresa, hoje ela busca um site para captar novos clientes. A WeFashion é uma escola de moda que existe há 12 anos em São José dos Campos. Atualmente, a escola conta com cerca de 65 alunos, mas tem como meta ter no mínimo 80 alunos ativos.
 
-## Sobre o projeto
+A cliente almeja um site moderno e que transmita a ideia de que "costura não é coisa de velho".
 
-Este é um projeto desenvolvido pelos alunos do curso TECH da [Escola DNC](https://www.escoladnc.com.br/). O objetivo do projeto é criar uma página web, criado em [React.JS](https://react.dev/) utilizando o framework [Vite](https://vitejs.dev/).
+## 👨🏻‍💻 Sobre o Desenvolvimento
 
-Mais detalhes sobre o projeto, pode ser acessado através do [Notion](https://thcodes.notion.site/thcodes/Projeto-We-Fashion-4b8641f83b434c7889140778101efd2a).
+Este é um projeto desenvolvido pelos alunos do curso TECH da [Escola DNC](https://www.escoladnc.com.br/). O objetivo do projeto é criar uma página web moderna, utilizando as tecnologias aprendidas para fornecer para a cliente um site onde ela consiga mostrar mais sobre a empresa dela, exibir quais cursos ela oferta e para captar o interesse dos alunos para a equipe comercial dela entrar em contato. Para isso desenvolvemos utilizando a biblioteca JavaScripy [React.JS](https://react.dev/) onde também utilizamos o framework [Vite](https://vitejs.dev/) para todo o desenvolvimento do projeto.
 
+> **Stacks:** React JS, Figma, SASS, JavaScript, HTML5, CSS3, NodeJS, SwiperJS, SweetAlert2, InputMask
 
+## 💻 Funcionalidades
 
-## Funcionalidades
+✅ Integração com o Google Maps de endereço;
 
-:heavy_check_mark: Telas 100% responsivas
+✅ Integração com o Sheet Monkey para captação de leads;
 
-:heavy_check_mark: Mock de informações sobre cursos que estão a venda
+✅ Card Carousel, para mostrar os cursos ofertados e os depoimentos dos alunos;
 
-:heavy_check_mark: Captação de clientes para o canal de vendas e captação de dados.
+✅ Responsividade para dispositivos móveis;
 
+✅ Mock de informações sobre cursos que estão disponíveis.
 
+## 🖥️ Demo da aplicação:
 
-## Deploy da Aplicação :dash:
+> Você pode estar acessando o projeto clicando neste link: https://wefashion.vercel.app
 
-> Link do deploy da aplicação: https://wefashion.vercel.app
-
-
-
-## Tecnologias utilizadas
-
-**Stacks:** React, Figma, SASS, JavaScript, HTML5, CSS3, NodeJS...
-
-
-
-## Como rodas a aplicação
+## ⚙️ Como executar a aplicação:
 
 Você precisará ter instalado o [Node.js](https://nodejs.org/en) para utilizar comandos npm e o [Git](https://git-scm.com/) instalado na sua máquina.
 
@@ -79,18 +75,15 @@ Instale as dependências:
   npm install
 ```
 
-Inicie o servidor the server:
+Inicie o servidor:
 
 ```bash
   npm run dev
 ```
 
+## 🛠️ Configurando Mock
 
-## Configurando Mock
-
-Na pasta Mock existe um arquivo chamado "product.mock.js" existem um json, que está descrito abaixo.
-
-É possivel fazer alterações no Mock para que fique de acordo com novos cursos ou atualizações nos cursos.
+Na pasta Mock existe um arquivo chamado "product.mock.js" onde há um arquivo .json, que está contendo as seguintes informações:
 
 ```
   export const itens = [
@@ -116,12 +109,28 @@ Na pasta Mock existe um arquivo chamado "product.mock.js" existem um json, que e
 ]
 ```
 
-## Desenvolvedores/Contribuintes :octocat:
+É possivel fazer alterações no Mock para que fique de acordo com novos cursos ou atualizações da grade de cursos.
 
+## :octocat: Contribuidores:
 
-| [<img src="https://avatars2.githubusercontent.com/u/46378210?s=400&u=071f7791bb03f8e102d835bdb9c2f0d3d24e8a34&v=4" width=115><br><sub>Diana Regina</sub>](https://github.com/Diana-ops) |  [<img src="https://avatars2.githubusercontent.com/u/46378210?s=400&u=071f7791bb03f8e102d835bdb9c2f0d3d24e8a34&v=4" width=115><br><sub>Diana Regina</sub>](https://github.com/Diana-ops) |  [<img src="https://avatars2.githubusercontent.com/u/46378210?s=400&u=071f7791bb03f8e102d835bdb9c2f0d3d24e8a34&v=4" width=115><br><sub>Diana Regina</sub>](https://github.com/Diana-ops) |
-| :---: | :---: | :---: 
-
-
-Copyright :copyright: 2023 - WeFashion
-
+<a title="Elias Neto" href="https://github.com/eliasacneto">
+  <img src="https://avatars.githubusercontent.com/u/8580665?v=4" width="100" style="border-radius:50%">
+</a>
+<a title="Aded" href="https://github.com/jpadedg">
+  <img src="https://avatars.githubusercontent.com/u/57507707?v=4" width="100" style="border-radius:50%">
+</a>
+<a title="Hugo Zeymer" href="https://github.com/HugoZAuad">
+  <img src="https://avatars.githubusercontent.com/u/125771692?v=4" width="100" style="border-radius:50%">
+</a>
+<a title="Marcelo" href="https://github.com/marcelosifr">
+  <img src="https://avatars.githubusercontent.com/u/118279059?v=4" width="100" style="border-radius:50%">
+</a>
+<a title="Rafael Loureiro" href="https://github.com/RafaelLoureiro">
+  <img src="https://avatars.githubusercontent.com/u/110606299?v=4" width="100" style="border-radius:50%">
+</a>
+<a title="Rodrigo Brandão" href="https://github.com/rodrigmeira">
+  <img src="https://avatars.githubusercontent.com/u/114089132?v=4" width="100" style="border-radius:50%">
+</a>
+<a title="Thiago Coelho" href="https://github.com/thiago-b-coelho">
+  <img src="https://avatars.githubusercontent.com/u/1478539?v=4" width="100" style="border-radius:50%">
+</a>

@@ -22,8 +22,8 @@ const Posts = () => {
         </div>
         <div className="Posts__Right__Content">
           <h1 className="Posts__Right__Content--title"> 🪡 Descubra o seu estilo <u className="underlight-small">único</u><span className="highlight">!</span></h1>
-          <p className="Posts__Right__Content--subtitle">Na WeFashion, valorizamos a <b><span className="highlight-y">diversidade 🏳️‍🌈</span></b> e acreditamos que a moda <b>deve ser acessível a todos</b>. </p><p p className="Posts__Right__Content--subtitle"> Nossos cursos de moda são <b>projetados para atender a todos</b> os tipos de corpos e estilos. </p> <p p className="Posts__Right__Content--subtitle"> Quer você seja apaixonado por design, sonhe em criar suas próprias roupas sob medida ou deseje personalizar seu guarda-roupa, nossos cursos são feitos sob medida para você.</p>
-
+          <p className="Posts__Right__Content--subtitle">Na WeFashion, valorizamos a <b><span className="highlight-y">diversidade 🏳️‍🌈</span></b> e acreditamos que a moda <b>deve ser acessível a todos</b>. </p>
+          <p className="Posts__Right__Content--subtitle"> Nossos cursos de moda são <b>projetados para atender a todos</b> os tipos de corpos e estilos. </p> <p className="Posts__Right__Content--subtitle"> Quer você seja apaixonado por design, sonhe em criar suas próprias roupas sob medida ou deseje personalizar seu guarda-roupa, nossos cursos são feitos sob medida para você.</p>
         </div>
       </div>
     </div>
