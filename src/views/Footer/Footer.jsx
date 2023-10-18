@@ -1,22 +1,18 @@
-import React from "react";
+
 import weFashionLogo from "../../assets/images/footer-wf.png";
 import instaIcon from "../../assets/icons/instagram-icon.svg";
 import ytIcon from "../../assets/icons/youtube-icon.svg";
 import facebookIcon from "../../assets/icons/facebook.svg";
+
 import "./Footer.scss";
 
 const Footer = () => {
     return (
         <footer >
             <div className="Footer">
-
-
                 <div className="Footer__contact">
                     <img className="Footer__contact--logo" src={weFashionLogo} alt="Logo da WeFashion"></img>
                     <p className="Footer__contact--info">Sua jornada de moda começa aqui!</p>
-                    <div>
-
-                    </div>
                 </div>
                 <div id="clickable">
                     <div className="Footer__courses">
@@ -28,24 +24,13 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="Footer__courses">
-                        <h3 className="footer-title">Mapa do site</h3>
+                        <h3 className="footer-title">Línks úteis</h3>
                         <div className="Footer__courses__links">
                             <ul className="footer-ul">
 
-                                <li><a className="footer-li" href="#courses">Cursos</a></li>
+                                <li><a className="footer-li" href="#courses">Nossos cursos</a></li>
                                 <li><a className="footer-li" href="#about">Sobre nós</a></li>
-                                <li><a className="footer-li" href="#contact">Contato</a></li>
-
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="Footer__useful-links">
-                        <h3 className="footer-title">Links úteis</h3>
-                        <div className="Footer__useful-links__links">
-                            <ul className="footer-ul">
-                                <li><a className="footer-li" href="#courses">Políticas de privacidade</a></li>
-                                <li><a className="footer-li" href="#courses">Termos de uso</a></li>
-                                <li><a className="footer-li" href="https://api.whatsapp.com/send?phone=5512988880301&text=Ol%C3%A1,%20visitei%20o%20site%20e%20gostaria%20de%20maiores%20informa%C3%A7%C3%B5es.%20%F0%9F%98%8A" target="_blank">Dúvidas</a></li>
+                                <li><a className="footer-li" href="https://api.whatsapp.com/send?phone=5512988880301&text=Ol%C3%A1,%20visitei%20o%20site%20e%20gostaria%20de%20maiores%20informa%C3%A7%C3%B5es.%20%F0%9F%98%8A" target="_blank">Falar com consultor</a></li>
 
                             </ul>
                         </div>

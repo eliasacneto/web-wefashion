@@ -1,8 +1,7 @@
-import React, { useState } from "react";
-import Navbar from "../../Components/Navbar/Navbar";
+import React, { useState, useRef } from "react";
 import Footer from "../../views/Footer/Footer";
 import { items } from "../../mock/product.mock";
-import { Link, useParams } from "react-router-dom";
+
 import "./ClassForm.scss";
 import mapPin from "../../assets/icons/map.svg";
 import clock from "../../assets/icons/time.svg";
@@ -13,18 +12,24 @@ import Testimonials from "../../views/Testimonials/Testimonials";
 import CTAButton from "../CTAButton/CTAButton";
 import Swal from 'sweetalert2';
 import InputMask from 'react-input-mask';
-
+import { useParams } from "react-router-dom";
 
 
 
 const ClassForm = () => {
 
+
+
     const [formSent, setFormSent] = useState(false);
     const [phone, setPhone] = useState('');
 
+    const inputRef = useRef(null); // Criando a referência
+
     const handleChange = (event) => {
         setPhone(event.target.value);
-    }
+    };
+
+
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -104,31 +109,24 @@ const ClassForm = () => {
                     <hr className="line-form" />
                     <input
                         className='classesForm__form-input'
-                        type='text' name="Name"
+                        type='text' name="Name" id="Name"
                         placeholder='Nome completo' required
                     />
                     <input
                         className='classesForm__form-input'
-                        type='email' name="Email"
+                        type='email' name="Email" id="Email"
                         placeholder='Seu melhor e-mail' required
                     />
                     <InputMask
                         className='classesForm__form-input'
-                        mask="(99) 9 9999-9999"
+                        mask="(99) 9 9999-9999" id="WhatsApp"
                         type='phone' name="WhatsApp"
                         placeholder='Seu WhatsApp'
                         value={phone}
-                        onChange={handleChange} required
-                    />
-
+                        inputRef={inputRef}
+                        onChange={handleChange} required />
                     <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
-
-
                     <CTAButton type="submit">Tenho interesse!</CTAButton>
-
-
-
-
                 </form>
             </div>
             <ChooseUs />
