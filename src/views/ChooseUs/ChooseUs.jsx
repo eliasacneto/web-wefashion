@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 
 const ChooseUs = () => {
   return (
-    <div id='About' className='ChooseUs'>
+    <div id='about' className='ChooseUs'>
       <div className='ChooseUs__Left'>
         <div className="ChooseUs__Left__Content">
           <h1 className="ChooseUs__Left__Content--title">Por que <u className="underlight-small">escolher</u> a <span className="highlight">We</span>Fashion<span className="highlight">?</span></h1>
