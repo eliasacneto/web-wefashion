@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 const Home = () => {
     return (
-        <div id='Home' className='Home'>
+        <div id='home' className='Home'>
             <div className='Home__Content'>
                 <div className='Home__Content--left'>
                     <motion.div

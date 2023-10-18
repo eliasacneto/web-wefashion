@@ -1,6 +1,11 @@
 @use "../../global.scss" as *;
 
 
+
+.swal2-popup {
+    font-size: 16px;
+}
+
 .class-icon {
     margin-right: 10px;
 }
@@ -240,6 +245,7 @@
 
 @media (max-width: 810px) {
 
+
     .classesForm {
         display: flex;
         flex-direction: column;
@@ -377,5 +383,11 @@
             height: 330px;
             margin-top: 20px;
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .swal2-popup {
+        width: 90%;
     }
 }

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Footer from "../../views/Footer/Footer";
 import { items } from "../../mock/product.mock";
 
@@ -18,7 +18,9 @@ import { useParams } from "react-router-dom";
 
 const ClassForm = () => {
 
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const [formSent, setFormSent] = useState(false);
     const [phone, setPhone] = useState('');
@@ -53,6 +55,9 @@ const ClassForm = () => {
                     text: 'Agradecemos o interesse, em breve entraremos em contato!',
                     confirmButtonText: 'OK',
                     confirmButtonColor: '#feae11',
+                    customClass: {
+                        container: 'custom-swal-container',
+                    },
                 });
 
                 setFormSent(true);
@@ -63,6 +68,9 @@ const ClassForm = () => {
                     text: 'Ocorreu um erro ao enviar o formulário. Por favor, tente novamente mais tarde.',
                     confirmButtonText: 'OK',
                     confirmButtonColor: '#feae11',
+                    customClass: {
+                        container: 'custom-swal-container',
+                    },
                 });
             }
         } catch (error) {
@@ -72,6 +80,9 @@ const ClassForm = () => {
                 text: 'Ocorreu um erro ao enviar o formulário. Por favor, tente novamente mais tarde.',
                 confirmButtonText: 'OK',
                 confirmButtonColor: '#feae11',
+                customClass: {
+                    container: 'custom-swal-container',
+                },
 
             });
         }
@@ -84,7 +95,7 @@ const ClassForm = () => {
     return (
         <div className='classes'>
             <Header />
-            <div className='classesForm'>
+            <div id="course-form" className='classesForm'>
                 <div className='classesForm__description'>
                     <h2 className='classesForm__description-cursoFix'>🔥 Curso em destaque</h2>
                     <h1 className='classesForm__description-h1'>{product.nome1} <br />{product.nome2}</h1>
