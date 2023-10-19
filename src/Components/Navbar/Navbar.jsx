@@ -7,7 +7,7 @@ import { Link, Routes } from "react-router-dom";
 const Navbar = ({ home }) => {
 
   function changeHome(){
-    setTypeHome(home);
+    window.location.href('/');
   }
 
   return (
@@ -18,9 +18,7 @@ const Navbar = ({ home }) => {
 
       <div className='navbarDesk__menu desktop'>
         <ul>
-          <li>
-            <Link to='/' onClick={changeHome}><a>Início</a></Link>
-          </li>
+            <li><Link to='/' onClick={changeHome}><a>Início</a></Link></li>
           <li>
             <a href='#courses'>Cursos</a>
           </li>

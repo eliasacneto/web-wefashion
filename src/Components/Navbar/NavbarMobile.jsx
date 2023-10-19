@@ -9,6 +9,10 @@ const NavbarMobile = () => {
     const [menuView, setMenuView] = useState(false);
 
     const showMenu = () => setMenuView(!menuView);
+    
+    function changeHome(){
+        window.location.href('/');
+      }
 
     return (
         <header className='navbarMobile'>
@@ -16,19 +20,19 @@ const NavbarMobile = () => {
                 <div className='navbarMobile__menu mobile'>
                     <ul>
                         <li>
-                            <a href='#Home'>Início</a>
+                            <Link to='/' onClick={changeHome}><a>Início</a></Link>
                         </li>
                         <hr />
                         <li>
-                            <a href='#Courses'>Cursos</a>
+                            <a href='#courses'>Cursos</a>
                         </li>
                         <hr />
                         <li>
-                            <a href='#About'>Sobre</a>
+                            <a href='#about'>Sobre</a>
                         </li>
                         <hr />
                         <li>
-                            <a href='#Contact'>Contato</a>
+                            <a href='#contact'>Contato</a>
                         </li>
                         <hr />
                     </ul>
