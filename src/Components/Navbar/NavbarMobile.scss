@@ -41,6 +41,7 @@
         justify-content: center;
         background-color: $main-white;
         width: 100%;
+        filter: drop-shadow(5px 0 1px $bg-black);
 
         a {
             text-decoration: none;
