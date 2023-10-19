@@ -18,7 +18,6 @@ const router = createBrowserRouter([
     element: <ClassForm />,
     errorElement: <Error404 />
   }
-
 ]);
 
 
