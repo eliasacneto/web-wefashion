@@ -2,7 +2,6 @@ import './Home.scss';
 import ButtonWhite from '../../Components/ButtonWhite/ButtonWhite';
 import ButtonYellow from '../../Components/ButtonYellow/ButtonYellow';
 import yellowImg from './../../assets/WeFashion-img-yellow.png';
-import WeWoman from './../../assets/q.png';
 
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
