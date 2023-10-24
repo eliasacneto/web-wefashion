@@ -93,8 +93,8 @@ const ClassForm = () => {
     const product = products.find((element) => element.id == id);
 
     return (
-        <div className='classes'>
-            <Header />
+        <div id="courses" className='classes'>
+            <Header home='/' />
             <div id="course-form" className='classesForm'>
                 <div className='classesForm__description'>
                     <h2 className='classesForm__description-cursoFix'>🔥 Curso em destaque</h2>
