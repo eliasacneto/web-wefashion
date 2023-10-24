@@ -6,7 +6,7 @@ import { Link, Routes } from "react-router-dom";
 
 const Navbar = ({ home }) => {
 
-  function changeHome(){
+  function changeHome() {
     window.location.href('/');
   }
 
@@ -18,7 +18,7 @@ const Navbar = ({ home }) => {
 
       <div className='navbarDesk__menu desktop'>
         <ul>
-            <li><Link to='/' onClick={changeHome}><a>Início</a></Link></li>
+          <li><Link to='/' onClick={changeHome}><a>Início</a></Link></li>
           <li>
             <a href='#courses'>Cursos</a>
           </li>
@@ -30,7 +30,7 @@ const Navbar = ({ home }) => {
           </li>
         </ul>
         <Link to="https://api.whatsapp.com/send?phone=5512988880301&text=Ol%C3%A1,%20visitei%20o%20site%20e%20gostaria%20de%20me%20inscrever%20em%20um%20dos%20cursos.%20%F0%9F%98%8A" target='_blank' className='whats-link'><CTAButton>
-          Inscreva-se agora</CTAButton></Link>
+          Quero me matricular!</CTAButton></Link>
       </div>
     </header>
   );

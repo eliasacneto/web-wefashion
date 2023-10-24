@@ -17,7 +17,8 @@ const router = createBrowserRouter([
     path: "/course/:id",
     element: <ClassForm />,
     errorElement: <Error404 />
-  }
+  },
+
 ]);
 
 

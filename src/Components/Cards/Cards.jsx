@@ -23,7 +23,7 @@ export default function Cards({ data }) {
                 onMouseEnter={() => setIsShown(true)}
             >
                 <div className='card-Box1__Folder'>
-                    <img src={modelagemImg} alt="" className='card-Box1__Folder-Img' />
+                    <img src={data.imgA} alt="" className='card-Box1__Folder-Img' />
 
                 </div>
                 <div className='card-Box1__Assessment'>

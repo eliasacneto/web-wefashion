@@ -40,6 +40,7 @@
     margin-right: 10px;
 
 
+
     &__Folder {
         height: auto;
         justify-content: center;
@@ -161,4 +162,86 @@
         margin-bottom: 20px;
         padding: 10px;
     }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .card-Box1,
+    .card-Box2 {
+        width: 100% !important;
+        height: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+
+
+    .card-Box1__Folder-Img {
+        width: 100%;
+    }
+
+    .card-Box1__Folder-Price-link {
+        left: 25%;
+    }
+
+    .card-Box2__titles-2 {
+        font-size: 16px;
+    }
+
+    .card-Box2__spec {
+        font-size: 12px;
+    }
+
+    .card-Box2__description {
+        font-size: 14px;
+    }
+
+    .btn-course {
+        height: 50px;
+        padding: 0 10px;
+        color: $bg-black;
+        background-color: $dark-yellow;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: 600;
+
+        transition: color 0.3s ease;
+        border: 1px $dark-yellow;
+    }
+
+    .btn-course:hover,
+    .btn-course:active {
+        cursor: pointer;
+        color: $off-white;
+        background-color: $dark-yellow;
+        transition: color 0.3s ease;
+    }
+
+
+    .card-Box1 {
+
+
+        &__Assessment {
+            margin-left: 15px;
+            margin-right: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            height: auto;
+            padding: 2px;
+
+
+            &-spec {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                font-size: 14px;
+                gap: 10px;
+                color: #000;
+                font-weight: 400;
+            }
+        }
+    }
+
+
 }

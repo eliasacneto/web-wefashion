@@ -22,7 +22,7 @@ export const items = [
     id: 2,
     nome1: "Tecido Plano",
     nome2: "Masculino",
-    imgA: "",
+    imgA: "/src/assets/images/courses/6.jpg",
     descritit1: "Modelagem",
     descrição1:
       "Nas aulas de modelagem o aluno aprende a tirar medidas, desenvolver os moldes de cada peça do zero. Dessa forma, terá autonomia para criar qualquer tipo de peça/modelo em qualquer tamanho.",
@@ -41,7 +41,7 @@ export const items = [
     id: 3,
     nome1: "Tecido Plano",
     nome2: "Infantil",
-    imgA: "",
+    imgA: "/src/assets/images/courses/7.jpg",
     descritit1: "Modelagem",
     descrição1:
       "Nas aulas de modelagem o aluno aprende a tirar medidas, desenvolver os moldes de cada peça do zero. Dessa forma, terá autonomia para criar qualquer tipo de peça/modelo em qualquer tamanho.",
@@ -60,7 +60,7 @@ export const items = [
     id: 4,
     nome1: "Tecido Plano",
     nome2: "Pet",
-    imgA: "",
+    imgA: "/src/assets/images/courses/9.jpg",
     descritit1: "Modelagem",
     descrição1:
       "Nas aulas de modelagem o aluno aprende a tirar medidas, desenvolver os moldes de cada peça do zero. Dessa forma, terá autonomia para criar qualquer tipo de peça/modelo em qualquer tamanho.",
@@ -79,7 +79,7 @@ export const items = [
     id: 5,
     nome1: "Tecido Plano",
     nome2: "Personalizado*",
-    imgA: "",
+    imgA: "/src/assets/images/courses/1.jpg",
     descritit1: "Modelagem",
     descrição1:
       "Nas aulas de modelagem o aluno aprende a tirar medidas, desenvolver os moldes de cada peça do zero. Dessa forma, terá autonomia para criar qualquer tipo de peça/modelo em qualquer tamanho.",
@@ -98,7 +98,7 @@ export const items = [
     id: 6,
     nome1: "Tecido Plano",
     nome2: "Modelagem",
-    imgA: "",
+    imgA: "/src/assets/images/courses/2.jpg",
     descritit1: "Modelagem",
     descrição1:
       "Nas aulas de modelagem o aluno aprende a tirar medidas, desenvolver os moldes de cada peça do zero. Dessa forma, terá autonomia para criar qualquer tipo de peça/modelo em qualquer tamanho.",
@@ -117,7 +117,7 @@ export const items = [
     id: 7,
     nome1: "Malha",
     nome2: "Básico",
-    imgA: "",
+    imgA: "/src/assets/images/courses/10.jpg",
     descritit1: "Modelagem",
     descrição1:
       "No curso de malha o aluno aprende a desenvolver a modelagem para trabalhar com alta, média e baixa elasticidade. A modelagem de malha possui uma redução das medidas em comparação a modelagem de tecido plano, para evitar que a peça fique larga no corpo.",
@@ -135,8 +135,8 @@ export const items = [
   {
     id: 8,
     nome1: "Malha",
-    nome2: "Personalizado*",
-    imgA: "",
+    nome2: "Personalizado",
+    imgA: "/src/assets/images/courses/5.jpg",
     descritit1: "Modelagem",
     descrição1:
       "No curso de malha o aluno aprende a desenvolver a modelagem para trabalhar com alta, média e baixa elasticidade. A modelagem de malha possui uma redução das medidas em comparação a modelagem de tecido plano, para evitar que a peça fique larga no corpo.",
@@ -155,7 +155,7 @@ export const items = [
     id: 9,
     nome1: "Estilismo",
     nome2: "",
-    imgA: "",
+    imgA: "/src/assets/images/courses/4.jpg",
     descritit1: "Cronograma Estilismo",
     descrição1:
       "Aqui o aluno terá aulas de introdução à Moda, História da Moda, Moda de 100 anos (1900 - Belle Époque), Elementos de Arte, Movimento visual, Elementos de Criação e muito mais.",
@@ -173,7 +173,7 @@ export const items = [
     id: 10,
     nome1: "Desenho Técnico de Croqui",
     nome2: "",
-    imgA: "",
+    imgA: "/src/assets/images/courses/3.jpg",
     descritit1: "Cronograma Estilismo",
     descrição1:
       "Em Desenho Técnico de Croqui o aluno aprenderá como desenhar um croqui Feminino e Masculino, Croqui para Plus Size, Técnicas para desenhar poses para o Croqui, Como desenhar croqui feminino no eixo, a desenhar diversos modelos de roupas, como desenhar o caimento do tecido, desenhar cabelo e muito mais.",
