@@ -1,7 +1,7 @@
 import "./ButtonYellow.scss";
 
 const ButtonYellow = ({ link, children }) => {
-  return <button className="ButtonYellow"><a href={link}>{children}</a></button>;
+  return <a href={link} target="_blank"><button className="ButtonYellow">{children}</button></a>;
 };
 
 export default ButtonYellow;

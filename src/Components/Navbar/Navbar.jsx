@@ -3,11 +3,16 @@ import weLogo from '../../assets/images/nav-logo.png'
 import "./Navbar.scss";
 import CTAButton from "../CTAButton/CTAButton";
 import { Link, Routes } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link'
 
-const Navbar = ({ home }) => {
+const Navbar = () => {
 
-  function changeHome() {
-    window.location.href('/');
+  function linkOrAnchor(linkTo, text){
+    if(window.location.pathname === '/'){
+      return <a href={linkTo}>{text}</a>
+    } else {
+      return <HashLink to={`/${linkTo}`} ><a>{text}</a></HashLink>
+    }
   }
 
   return (
@@ -18,9 +23,9 @@ const Navbar = ({ home }) => {
 
       <div className='navbarDesk__menu desktop'>
         <ul>
-          <li><Link to='/' onClick={changeHome}><a>Início</a></Link></li>
+          <li>{linkOrAnchor('#home','Início')}</li>
           <li>
-            <a href='#courses'>Cursos</a>
+          {linkOrAnchor('#courses','Cursos')}
           </li>
           <li>
             <a href='#about'>Sobre nós</a>

@@ -45,11 +45,11 @@ const ChooseUs = () => {
         </div>
 
       </div>
-      <div id='Contact' className='ChooseUs__Right'>
+      <div id='contact' className='ChooseUs__Right'>
         <div className="ChooseUs__Right__ImgContainer">
           <img className="ChooseUs__Right__ImgContainer--img" src={ImgCTA} alt="post02" loading="lazy" />
         </div>
-        <div className="ChooseUs__Right__Content" id='contact'>
+        <div className="ChooseUs__Right__Content">
           <h1 className="ChooseUs__Right__Content--title">⏰ Inicie a sua jornada de moda agora! </h1>
           <p className="ChooseUs__Right__Content--subtitle"> A <b><span className="highlight-y">We</span>Fashion</b> é o seu ponto de partida para uma jornada emocionante no mundo da moda.</p>
           <p className="ChooseUs__Right__Content--subtitle">Descubra seu estilo, crie roupas únicas e <b><span className="highlight-y">faça parte</span></b> de uma comunidade diversificada e inspiradora. Junte-se a nós e torne-se um criador de moda confiante e talentoso!</p>

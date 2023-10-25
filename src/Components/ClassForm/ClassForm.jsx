@@ -140,8 +140,8 @@ const ClassForm = () => {
                     <CTAButton type="submit">Tenho interesse!</CTAButton>
                 </form>
             </div>
-            <ChooseUs />
             <Testimonials />
+            <ChooseUs />
             <Footer />
         </div>
     );

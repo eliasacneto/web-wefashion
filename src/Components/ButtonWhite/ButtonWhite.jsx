@@ -2,7 +2,7 @@ import './ButtonWhite.scss'
 
 const ButtonWhite = ({ children, link }) => {
   return (
-    <button className='ButtonWhite'><a href={link}>{children}</a></button>
+    <a href={link}><button className='ButtonWhite'>{children}</button></a>
   )
 }
 

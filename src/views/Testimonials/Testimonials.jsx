@@ -18,8 +18,7 @@ const Testimonials = () => {
           experiência de aprender essa arte milenar e transformar tecidos em
           verdadeiras obras de arte.
         </p>
-        <CTAButton>
-          Conheça nossos cursos</CTAButton>
+        <CTAButton link="#courses">Conheça nossos cursos</CTAButton>
       </div>
 
       <div className='right-content'>

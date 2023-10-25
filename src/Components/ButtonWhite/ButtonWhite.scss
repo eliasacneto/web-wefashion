@@ -10,17 +10,14 @@
   align-items: center;
   border: 2px solid $dark-yellow;
   transition: background-color 0.5s ease;
-  
-  a{
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: 600;
-      color: $bg-black;
-  }
+  font-size: 1rem;
+  font-weight: 600;
+  color: $main-black;
   
   &:hover {
     cursor: pointer;
     background-color: $dark-yellow;
     transition: background-color 0.5s ease;
+    color: white;
   }
 }

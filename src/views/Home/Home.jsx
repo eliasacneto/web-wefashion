@@ -39,9 +39,8 @@ const Home = () => {
                             hidden: { opacity: 0, x: -50 },
                             visible: { opacity: 1, x: 0 },
                         }}>
-                        <ButtonYellow link="#courses">Conheça nossos cursos</ButtonYellow>
-                        <Link to="https://api.whatsapp.com/send?phone=5512988880301&text=Ol%C3%A1,%20visitei%20o%20site%20e%20gostaria%20de%20me%20inscrever%20em%20um%20dos%20cursos.%20%F0%9F%98%8A" target='_blank' className='whats-link'><ButtonWhite>Matricule-se agora</ButtonWhite></Link>
-
+                        <ButtonYellow link="https://api.whatsapp.com/send?phone=5512988880301&text=Ol%C3%A1,%20visitei%20o%20site%20e%20gostaria%20de%20me%20inscrever%20em%20um%20dos%20cursos.%20%F0%9F%98%8A">Matricule-se agora</ButtonYellow>
+                        <ButtonWhite link="#courses">Conheça nossos cursos</ButtonWhite>
                     </motion.div>
                 </div>
                 <div className='Home__Content--right'>

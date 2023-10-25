@@ -8,27 +8,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: 700;
+  font-weight: 600;
   color: $bg-black;
   border: 2px solid $dark-yellow;
   transition: color 0.3s ease;
   font-family: 'Poppins', sans-serif;
-
-  a {
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 600;
-    color: $bg-black;
-  }
+  font-size: 1rem;
+  
 
   &:hover {
     cursor: pointer;
     color: $main-white;
     background-color: $dark-yellow;
     transition: color 0.3s ease;
-
-    a {
-      color: $off-white;
-    }
   }
+}
+
+a {
+  text-decoration: none;
 }

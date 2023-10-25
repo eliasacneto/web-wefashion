@@ -4,7 +4,7 @@ import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../Footer/Footer';
 
 const Classes = () => {
-   console.log(data)
+  console.log(data)
 
   return (
     <div className='product__view'>
@@ -12,7 +12,6 @@ const Classes = () => {
           <div className='rollSet'>
             <ClassForm />
           </div>
-        <Footer />
     </div>
   )
 }
